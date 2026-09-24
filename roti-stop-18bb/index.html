@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Roti Stop · design preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,750&family=Nunito+Sans:wght@400;650&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#FFFFFF; --surface:#F4F7F2; --ink:#22301F; --muted:#56634F; --accent:#2E6B4F;
+  --accent-ink:#FFFFFF; --soft:#F6DD8E; --r:22px; --rule:#2E6B4F; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:'Nunito Sans', system-ui, sans-serif; font-size:17px; line-height:1.6; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.preview-bar { background: var(--ink); color: var(--bg); font-size: 14px; padding: 10px 16px; text-align: center; }
+.preview-bar a { color: inherit; font-weight: 600; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+header.top { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 22px 0; }
+.brand { font-family:'Bricolage Grotesque', system-ui, sans-serif; font-weight:700; font-size: 21px; line-height:1.2;  }
+.top .btn { padding: 10px 16px; font-size: 15px; }
+.hero { padding: 56px 0 64px; display:grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items:end; }
+.hero h1 { font-family:'Bricolage Grotesque', system-ui, sans-serif; font-size: clamp(36px, 6vw, 64px); line-height:1.04; margin:0 0 20px; font-weight:700;  max-width: 16ch; }
+.hero p.sub { font-size: 19px; color: var(--muted); max-width: 52ch; margin: 0 0 28px; }
+.actions { display:flex; flex-wrap:wrap; gap: 12px; }
+.btn { display:inline-block; background:var(--accent); color:var(--accent-ink); text-decoration:none; font-weight:650;
+  padding: 14px 22px; border-radius: var(--r); border: 2px solid var(--accent); }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+.hero aside { background: var(--surface); border-radius: var(--r); padding: 24px; border-top: 4px solid var(--rule); }
+.hero aside ul { margin:0; padding-left: 20px; }
+.hero aside li { margin: 6px 0; }
+section { padding: 64px 0; }
+section.alt { background: var(--surface); }
+h2 { font-family:'Bricolage Grotesque', system-ui, sans-serif; font-size: clamp(28px, 4vw, 40px); line-height:1.1; margin: 0 0 32px;  }
+ul.services { list-style:none; margin:0; padding:0; display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 28px 36px; }
+ul.services li { border-top: 2px solid var(--rule); padding-top: 16px; }
+ul.services h3 { margin: 0 0 6px; font-size: 19px; }
+ul.services p { margin:0; color: var(--muted); }
+.about { max-width: 68ch; font-size: 18px; }
+.contact { display:grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+form { display:grid; gap: 14px; }
+label { font-weight: 600; font-size: 15px; display:grid; gap: 6px; }
+input, textarea, select { font: inherit; padding: 12px 14px; border: 1.5px solid #B9C0C7; border-radius: var(--r); background: #fff; color: var(--ink); }
+.note { font-size: 14px; color: var(--muted); }
+footer { padding: 32px 0; font-size: 14px; color: var(--muted); border-top: 1px solid var(--soft); }
+@media (max-width: 760px) {
+  .hero, .contact { grid-template-columns: 1fr; gap: 28px; }
+  .hero { padding-top: 28px; }
+  header.top .btn { display:none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero h1 { animation: rise .6s ease-out both; }
+  @keyframes rise { from { opacity:0; transform: translateY(12px); } to { opacity:1; transform:none; } }
+}
+</style>
+</head>
+<body>
+<div class="preview-bar">Design preview made for Roti Stop by Husnain Babar. This is not the official website. <a href="mailto:husnain.babar.dev@gmail.com">Questions?</a></div>
+<div class="wrap">
+  <header class="top"><div class="brand">Roti Stop</div><a class="btn" href="tel:9053067684">Call 905-306-7684</a></header>
+  <div class="hero">
+    <div>
+      <h1>Home-style Caribbean roti in Mississauga, made fresh daily</h1>
+      <p class="sub">West Indian curries and vegetarian dishes wrapped in fresh roti or served with rice and peas, on Dundas Street East.</p>
+      <div class="actions"><a class="btn" href="#contact">Call to order</a><a class="btn ghost" href="tel:9053067684">905-306-7684</a></div>
+    </div>
+    <aside><ul><li>Rotis made fresh daily</li><li>No oil, low sodium</li><li>Dine-in, takeout, delivery and catering</li></ul></aside>
+  </div>
+</div>
+<section class="alt"><div class="wrap"><h2>What we serve</h2><ul class="services"><li><h3>Fresh roti</h3><p>Our rotis are made fresh daily in front of you in an open kitchen.</p></li><li><h3>Curries and boneless meats</h3><p>Succulent boneless seasoned meats and delicately seasoned curries.</p></li><li><h3>Vegetarian dishes</h3><p>Tasty vegetarian dishes, wrapped in roti or served with rice and peas and a side salad.</p></li><li><h3>Catering</h3><p>We cater small parties and events.</p></li><li><h3>Delivery and takeout</h3><p>We deliver to offices and homes. Call ahead and your order will be ready when you arrive.</p></li></ul></div></section>
+<section><div class="wrap"><h2>Healthier Caribbean food</h2><p class="about">Roti Stop serves healthy, high-quality, affordable home-style Caribbean food. We trim excess fat off our meat, use no oil in dish preparation, and keep salt low, and our in-house blend of spices and fresh herbs brings the flavour. Dine in, take out, or have it delivered.</p></div></section>
+<section class="alt" id="contact"><div class="wrap contact">
+  <div><h2>Call to order</h2><p><strong>Location</strong><br>1125 Dundas St. E, Unit 7, Mississauga, ON L4Y 2C4</p><p><strong>Hours</strong><br>Mon-Wed 11:30am-6pm, Thu-Fri 11:30am-8pm, Sat 12:30pm-6pm, Sun closed</p>
+    <p><strong>Phone</strong><br><a href="tel:9053067684">905-306-7684</a></p>
+    <p><strong>Email</strong><br>info@rotistop.com</p></div>
+  <form onsubmit="event.preventDefault(); this.querySelector('.note').textContent='In the live version this sends straight to your inbox (and can text you).';">
+    <label>Your name <input name="name" autocomplete="name" required></label>
+    <label>Phone or email <input name="contact" required></label>
+    <label>How can we help? <textarea name="msg" rows="4"></textarea></label>
+    <button class="btn" type="submit">Send request</button>
+    <p class="note">Demo form: nothing is sent from this preview.</p>
+  </form>
+</div></section>
+<footer><div class="wrap">Roti Stop · Mississauga, ON. Preview concept only.</div></footer>
+</body>
+</html>
