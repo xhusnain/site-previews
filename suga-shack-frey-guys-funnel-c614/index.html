@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Suga Shack (Frey Guys Funnel) · design preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,750&family=Nunito+Sans:wght@400;650&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#FFFFFF; --surface:#F4F7F2; --ink:#22301F; --muted:#56634F; --accent:#2E6B4F;
+  --accent-ink:#FFFFFF; --soft:#F6DD8E; --r:22px; --rule:#2E6B4F; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:'Nunito Sans', system-ui, sans-serif; font-size:17px; line-height:1.6; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.preview-bar { background: var(--ink); color: var(--bg); font-size: 14px; padding: 10px 16px; text-align: center; }
+.preview-bar a { color: inherit; font-weight: 600; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+header.top { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 22px 0; }
+.brand { font-family:'Bricolage Grotesque', system-ui, sans-serif; font-weight:700; font-size: 21px; line-height:1.2;  }
+.top .btn { padding: 10px 16px; font-size: 15px; }
+.hero { padding: 56px 0 64px; display:grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items:end; }
+.hero h1 { font-family:'Bricolage Grotesque', system-ui, sans-serif; font-size: clamp(36px, 6vw, 64px); line-height:1.04; margin:0 0 20px; font-weight:700;  max-width: 16ch; }
+.hero p.sub { font-size: 19px; color: var(--muted); max-width: 52ch; margin: 0 0 28px; }
+.actions { display:flex; flex-wrap:wrap; gap: 12px; }
+.btn { display:inline-block; background:var(--accent); color:var(--accent-ink); text-decoration:none; font-weight:650;
+  padding: 14px 22px; border-radius: var(--r); border: 2px solid var(--accent); }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+.hero aside { background: var(--surface); border-radius: var(--r); padding: 24px; border-top: 4px solid var(--rule); }
+.hero aside ul { margin:0; padding-left: 20px; }
+.hero aside li { margin: 6px 0; }
+section { padding: 64px 0; }
+section.alt { background: var(--surface); }
+h2 { font-family:'Bricolage Grotesque', system-ui, sans-serif; font-size: clamp(28px, 4vw, 40px); line-height:1.1; margin: 0 0 32px;  }
+ul.services { list-style:none; margin:0; padding:0; display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 28px 36px; }
+ul.services li { border-top: 2px solid var(--rule); padding-top: 16px; }
+ul.services h3 { margin: 0 0 6px; font-size: 19px; }
+ul.services p { margin:0; color: var(--muted); }
+.about { max-width: 68ch; font-size: 18px; }
+.contact { display:grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+form { display:grid; gap: 14px; }
+label { font-weight: 600; font-size: 15px; display:grid; gap: 6px; }
+input, textarea, select { font: inherit; padding: 12px 14px; border: 1.5px solid #B9C0C7; border-radius: var(--r); background: #fff; color: var(--ink); }
+.note { font-size: 14px; color: var(--muted); }
+footer { padding: 32px 0; font-size: 14px; color: var(--muted); border-top: 1px solid var(--soft); }
+@media (max-width: 760px) {
+  .hero, .contact { grid-template-columns: 1fr; gap: 28px; }
+  .hero { padding-top: 28px; }
+  header.top .btn { display:none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero h1 { animation: rise .6s ease-out both; }
+  @keyframes rise { from { opacity:0; transform: translateY(12px); } to { opacity:1; transform:none; } }
+}
+</style>
+</head>
+<body>
+<div class="preview-bar">Design preview made for Suga Shack (Frey Guys Funnel) by Husnain Babar. This is not the official website. <a href="mailto:husnain.babar.dev@gmail.com">Questions?</a></div>
+<div class="wrap">
+  <header class="top"><div class="brand">Suga Shack (Frey Guys Funnel)</div></header>
+  <div class="hero">
+    <div>
+      <h1>Funnel cakes at fairs, rodeos and festivals</h1>
+      <p class="sub">Suga Shack (Frey Guys Funnel) brings funnel cakes and sweet treats to events around Kalispell and beyond.</p>
+      <div class="actions"><a class="btn" href="#contact">Book us for your event</a></div>
+    </div>
+    <aside><ul><li>Based in Kalispell</li><li>Fairs, rodeos and festivals</li></ul></aside>
+  </div>
+</div>
+<section class="alt"><div class="wrap"><h2>Where we serve</h2><ul class="services"><li><h3>Fairs</h3><p>Find us on the fair circuit.</p></li><li><h3>Rodeos</h3><p>Funnel cakes at the rodeo grounds.</p></li><li><h3>Festivals and events</h3><p>Want the Suga Shack at your event? Send us the details.</p></li></ul></div></section>
+<section><div class="wrap"><h2>About Suga Shack</h2><p class="about">Suga Shack, also known as Frey Guys Funnel, is a Kalispell snack van serving funnel cakes at fairs, rodeos and festivals. Follow us on Facebook to see where we&#x27;re headed next.</p></div></section>
+<section class="alt" id="contact"><div class="wrap contact">
+  <div><h2>Book us for your event</h2><p><strong>Location</strong><br>Kalispell, MT</p>
+    
+    <p><strong>Email</strong><br>freyguysfunnel@gmail.com</p></div>
+  <form onsubmit="event.preventDefault(); this.querySelector('.note').textContent='In the live version this sends straight to your inbox (and can text you).';">
+    <label>Your name <input name="name" autocomplete="name" required></label>
+    <label>Phone or email <input name="contact" required></label>
+    <label>How can we help? <textarea name="msg" rows="4"></textarea></label>
+    <button class="btn" type="submit">Send request</button>
+    <p class="note">Demo form: nothing is sent from this preview.</p>
+  </form>
+</div></section>
+<footer><div class="wrap">Suga Shack (Frey Guys Funnel) · Kalispell, MT. Preview concept only.</div></footer>
+</body>
+</html>
