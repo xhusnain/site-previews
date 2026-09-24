@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Lohrum Electrical LLC · design preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,600;62..125,800&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#FFFFFF; --surface:#F2F4F7; --ink:#14213D; --muted:#4E5B6C; --accent:#F2B300;
+  --accent-ink:#14213D; --soft:#E3E8EF; --r:6px; --rule:#F2B300; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:'Archivo', system-ui, sans-serif; font-size:17px; line-height:1.6; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.preview-bar { background: var(--ink); color: var(--bg); font-size: 14px; padding: 10px 16px; text-align: center; }
+.preview-bar a { color: inherit; font-weight: 600; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+header.top { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 22px 0; }
+.brand { font-family:'Archivo', system-ui, sans-serif; font-weight:700; font-size: 21px; line-height:1.2; font-stretch: 75%; text-transform: none; letter-spacing: -0.01em; }
+.top .btn { padding: 10px 16px; font-size: 15px; }
+.hero { padding: 56px 0 64px; display:grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items:end; }
+.hero h1 { font-family:'Archivo', system-ui, sans-serif; font-size: clamp(36px, 6vw, 64px); line-height:1.04; margin:0 0 20px; font-weight:700; font-stretch: 75%; text-transform: none; letter-spacing: -0.01em; max-width: 16ch; }
+.hero p.sub { font-size: 19px; color: var(--muted); max-width: 52ch; margin: 0 0 28px; }
+.actions { display:flex; flex-wrap:wrap; gap: 12px; }
+.btn { display:inline-block; background:var(--accent); color:var(--accent-ink); text-decoration:none; font-weight:650;
+  padding: 14px 22px; border-radius: var(--r); border: 2px solid var(--accent); }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+.hero aside { background: var(--surface); border-radius: var(--r); padding: 24px; border-top: 4px solid var(--rule); }
+.hero aside ul { margin:0; padding-left: 20px; }
+.hero aside li { margin: 6px 0; }
+section { padding: 64px 0; }
+section.alt { background: var(--surface); }
+h2 { font-family:'Archivo', system-ui, sans-serif; font-size: clamp(28px, 4vw, 40px); line-height:1.1; margin: 0 0 32px; font-stretch: 75%; text-transform: none; letter-spacing: -0.01em; }
+ul.services { list-style:none; margin:0; padding:0; display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 28px 36px; }
+ul.services li { border-top: 2px solid var(--rule); padding-top: 16px; }
+ul.services h3 { margin: 0 0 6px; font-size: 19px; }
+ul.services p { margin:0; color: var(--muted); }
+.about { max-width: 68ch; font-size: 18px; }
+.contact { display:grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+form { display:grid; gap: 14px; }
+label { font-weight: 600; font-size: 15px; display:grid; gap: 6px; }
+input, textarea, select { font: inherit; padding: 12px 14px; border: 1.5px solid #B9C0C7; border-radius: var(--r); background: #fff; color: var(--ink); }
+.note { font-size: 14px; color: var(--muted); }
+footer { padding: 32px 0; font-size: 14px; color: var(--muted); border-top: 1px solid var(--soft); }
+@media (max-width: 760px) {
+  .hero, .contact { grid-template-columns: 1fr; gap: 28px; }
+  .hero { padding-top: 28px; }
+  header.top .btn { display:none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero h1 { animation: rise .6s ease-out both; }
+  @keyframes rise { from { opacity:0; transform: translateY(12px); } to { opacity:1; transform:none; } }
+}
+</style>
+</head>
+<body>
+<div class="preview-bar">Design preview made for Lohrum Electrical LLC by Husnain Babar. This is not the official website. <a href="mailto:husnain.babar.dev@gmail.com">Questions?</a></div>
+<div class="wrap">
+  <header class="top"><div class="brand">Lohrum Electrical LLC</div><a class="btn" href="tel:8125936573">Call 812-593-6573</a></header>
+  <div class="hero">
+    <div>
+      <h1>Electrical, solar and generators in Southeastern Indiana since 2000</h1>
+      <p class="sub">Residential, commercial, industrial and agricultural electrical work from Greensburg, with 24/7 emergency service.</p>
+      <div class="actions"><a class="btn" href="#contact">Request an evaluation</a><a class="btn ghost" href="tel:8125936573">812-593-6573</a></div>
+    </div>
+    <aside><ul><li>Since 2000</li><li>24/7 emergency service</li><li>Generac and solar installs</li><li>Residential, commercial, industrial, agricultural</li></ul></aside>
+  </div>
+</div>
+<section class="alt"><div class="wrap"><h2>What we do</h2><ul class="services"><li><h3>Electrical work</h3><p>Troubleshooting, inspections, installation and design for homes, businesses, industry and farms.</p></li><li><h3>Generac standby generators</h3><p>Standby generators so a power outage doesn&#x27;t stop you.</p></li><li><h3>Solar and wind</h3><p>Solar panels and hybrid solar/wind installs to lower your electric bill.</p></li><li><h3>Bucket truck service</h3><p>Bucket truck work, temporary power and LED lighting.</p></li><li><h3>Thermal imaging</h3><p>Thermal imaging to find problems before they happen.</p></li></ul></div></section>
+<section><div class="wrap"><h2>Your energy solutions provider</h2><p class="about">Lohrum Electrical LLC has been Southeastern Indiana&#x27;s energy solutions provider since 2000. Whether it&#x27;s residential, commercial, industrial or farms, we look at every detail and design what&#x27;s best suited for you. Our solar work has been covered by the Greensburg Daily News. Visits to our location are by appointment only.</p></div></section>
+<section class="alt" id="contact"><div class="wrap contact">
+  <div><h2>Request an evaluation</h2><p><strong>Location</strong><br>Greensburg, IN</p>
+    <p><strong>Phone</strong><br><a href="tel:8125936573">812-593-6573</a></p>
+    <p><strong>Email</strong><br>lohrumelectrical@hotmail.com</p></div>
+  <form onsubmit="event.preventDefault(); this.querySelector('.note').textContent='In the live version this sends straight to your inbox (and can text you).';">
+    <label>Your name <input name="name" autocomplete="name" required></label>
+    <label>Phone or email <input name="contact" required></label>
+    <label>How can we help? <textarea name="msg" rows="4"></textarea></label>
+    <button class="btn" type="submit">Send request</button>
+    <p class="note">Demo form: nothing is sent from this preview.</p>
+  </form>
+</div></section>
+<footer><div class="wrap">Lohrum Electrical LLC · Greensburg, IN. Preview concept only.</div></footer>
+</body>
+</html>

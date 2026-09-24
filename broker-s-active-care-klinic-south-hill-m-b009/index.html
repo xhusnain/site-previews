@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Broker&#x27;s Active Care Klinic · design preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#F6FAFB; --surface:#FFFFFF; --ink:#0F2E3A; --muted:#4A6470; --accent:#16807F;
+  --accent-ink:#FFFFFF; --soft:#DCEEEE; --r:18px; --rule:#16807F; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:'Figtree', system-ui, sans-serif; font-size:17px; line-height:1.6; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.preview-bar { background: var(--ink); color: var(--bg); font-size: 14px; padding: 10px 16px; text-align: center; }
+.preview-bar a { color: inherit; font-weight: 600; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+header.top { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 22px 0; }
+.brand { font-family:'Instrument Serif', Georgia, serif; font-weight:700; font-size: 21px; line-height:1.2;  }
+.top .btn { padding: 10px 16px; font-size: 15px; }
+.hero { padding: 56px 0 64px; display:grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items:end; }
+.hero h1 { font-family:'Instrument Serif', Georgia, serif; font-size: clamp(36px, 6vw, 64px); line-height:1.04; margin:0 0 20px; font-weight:700;  max-width: 16ch; }
+.hero p.sub { font-size: 19px; color: var(--muted); max-width: 52ch; margin: 0 0 28px; }
+.actions { display:flex; flex-wrap:wrap; gap: 12px; }
+.btn { display:inline-block; background:var(--accent); color:var(--accent-ink); text-decoration:none; font-weight:650;
+  padding: 14px 22px; border-radius: var(--r); border: 2px solid var(--accent); }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+.hero aside { background: var(--surface); border-radius: var(--r); padding: 24px; border-top: 4px solid var(--rule); }
+.hero aside ul { margin:0; padding-left: 20px; }
+.hero aside li { margin: 6px 0; }
+section { padding: 64px 0; }
+section.alt { background: var(--surface); }
+h2 { font-family:'Instrument Serif', Georgia, serif; font-size: clamp(28px, 4vw, 40px); line-height:1.1; margin: 0 0 32px;  }
+ul.services { list-style:none; margin:0; padding:0; display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 28px 36px; }
+ul.services li { border-top: 2px solid var(--rule); padding-top: 16px; }
+ul.services h3 { margin: 0 0 6px; font-size: 19px; }
+ul.services p { margin:0; color: var(--muted); }
+.about { max-width: 68ch; font-size: 18px; }
+.contact { display:grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+form { display:grid; gap: 14px; }
+label { font-weight: 600; font-size: 15px; display:grid; gap: 6px; }
+input, textarea, select { font: inherit; padding: 12px 14px; border: 1.5px solid #B9C0C7; border-radius: var(--r); background: #fff; color: var(--ink); }
+.note { font-size: 14px; color: var(--muted); }
+footer { padding: 32px 0; font-size: 14px; color: var(--muted); border-top: 1px solid var(--soft); }
+@media (max-width: 760px) {
+  .hero, .contact { grid-template-columns: 1fr; gap: 28px; }
+  .hero { padding-top: 28px; }
+  header.top .btn { display:none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero h1 { animation: rise .6s ease-out both; }
+  @keyframes rise { from { opacity:0; transform: translateY(12px); } to { opacity:1; transform:none; } }
+}
+</style>
+</head>
+<body>
+<div class="preview-bar">Design preview made for Broker&#x27;s Active Care Klinic by Husnain Babar. This is not the official website. <a href="mailto:husnain.babar.dev@gmail.com">Questions?</a></div>
+<div class="wrap">
+  <header class="top"><div class="brand">Broker&#x27;s Active Care Klinic</div><a class="btn" href="tel:3069227028">Call (306) 922-7028</a></header>
+  <div class="hero">
+    <div>
+      <h1>Chiropractic, acupuncture and rehab in Prince Albert since 1988</h1>
+      <p class="sub">An outpatient rehabilitation centre with chiropractors and an exercise physiologist, helping patients of any age restore movement, often without surgery.</p>
+      <div class="actions"><a class="btn" href="#contact">Book an appointment</a><a class="btn ghost" href="tel:3069227028">(306) 922-7028</a></div>
+    </div>
+    <aside><ul><li>Serving Prince Albert since 1988</li><li>Complete Concussion Management clinic</li><li>Online booking</li><li>Youth athlete and pregnancy programs</li></ul></aside>
+  </div>
+</div>
+<section class="alt"><div class="wrap"><h2>Our services</h2><ul class="services"><li><h3>Chiropractic</h3><p>Diversified technique, myofascial release soft tissue therapy, and Activator for patients who prefer not to be adjusted manually.</p></li><li><h3>Concussion management</h3><p>An official Complete Concussion Management clinic, offering baseline testing and multi-modal concussion rehabilitation.</p></li><li><h3>Acupuncture</h3><p>Acupuncture as part of your treatment plan.</p></li><li><h3>Exercise therapy and kinesiology</h3><p>Specialized exercises and stretches to restore mobility, with programs for youth athletes and pregnancy.</p></li><li><h3>Orthotics</h3><p>Orthotics assessment and fitting.</p></li><li><h3>Broker&#x27;s Gym and personal training</h3><p>An on-site gym and personal training to keep you moving after treatment ends.</p></li></ul></div></section>
+<section><div class="wrap"><h2>About the clinic</h2><p class="about">Dr. Blaine Broker graduated from the Canadian Memorial Chiropractic College in 1988 and has served Prince Albert ever since, moving into the current location on 2nd Avenue West in 2005. The clinic&#x27;s chiropractors, including Dr. Scott Kurytnik and Dr. Zach Boettcher, work with all types of injuries and patients of any age, and believe in educating patients so they can stay flexible and pain-free long after treatment ends.</p></div></section>
+<section class="alt" id="contact"><div class="wrap contact">
+  <div><h2>Book an appointment</h2><p><strong>Location</strong><br>3350 2nd Ave W, Prince Albert, SK S6V 5E9</p>
+    <p><strong>Phone</strong><br><a href="tel:3069227028">(306) 922-7028</a></p>
+    <p><strong>Email</strong><br>brokersclinic@gmail.com</p></div>
+  <form onsubmit="event.preventDefault(); this.querySelector('.note').textContent='In the live version this sends straight to your inbox (and can text you).';">
+    <label>Your name <input name="name" autocomplete="name" required></label>
+    <label>Phone or email <input name="contact" required></label>
+    <label>How can we help? <textarea name="msg" rows="4"></textarea></label>
+    <button class="btn" type="submit">Send request</button>
+    <p class="note">Demo form: nothing is sent from this preview.</p>
+  </form>
+</div></section>
+<footer><div class="wrap">Broker&#x27;s Active Care Klinic · Prince Albert, SK. Preview concept only.</div></footer>
+</body>
+</html>
