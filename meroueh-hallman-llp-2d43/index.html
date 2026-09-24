@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Meroueh &amp; Hallman LLP · design preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#FAFAF8; --surface:#FFFFFF; --ink:#1B2433; --muted:#555E6B; --accent:#1B2433;
+  --accent-ink:#FFFFFF; --soft:#E9E4D8; --r:4px; --rule:#8C6A2F; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:'Public Sans', system-ui, sans-serif; font-size:17px; line-height:1.6; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.preview-bar { background: var(--ink); color: var(--bg); font-size: 14px; padding: 10px 16px; text-align: center; }
+.preview-bar a { color: inherit; font-weight: 600; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+header.top { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 22px 0; }
+.brand { font-family:'Libre Caslon Text', Georgia, serif; font-weight:700; font-size: 21px; line-height:1.2;  }
+.top .btn { padding: 10px 16px; font-size: 15px; }
+.hero { padding: 56px 0 64px; display:grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items:end; }
+.hero h1 { font-family:'Libre Caslon Text', Georgia, serif; font-size: clamp(36px, 6vw, 64px); line-height:1.04; margin:0 0 20px; font-weight:700;  max-width: 16ch; }
+.hero p.sub { font-size: 19px; color: var(--muted); max-width: 52ch; margin: 0 0 28px; }
+.actions { display:flex; flex-wrap:wrap; gap: 12px; }
+.btn { display:inline-block; background:var(--accent); color:var(--accent-ink); text-decoration:none; font-weight:650;
+  padding: 14px 22px; border-radius: var(--r); border: 2px solid var(--accent); }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+.hero aside { background: var(--surface); border-radius: var(--r); padding: 24px; border-top: 4px solid var(--rule); }
+.hero aside ul { margin:0; padding-left: 20px; }
+.hero aside li { margin: 6px 0; }
+section { padding: 64px 0; }
+section.alt { background: var(--surface); }
+h2 { font-family:'Libre Caslon Text', Georgia, serif; font-size: clamp(28px, 4vw, 40px); line-height:1.1; margin: 0 0 32px;  }
+ul.services { list-style:none; margin:0; padding:0; display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 28px 36px; }
+ul.services li { border-top: 2px solid var(--rule); padding-top: 16px; }
+ul.services h3 { margin: 0 0 6px; font-size: 19px; }
+ul.services p { margin:0; color: var(--muted); }
+.about { max-width: 68ch; font-size: 18px; }
+.contact { display:grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+form { display:grid; gap: 14px; }
+label { font-weight: 600; font-size: 15px; display:grid; gap: 6px; }
+input, textarea, select { font: inherit; padding: 12px 14px; border: 1.5px solid #B9C0C7; border-radius: var(--r); background: #fff; color: var(--ink); }
+.note { font-size: 14px; color: var(--muted); }
+footer { padding: 32px 0; font-size: 14px; color: var(--muted); border-top: 1px solid var(--soft); }
+@media (max-width: 760px) {
+  .hero, .contact { grid-template-columns: 1fr; gap: 28px; }
+  .hero { padding-top: 28px; }
+  header.top .btn { display:none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero h1 { animation: rise .6s ease-out both; }
+  @keyframes rise { from { opacity:0; transform: translateY(12px); } to { opacity:1; transform:none; } }
+}
+</style>
+</head>
+<body>
+<div class="preview-bar">Design preview made for Meroueh &amp; Hallman LLP by Husnain Babar. This is not the official website. <a href="mailto:husnain.babar.dev@gmail.com">Questions?</a></div>
+<div class="wrap">
+  <header class="top"><div class="brand">Meroueh &amp; Hallman LLP</div><a class="btn" href="tel:3135827469">Call (313) 582-7469</a></header>
+  <div class="hero">
+    <div>
+      <h1>Employment, real estate and business lawyers in Dearborn</h1>
+      <p class="sub">Meroueh &amp; Hallman LLP represents clients across Metro Detroit in employment, real estate, business, criminal defense, workers&#x27; compensation and estate matters. Your first consultation is free.</p>
+      <div class="actions"><a class="btn" href="#contact">Request a free consultation</a><a class="btn ghost" href="tel:3135827469">(313) 582-7469</a></div>
+    </div>
+    <aside><ul><li>Free consultation</li><li>Founding partners Odey K. Meroueh and Zachary A. Hallman</li><li>Serving Metro Detroit</li><li>Open 8:30am to 6:00pm daily</li></ul></aside>
+  </div>
+</div>
+<section class="alt"><div class="wrap"><h2>Practice areas</h2><ul class="services"><li><h3>Employment law</h3><p>Discrimination, retaliation, non-compete, wrongful termination, employment contract and whistleblower cases.</p></li><li><h3>Real estate law</h3><p>Deed preparation, purchase agreements, leases, land contracts, residential and commercial closings, and quiet title actions.</p></li><li><h3>Business law</h3><p>Commercial litigation, contract preparation, corporate and LLC formation, mergers and acquisitions, and non-profit formation.</p></li><li><h3>Criminal defense</h3><p>Representation when you&#x27;re facing criminal charges in Michigan.</p></li><li><h3>Workers&#x27; compensation</h3><p>Help with workers&#x27; compensation claims after a workplace injury.</p></li><li><h3>Wills, trusts and estates</h3><p>Planning documents that protect your family and your assets.</p></li></ul></div></section>
+<section><div class="wrap"><h2>About the firm</h2><p class="about">Meroueh &amp; Hallman LLP was founded by Odey K. Meroueh and Zachary A. Hallman. The firm treats clients with respect, responds promptly to calls and emails, and tailors its legal services to each client&#x27;s needs and budget. Legal problems are stressful; the attorneys work with you to find a solution and advocate hard on your behalf.</p></div></section>
+<section class="alt" id="contact"><div class="wrap contact">
+  <div><h2>Request a free consultation</h2><p><strong>Location</strong><br>14339 Ford Road, 2nd Floor, Dearborn, MI 48126</p><p><strong>Hours</strong><br>8:30am to 6:00pm daily</p>
+    <p><strong>Phone</strong><br><a href="tel:3135827469">(313) 582-7469</a></p>
+    <p><strong>Email</strong><br>okm@mhatlaw.com</p></div>
+  <form onsubmit="event.preventDefault(); this.querySelector('.note').textContent='In the live version this sends straight to your inbox (and can text you).';">
+    <label>Your name <input name="name" autocomplete="name" required></label>
+    <label>Phone or email <input name="contact" required></label>
+    <label>How can we help? <textarea name="msg" rows="4"></textarea></label>
+    <button class="btn" type="submit">Send request</button>
+    <p class="note">Demo form: nothing is sent from this preview.</p>
+  </form>
+</div></section>
+<footer><div class="wrap">Meroueh &amp; Hallman LLP · Dearborn, MI. Preview concept only.</div></footer>
+</body>
+</html>

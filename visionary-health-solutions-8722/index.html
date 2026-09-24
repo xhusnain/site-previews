@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Visionary Health Solutions · design preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,650&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#EDF1EF; --surface:#FFFFFF; --ink:#1F2A2E; --muted:#56656A; --accent:#35614F;
+  --accent-ink:#FFFFFF; --soft:#D5E2DC; --r:14px; --rule:#35614F; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:'Source Sans 3', system-ui, sans-serif; font-size:17px; line-height:1.6; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.preview-bar { background: var(--ink); color: var(--bg); font-size: 14px; padding: 10px 16px; text-align: center; }
+.preview-bar a { color: inherit; font-weight: 600; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+header.top { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 22px 0; }
+.brand { font-family:'Literata', Georgia, serif; font-weight:700; font-size: 21px; line-height:1.2;  }
+.top .btn { padding: 10px 16px; font-size: 15px; }
+.hero { padding: 56px 0 64px; display:grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items:end; }
+.hero h1 { font-family:'Literata', Georgia, serif; font-size: clamp(36px, 6vw, 64px); line-height:1.04; margin:0 0 20px; font-weight:700;  max-width: 16ch; }
+.hero p.sub { font-size: 19px; color: var(--muted); max-width: 52ch; margin: 0 0 28px; }
+.actions { display:flex; flex-wrap:wrap; gap: 12px; }
+.btn { display:inline-block; background:var(--accent); color:var(--accent-ink); text-decoration:none; font-weight:650;
+  padding: 14px 22px; border-radius: var(--r); border: 2px solid var(--accent); }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+.hero aside { background: var(--surface); border-radius: var(--r); padding: 24px; border-top: 4px solid var(--rule); }
+.hero aside ul { margin:0; padding-left: 20px; }
+.hero aside li { margin: 6px 0; }
+section { padding: 64px 0; }
+section.alt { background: var(--surface); }
+h2 { font-family:'Literata', Georgia, serif; font-size: clamp(28px, 4vw, 40px); line-height:1.1; margin: 0 0 32px;  }
+ul.services { list-style:none; margin:0; padding:0; display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 28px 36px; }
+ul.services li { border-top: 2px solid var(--rule); padding-top: 16px; }
+ul.services h3 { margin: 0 0 6px; font-size: 19px; }
+ul.services p { margin:0; color: var(--muted); }
+.about { max-width: 68ch; font-size: 18px; }
+.contact { display:grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+form { display:grid; gap: 14px; }
+label { font-weight: 600; font-size: 15px; display:grid; gap: 6px; }
+input, textarea, select { font: inherit; padding: 12px 14px; border: 1.5px solid #B9C0C7; border-radius: var(--r); background: #fff; color: var(--ink); }
+.note { font-size: 14px; color: var(--muted); }
+footer { padding: 32px 0; font-size: 14px; color: var(--muted); border-top: 1px solid var(--soft); }
+@media (max-width: 760px) {
+  .hero, .contact { grid-template-columns: 1fr; gap: 28px; }
+  .hero { padding-top: 28px; }
+  header.top .btn { display:none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero h1 { animation: rise .6s ease-out both; }
+  @keyframes rise { from { opacity:0; transform: translateY(12px); } to { opacity:1; transform:none; } }
+}
+</style>
+</head>
+<body>
+<div class="preview-bar">Design preview made for Visionary Health Solutions by Husnain Babar. This is not the official website. <a href="mailto:husnain.babar.dev@gmail.com">Questions?</a></div>
+<div class="wrap">
+  <header class="top"><div class="brand">Visionary Health Solutions</div><a class="btn" href="tel:5164599036">Call (516) 459-9036</a></header>
+  <div class="hero">
+    <div>
+      <h1>Wellness seminars and coaching with Susan Eisner, MPH, CASAC</h1>
+      <p class="sub">CEU and non-CEU seminars on emotional wellness and self-care, plus 1:1 coaching, Havening and anger management coaching.</p>
+      <div class="actions"><a class="btn" href="#contact">Book a seminar</a><a class="btn ghost" href="tel:5164599036">(516) 459-9036</a></div>
+    </div>
+    <aside><ul><li>Certified CEU provider</li><li>Certified Havening practitioner</li><li>Seminars, webinars and 1:1 coaching</li></ul></aside>
+  </div>
+</div>
+<section class="alt"><div class="wrap"><h2>What Susan offers</h2><ul class="services"><li><h3>CEU seminars</h3><p>Certified CEU provider for NY LMSWs and LCSWs, NY addiction counselors (CASAC, CPP, CPS) and case managers (CCM).</p></li><li><h3>Non-CEU seminars and webinars</h3><p>For staff, caregiver groups, community groups, patients and residents, tailored to each group.</p></li><li><h3>1:1 coaching</h3><p>Coaching for professional and personal issues, using guided imagery and experiential skills.</p></li><li><h3>Havening Techniques</h3><p>Certified Havening Techniques practitioner: a gentle, neuroscience-based healing method.</p></li><li><h3>Anger management coaching</h3><p>One-on-one anger management coaching.</p></li></ul></div></section>
+<section><div class="wrap"><h2>About Susan</h2><p class="about">Visionary Health Solutions LLC is a training and coaching company led by Susan Eisner, MPH, CASAC. She is a well-known speaker for professionals in geriatrics, addiction and mental health, and speaks at hospitals, assisted living facilities, nursing homes and rehabs. Every seminar covers communication, mindfulness, meditation, the mind-body connection and self-compassion, with an emphasis on resilience.</p></div></section>
+<section class="alt" id="contact"><div class="wrap contact">
+  <div><h2>Book a seminar</h2><p><strong>Location</strong><br>Kings Park, NY</p>
+    <p><strong>Phone</strong><br><a href="tel:5164599036">(516) 459-9036</a></p>
+    <p><strong>Email</strong><br>info@visionaryhealthsolutions.com</p></div>
+  <form onsubmit="event.preventDefault(); this.querySelector('.note').textContent='In the live version this sends straight to your inbox (and can text you).';">
+    <label>Your name <input name="name" autocomplete="name" required></label>
+    <label>Phone or email <input name="contact" required></label>
+    <label>How can we help? <textarea name="msg" rows="4"></textarea></label>
+    <button class="btn" type="submit">Send request</button>
+    <p class="note">Demo form: nothing is sent from this preview.</p>
+  </form>
+</div></section>
+<footer><div class="wrap">Visionary Health Solutions · Kings Park, NY. Preview concept only.</div></footer>
+</body>
+</html>

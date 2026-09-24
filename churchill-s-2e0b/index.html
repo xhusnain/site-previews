@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Churchill&#x27;s · design preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,750&family=Nunito+Sans:wght@400;650&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#FFFFFF; --surface:#F4F7F2; --ink:#22301F; --muted:#56634F; --accent:#2E6B4F;
+  --accent-ink:#FFFFFF; --soft:#F6DD8E; --r:22px; --rule:#2E6B4F; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:'Nunito Sans', system-ui, sans-serif; font-size:17px; line-height:1.6; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.preview-bar { background: var(--ink); color: var(--bg); font-size: 14px; padding: 10px 16px; text-align: center; }
+.preview-bar a { color: inherit; font-weight: 600; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+header.top { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 22px 0; }
+.brand { font-family:'Bricolage Grotesque', system-ui, sans-serif; font-weight:700; font-size: 21px; line-height:1.2;  }
+.top .btn { padding: 10px 16px; font-size: 15px; }
+.hero { padding: 56px 0 64px; display:grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items:end; }
+.hero h1 { font-family:'Bricolage Grotesque', system-ui, sans-serif; font-size: clamp(36px, 6vw, 64px); line-height:1.04; margin:0 0 20px; font-weight:700;  max-width: 16ch; }
+.hero p.sub { font-size: 19px; color: var(--muted); max-width: 52ch; margin: 0 0 28px; }
+.actions { display:flex; flex-wrap:wrap; gap: 12px; }
+.btn { display:inline-block; background:var(--accent); color:var(--accent-ink); text-decoration:none; font-weight:650;
+  padding: 14px 22px; border-radius: var(--r); border: 2px solid var(--accent); }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+.hero aside { background: var(--surface); border-radius: var(--r); padding: 24px; border-top: 4px solid var(--rule); }
+.hero aside ul { margin:0; padding-left: 20px; }
+.hero aside li { margin: 6px 0; }
+section { padding: 64px 0; }
+section.alt { background: var(--surface); }
+h2 { font-family:'Bricolage Grotesque', system-ui, sans-serif; font-size: clamp(28px, 4vw, 40px); line-height:1.1; margin: 0 0 32px;  }
+ul.services { list-style:none; margin:0; padding:0; display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 28px 36px; }
+ul.services li { border-top: 2px solid var(--rule); padding-top: 16px; }
+ul.services h3 { margin: 0 0 6px; font-size: 19px; }
+ul.services p { margin:0; color: var(--muted); }
+.about { max-width: 68ch; font-size: 18px; }
+.contact { display:grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+form { display:grid; gap: 14px; }
+label { font-weight: 600; font-size: 15px; display:grid; gap: 6px; }
+input, textarea, select { font: inherit; padding: 12px 14px; border: 1.5px solid #B9C0C7; border-radius: var(--r); background: #fff; color: var(--ink); }
+.note { font-size: 14px; color: var(--muted); }
+footer { padding: 32px 0; font-size: 14px; color: var(--muted); border-top: 1px solid var(--soft); }
+@media (max-width: 760px) {
+  .hero, .contact { grid-template-columns: 1fr; gap: 28px; }
+  .hero { padding-top: 28px; }
+  header.top .btn { display:none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero h1 { animation: rise .6s ease-out both; }
+  @keyframes rise { from { opacity:0; transform: translateY(12px); } to { opacity:1; transform:none; } }
+}
+</style>
+</head>
+<body>
+<div class="preview-bar">Design preview made for Churchill&#x27;s by Husnain Babar. This is not the official website. <a href="mailto:husnain.babar.dev@gmail.com">Questions?</a></div>
+<div class="wrap">
+  <header class="top"><div class="brand">Churchill&#x27;s</div><a class="btn" href="tel:2495066101">Call 249-506-6101</a></header>
+  <div class="hero">
+    <div>
+      <h1>Prime rib and fine dining on Lakeshore Drive, North Bay</h1>
+      <p class="sub">Over 40 years of fine dining in North Bay: prime rib, steaks and seafood, plus tapas and oysters at barCultura.</p>
+      <div class="actions"><a class="btn" href="#contact">Reserve a table</a><a class="btn ghost" href="tel:2495066101">249-506-6101</a></div>
+    </div>
+    <aside><ul><li>Over 40 years in North Bay</li><li>Named among Canada&#x27;s top 50 restaurants</li><li>Weddings and catering</li><li>Steps from Sunset Park</li></ul></aside>
+  </div>
+</div>
+<section class="alt"><div class="wrap"><h2>Dine with us</h2><ul class="services"><li><h3>Fine dining</h3><p>Classic prime rib, steaks and seafood, alongside dishes inspired by Canadian and international cuisine.</p></li><li><h3>barCultura</h3><p>Oysters, tapas and cocktails Thursday through Saturday in a laid-back setting.</p></li><li><h3>Weddings and events</h3><p>Receptions in The Loft, Chumbolly&#x27;s and our smaller rooms, with plated or buffet menus and custom options.</p></li><li><h3>Catering</h3><p>We bring our kitchen to your venue or home, with hors d&#x27;oeuvres and midnight buffet add-ons.</p></li></ul></div></section>
+<section><div class="wrap"><h2>Over 40 years on Lakeshore Drive</h2><p class="about">Churchill&#x27;s has been North Bay&#x27;s fine dining restaurant for over 40 years and is named among the top 50 restaurants in Canada. We&#x27;re on Lakeshore Drive, steps from Sunset Park, and host everything from family get-togethers and date nights to full wedding receptions.</p></div></section>
+<section class="alt" id="contact"><div class="wrap contact">
+  <div><h2>Reserve a table</h2><p><strong>Location</strong><br>631 Lakeshore Drive, North Bay, ON P1A 2E7</p>
+    <p><strong>Phone</strong><br><a href="tel:2495066101">249-506-6101</a></p>
+    <p><strong>Email</strong><br>lesley_mason@live.com</p></div>
+  <form onsubmit="event.preventDefault(); this.querySelector('.note').textContent='In the live version this sends straight to your inbox (and can text you).';">
+    <label>Your name <input name="name" autocomplete="name" required></label>
+    <label>Phone or email <input name="contact" required></label>
+    <label>How can we help? <textarea name="msg" rows="4"></textarea></label>
+    <button class="btn" type="submit">Send request</button>
+    <p class="note">Demo form: nothing is sent from this preview.</p>
+  </form>
+</div></section>
+<footer><div class="wrap">Churchill&#x27;s · North Bay, ON. Preview concept only.</div></footer>
+</body>
+</html>
