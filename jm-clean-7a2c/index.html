@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>JM-CLEAN LIMITED · design preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0E2A3B;--deep:#123A50;--aqua:#3FB8AF;--foam:#E6F5F3;--sky:#F4FAFB;--ink:#0E2A3B;--muted:#557080;--line:#D5E6EA;--sun:#F2C14E}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--sky);color:var(--ink);font:16px/1.65 Figtree,system-ui,sans-serif;overflow-x:hidden}
+img{max-width:100%;display:block}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.preview{background:var(--navy);color:#bfe3e0;font-size:13px;text-align:center;padding:7px 16px;letter-spacing:.02em}
+h1,h2,h3,.logo{font-family:'Bricolage Grotesque',sans-serif}
+header{position:sticky;top:0;z-index:20;background:rgba(244,250,251,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.logo{font-weight:800;font-size:22px;letter-spacing:-.02em;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo .mk{width:34px;height:34px;border-radius:10px;background:var(--navy);display:grid;place-items:center}
+.logo small{font:600 10px Figtree;letter-spacing:.2em;color:var(--muted);display:block;margin-top:-3px}
+nav{display:flex;gap:26px;font-weight:500;font-size:15px}
+nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--navy)}
+.hdr-cta{display:flex;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--aqua);color:var(--navy);text-decoration:none;padding:13px 22px;border-radius:12px;font:600 15px Figtree;border:0;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 8px 20px -8px rgba(63,184,175,.7)}
+.btn.dark{background:var(--navy);color:#fff}
+.btn.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.5)}
+.tel{font-weight:600;color:var(--navy);text-decoration:none;white-space:nowrap}
+/* hero */
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding-top:72px;padding-bottom:84px}
+.tag{display:inline-flex;gap:8px;align-items:center;background:rgba(63,184,175,.15);color:#8fe0d8;border-radius:30px;padding:6px 14px;font-size:13px;font-weight:600;letter-spacing:.04em}
+.hero h1{font-size:clamp(40px,5.6vw,72px);line-height:1;letter-spacing:-.035em;font-weight:800;margin:22px 0 20px}
+.hero h1 em{font-style:normal;color:var(--aqua);position:relative}
+.hero p.lede{color:#b9cfd8;font-size:18px;max-width:31em;margin-bottom:32px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img{position:relative}
+.hero-img .ph{border-radius:24px;overflow:hidden;aspect-ratio:4/4.4;box-shadow:0 30px 60px -20px rgba(0,0,0,.5)}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;left:-22px;bottom:34px;background:#fff;color:var(--navy);border-radius:16px;padding:14px 18px;display:flex;gap:12px;align-items:center;box-shadow:0 20px 40px -16px rgba(0,0,0,.45);max-width:250px}
+.badge b{display:block;font:700 15px 'Bricolage Grotesque'}
+.badge span{font-size:13px;color:var(--muted)}
+.sparkle{position:absolute;right:-12px;top:-12px;width:64px;height:64px}
+/* trust */
+.trust{background:#fff;border-bottom:1px solid var(--line)}
+.trust .wrap{display:flex;justify-content:center;gap:16px 48px;flex-wrap:wrap;padding-top:22px;padding-bottom:22px}
+.ti{display:flex;align-items:center;gap:12px;font-weight:600}
+.ti small{display:block;font-weight:400;color:var(--muted);font-size:13px}
+.ti .ic{width:42px;height:42px;border-radius:12px;background:var(--foam);display:grid;place-items:center;flex:none}
+.stars{color:#E9A92B;letter-spacing:1px}
+section{padding:96px 0}
+.eyebrow{font-weight:600;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#2a9d94;margin-bottom:12px}
+h2{font-size:clamp(32px,4vw,50px);line-height:1.05;letter-spacing:-.03em;font-weight:700;margin-bottom:14px}
+.sub{color:var(--muted);font-size:17px;max-width:36em}
+/* overlooked */
+.spots{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.list{list-style:none;margin-top:28px;display:grid;gap:14px}
+.list li{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.list li .n{font:800 14px 'Bricolage Grotesque';color:#fff;background:var(--navy);width:28px;height:28px;border-radius:8px;display:grid;place-items:center;flex:none}
+.list b{display:block}
+.list span{color:var(--muted);font-size:15px}
+.room{border-radius:24px;overflow:hidden;aspect-ratio:3/2.2;position:relative}
+.room img{width:100%;height:100%;object-fit:cover}
+.room .chip{position:absolute;padding:6px 12px;background:rgba(14,42,59,.85);color:#fff;border-radius:20px;font-size:13px;font-weight:600;display:flex;gap:6px;align-items:center}
+.room .chip i{width:8px;height:8px;border-radius:50%;background:var(--aqua);box-shadow:0 0 0 4px rgba(63,184,175,.35)}
+.hashes{margin-top:22px;display:flex;gap:8px;flex-wrap:wrap}
+.hashes span{background:var(--foam);color:#1f7f78;border-radius:8px;padding:5px 10px;font-size:14px;font-weight:600}
+/* services */
+.svc-bg{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.svcs{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:48px}
+.svc{border:1px solid var(--line);border-radius:18px;padding:26px 22px;background:var(--sky);transition:.2s}
+.svc:hover{border-color:var(--aqua);transform:translateY(-3px)}
+.svc .ic{width:52px;height:52px;border-radius:14px;background:var(--navy);display:grid;place-items:center;margin-bottom:20px}
+.svc h3{font-size:21px;letter-spacing:-.02em;margin-bottom:8px}
+.svc p{color:var(--muted);font-size:15px}
+.svc a{display:inline-block;margin-top:14px;color:#1f7f78;font-weight:600;text-decoration:none;font-size:15px}
+/* areas */
+.areas{background:var(--deep);color:#fff;position:relative;overflow:hidden}
+.areas .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:start}
+.areas .sub{color:#b9cfd8}
+.areas .eyebrow{color:var(--aqua)}
+.checker{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:22px;margin-top:28px}
+.checker label{font-weight:600;display:block;margin-bottom:10px}
+.cin{display:flex;gap:10px}
+.cin input{flex:1;min-width:0;padding:14px 16px;border-radius:12px;border:0;font:16px Figtree;color:var(--navy)}
+.result{margin-top:14px;min-height:24px;font-weight:500}
+.result.yes{color:#8fe0d8}.result.no{color:#ffd58a}
+.coast{border-radius:18px;overflow:hidden;aspect-ratio:16/8;margin-bottom:22px}
+.coast img{width:100%;height:100%;object-fit:cover}
+.towns h3{font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:var(--aqua);margin:18px 0 10px;font-family:Figtree;font-weight:600}
+.pills{display:flex;flex-wrap:wrap;gap:7px}
+.pills span{background:rgba(255,255,255,.08);border-radius:30px;padding:5px 12px;font-size:14px;transition:.2s}
+.pills span.hit{background:var(--aqua);color:var(--navy);font-weight:600}
+/* quote */
+.quote .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px}
+.side-card{background:var(--navy);color:#fff;border-radius:20px;padding:28px;margin-top:30px}
+.side-card a{color:#fff;text-decoration:none;font:700 24px 'Bricolage Grotesque';display:block;margin:4px 0 14px;word-break:break-word}
+.side-card small{color:#9fb9c4;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+form{background:#fff;border:1px solid var(--line);border-radius:20px;padding:32px;box-shadow:0 20px 50px -30px rgba(14,42,59,.35)}
+form label{display:block;font-size:14px;font-weight:600;margin:16px 0 6px}
+form label:first-child{margin-top:0}
+input,select,textarea{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:15px Figtree;background:var(--sky);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--aqua)}
+textarea{min-height:100px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.drop{border:2px dashed var(--line);border-radius:14px;padding:22px;text-align:center;background:var(--sky);cursor:pointer;display:block;font-weight:500!important}
+.drop:hover{border-color:var(--aqua)}
+.drop input{display:none}
+.drop small{display:block;color:var(--muted);font-weight:400;font-size:13px;margin-top:4px}
+#files{font-size:14px;color:#1f7f78;margin-top:8px}
+form .btn{width:100%;justify-content:center;margin-top:24px;font-size:16px;padding:15px}
+footer{background:var(--navy);color:#9fb9c4;padding:48px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+footer .logo{color:#fff}
+footer a{color:#fff;text-decoration:none}
+.callbar{display:none}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(140px);background:var(--navy);color:#fff;padding:14px 22px;border-radius:14px;font-size:14px;transition:.35s;max-width:calc(100% - 32px);text-align:center;z-index:50;box-shadow:0 10px 30px -10px rgba(0,0,0,.5);border-left:4px solid var(--aqua)}
+.toast.show{transform:translateX(-50%) translateY(0)}
+@media(max-width:900px){
+ nav,.tel{display:none}
+ .hero .wrap,.spots,.areas .wrap,.quote .wrap{grid-template-columns:1fr}
+ .hero .wrap{padding-top:44px;padding-bottom:60px;gap:40px}
+ .badge{left:12px;bottom:12px}
+ .svcs{grid-template-columns:1fr 1fr}
+ section{padding:64px 0}
+ .room{order:-1}
+}
+@media(max-width:560px){
+ .svcs,.row2{grid-template-columns:1fr}
+ .hdr-cta .btn{padding:10px 14px;font-size:14px}
+ .logo small{display:none}
+ form{padding:22px}
+ .cin{flex-direction:column}
+ .callbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:30;background:var(--navy);padding:10px 12px;gap:10px}
+ .callbar a{flex:1;justify-content:center}
+ body{padding-bottom:68px}
+ .toast{bottom:84px}
+}
+</style>
+</head>
+<body>
+<div class="preview">Design preview made for JM-CLEAN LIMITED · not a live site</div>
+<header><div class="wrap">
+  <a class="logo" href="#"><span class="mk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2c3 4.5 6 7.6 6 11.2A6 6 0 0 1 6 13.2C6 9.6 9 6.5 12 2z" fill="#3FB8AF"/><path d="M9.5 14.5a2.6 2.6 0 0 0 2.5 2.4" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></span><span>JM-CLEAN<small>LIMITED · SUSSEX</small></span></a>
+  <nav><a href="#spots">What we tackle</a><a href="#services">Services</a><a href="#areas">Areas</a><a href="#quote">Quote</a></nav>
+  <div class="hdr-cta"><a class="tel" href="tel:07982845823">07982 845 823</a><a class="btn dark" href="#quote">Get a quote</a></div>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <div>
+    <span class="tag">● Property cleaning &amp; upkeep · Sussex</span>
+    <h1>The spots everyone else <em>misses</em>, cleaned properly.</h1>
+    <p class="lede">Cleaning and upkeep for property owners and managers across Sussex. Wet rooms, shower screens, mould around window reveals and ceilings: the overlooked areas that make a property feel cared for.</p>
+    <div class="cta">
+      <a class="btn" href="#quote">Get a quote <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn ghost" href="tel:07982845823"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Call 07982 845 823</a>
+    </div>
+  </div>
+  <div class="hero-img">
+    <div class="ph"><img src="jm-wetroom.jpg" alt="A spotless modern wet room with a clear glass shower screen"></div>
+    <svg class="sparkle" viewBox="0 0 64 64"><path d="M32 4l5 23 23 5-23 5-5 23-5-23-23-5 23-5z" fill="#F2C14E"/></svg>
+    <div class="badge"><svg width="34" height="34" viewBox="0 0 24 24" fill="#3FB8AF"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"/></svg><div><b>4.9★ or above</b><span>rated on Google</span></div></div>
+  </div>
+</div></div>
+
+<div class="trust"><div class="wrap">
+  <div class="ti"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E2A3B" stroke-width="2"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><div>Checkatrade Approved Trader<small>Vetted &amp; approved</small></div></div>
+  <div class="ti"><span class="ic"><span class="stars" style="font-size:13px">★</span></span><div><span class="stars">★★★★★</span> 4.9 or above<small>Rated on Google</small></div></div>
+  <div class="ti"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E2A3B" stroke-width="2"><path d="M3 21h18M5 21V9l7-5 7 5v12"/><path d="M9 21v-6h6v6"/></svg></span><div>Owners &amp; managers<small>Property-focused cleaning</small></div></div>
+</div></div>
+
+<section id="spots"><div class="wrap spots">
+  <div>
+    <div class="eyebrow">What we tackle</div>
+    <h2>Detail work for properties that need to stay looking right.</h2>
+    <p class="sub">The everyday clean is only half the story. JM-CLEAN focuses on the areas that quietly build up between tenancies and inspections.</p>
+    <ul class="list">
+      <li><span class="n">1</span><div><b>Wet rooms &amp; shower screens</b><span>Limescale, soap film and water marks lifted from glass, tiles and fittings.</span></div></li>
+      <li><span class="n">2</span><div><b>Mould around window reveals</b><span>Spotting where condensation collects, dealt with before it spreads.</span></div></li>
+      <li><span class="n">3</span><div><b>Ceilings &amp; corners</b><span>Marks and mould spots on ceilings, the places most cleans never look up at.</span></div></li>
+    </ul>
+    <div class="hashes"><span>#PropertyManagement</span><span>#Maintenance</span></div>
+  </div>
+  <div class="room"><img src="jm-wetroom.jpg" alt="Clean wet room tiles and glass" style="object-position:30% 50%"><span class="chip" style="left:18px;top:18px"><i></i>Shower screen</span><span class="chip" style="right:18px;bottom:18px"><i></i>Tiles &amp; grout</span></div>
+</div></section>
+
+<section id="services" class="svc-bg"><div class="wrap">
+  <div class="eyebrow">Services</div>
+  <h2>What JM-CLEAN can take on</h2>
+  <p class="sub">Every property is different, so every quote is too. Tell us what you need and we'll come back with a price.</p>
+  <div class="svcs">
+    <div class="svc"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3FB8AF" stroke-width="2"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 21v-6h6v6"/></svg></div><h3>Property cleans</h3><p>Regular or one-off cleans for let, managed and owner-occupied properties.</p><a href="#quote" data-svc="Property clean">Ask for a quote →</a></div>
+    <div class="svc"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3FB8AF" stroke-width="2"><path d="M4 12h16v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M6 12V5a2 2 0 0 1 4 0"/><path d="M8 20l-1 2M16 20l1 2"/></svg></div><h3>Wet rooms &amp; bathrooms</h3><p>Shower screens, tiles, grout and fittings brought back to a proper shine.</p><a href="#quote" data-svc="Wet room / bathroom">Ask for a quote →</a></div>
+    <div class="svc"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3FB8AF" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M12 3v18M4 12h16"/><circle cx="7.5" cy="6.5" r="1" fill="#3FB8AF"/><circle cx="17" cy="16" r="1" fill="#3FB8AF"/></svg></div><h3>Mould treatment &amp; stain removal</h3><p>Window reveals, ceilings and corners where mould and marks gather.</p><a href="#quote" data-svc="Mould / stain removal">Ask for a quote →</a></div>
+    <div class="svc"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3FB8AF" stroke-width="2"><path d="M14 4l6 6-9 9H5v-6z"/><path d="M12 6l6 6"/></svg></div><h3>Deep cleans</h3><p>End-of-tenancy style top-to-bottom cleans to get a property ready again.</p><a href="#quote" data-svc="Deep clean">Ask for a quote →</a></div>
+  </div>
+</div></section>
+
+<section id="areas" class="areas"><div class="wrap">
+  <div>
+    <div class="eyebrow">Areas covered</div>
+    <h2>From the coast to the Downs</h2>
+    <p class="sub">JM-CLEAN covers towns along the Sussex coast and inland villages. Not sure if you're in range? Check your town below.</p>
+    <div class="checker">
+      <label for="town">Is my town covered?</label>
+      <div class="cin"><input id="town" placeholder="e.g. Shoreham-by-Sea" autocomplete="off"><button class="btn" type="button" id="chk">Check</button></div>
+      <div class="result" id="res" aria-live="polite"></div>
+    </div>
+  </div>
+  <div class="towns">
+    <div class="coast"><img src="jm-coast.jpg" alt="Sunny Sussex seaside street with pastel houses"></div>
+    <h3>Coastal</h3>
+    <div class="pills" id="coastal"></div>
+    <h3>Inland</h3>
+    <div class="pills" id="inland"></div>
+  </div>
+</div></section>
+
+<section id="quote" class="quote"><div class="wrap">
+  <div>
+    <div class="eyebrow">Get a quote</div>
+    <h2>Send a few details and photos</h2>
+    <p class="sub">A couple of photos of the wet room, window reveal or ceiling helps Jamie give you an accurate quote faster.</p>
+    <div class="side-card">
+      <small>Call or text</small><a href="tel:07982845823">07982 845 823</a>
+      <small>Email</small><a href="mailto:jm-clean@outlook.com">jm-clean@outlook.com</a>
+      <small>Owner</small><div style="font-weight:600;margin-top:4px">Jamie Mclean</div>
+    </div>
+  </div>
+  <form id="qf">
+    <div class="row2"><div><label>Your name</label><input required></div><div><label>Phone</label><input type="tel" required></div></div>
+    <div class="row2"><div><label>Email</label><input type="email"></div><div><label>Town</label><input id="qtown" placeholder="e.g. Worthing"></div></div>
+    <label>What do you need?</label>
+    <select id="svcsel"><option>Property clean</option><option>Wet room / bathroom</option><option>Mould / stain removal</option><option>Deep clean</option><option>Not sure, need advice</option></select>
+    <label>I am a…</label>
+    <select><option>Property owner</option><option>Property / letting manager</option><option>Homeowner</option><option>Other</option></select>
+    <label>Tell us about the job</label>
+    <textarea placeholder="Number of rooms, problem areas, access, preferred dates..."></textarea>
+    <label class="drop" for="ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3FB8AF" stroke-width="2" style="margin:0 auto 6px;display:block"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg>Add photos of the area<small>JPG or PNG · tap to choose</small><input type="file" id="ph" accept="image/*" multiple></label>
+    <div id="files"></div>
+    <button class="btn dark" type="submit">Request my quote</button>
+  </form>
+</div></section>
+
+<footer><div class="wrap">
+  <div><span class="logo">JM-CLEAN LIMITED</span><div style="margin-top:6px">Property cleaning &amp; upkeep · Sussex · Checkatrade Approved Trader</div></div>
+  <div><a href="tel:07982845823">07982 845 823</a> · <a href="mailto:jm-clean@outlook.com">jm-clean@outlook.com</a></div>
+</div></footer>
+
+<div class="callbar"><a class="btn" href="tel:07982845823">Call now</a><a class="btn ghost" href="#quote">Get a quote</a></div>
+<div class="toast" id="toast">Preview only: on the live site this goes straight to your inbox.</div>
+<script>
+const C=["Brighton","Hove","Portslade","Southwick","Shoreham-by-Sea","Lancing","Sompting","Worthing","Goring-by-Sea","Ferring","East Preston","Rustington","Littlehampton"];
+const I=["Hassocks","Hurstpierpoint","Ditchling","Steyning","Bramber","Upper Beeding","Henfield","Findon","Angmering","Arundel"];
+const pill=(a,id)=>document.getElementById(id).innerHTML=a.map(t=>`<span data-t="${t}">${t}</span>`).join('');
+pill(C,'coastal');pill(I,'inland');
+const norm=s=>s.toLowerCase().replace(/[^a-z]/g,'');
+function check(){
+  const v=norm(document.getElementById('town').value),r=document.getElementById('res');
+  document.querySelectorAll('.pills span').forEach(s=>s.classList.remove('hit'));
+  if(!v){r.textContent='';return}
+  const all=[...C,...I],m=all.find(t=>norm(t)===v)||(v.length>3&&all.find(t=>norm(t).startsWith(v)));
+  if(m){r.className='result yes';r.textContent=`Yes, ${m} is covered. Get a quote below.`;document.querySelector(`[data-t="${m}"]`).classList.add('hit');document.getElementById('qtown').value=m}
+  else{r.className='result no';r.textContent="That town isn't on the list yet, but get in touch and ask. Nearby jobs may still be possible."}
+}
+document.getElementById('chk').onclick=check;
+document.getElementById('town').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();check()}});
+document.querySelectorAll('[data-svc]').forEach(a=>a.addEventListener('click',()=>document.getElementById('svcsel').value=a.dataset.svc));
+document.getElementById('ph').onchange=e=>{const n=e.target.files.length;document.getElementById('files').textContent=n?`${n} photo${n>1?'s':''} attached`:''};
+document.getElementById('qf').onsubmit=e=>{e.preventDefault();const t=document.getElementById('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3800)};
+</script>
+</body>
+</html>

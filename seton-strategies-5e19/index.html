@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Seton Strategies · design preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--stone:#F4EFE6;--stone2:#EAE2D4;--ink:#1E2B28;--ink2:#2F403B;--muted:#5F6A64;--wine:#8B3A2F;--wine2:#A9513F;--line:#D9CFBE;--sage:#7C8B7A}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--stone);color:var(--ink);font:17px/1.7 Karla,system-ui,sans-serif;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.serif{font-family:"Cormorant Garamond",Georgia,serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.preview{background:var(--ink);color:#C9CFC6;font-size:12.5px;letter-spacing:.04em;text-align:center;padding:7px 16px}
+header{position:sticky;top:0;z-index:10;background:rgba(244,239,230,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.brand{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.brand b{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:27px;letter-spacing:.02em}
+.brand small{font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+nav{display:flex;gap:30px;font-size:14.5px}
+nav a{text-decoration:none;color:var(--ink2)}nav a:hover{color:var(--wine)}
+.btn{display:inline-flex;align-items:center;gap:10px;font:700 14.5px Karla,sans-serif;letter-spacing:.03em;padding:13px 22px;border:1px solid var(--ink);background:var(--ink);color:var(--stone);text-decoration:none;cursor:pointer;transition:.25s}
+.btn:hover{background:var(--wine);border-color:var(--wine)}
+.btn.line{background:transparent;color:var(--ink)}.btn.line:hover{background:var(--ink);color:var(--stone)}
+.btn .ar{transition:.25s}.btn:hover .ar{transform:translateX(4px)}
+
+/* hero */
+.hero{padding:72px 0 0}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:end}
+.kicker{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--wine);display:flex;align-items:center;gap:14px;margin-bottom:26px}
+.kicker::before{content:"";width:34px;height:1px;background:var(--wine)}
+h1{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(44px,6.2vw,82px);line-height:1.02;letter-spacing:-.01em}
+h1 em{color:var(--wine);font-style:italic}
+.lede{font-size:19px;color:var(--ink2);max-width:31em;margin:28px 0 36px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;padding-bottom:72px}
+.arch{position:relative;border-radius:999px 999px 0 0;overflow:hidden;aspect-ratio:4/5;background:var(--stone2)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:68% center}
+.arch::after{content:"";position:absolute;inset:14px 14px 0;border:1px solid rgba(255,255,255,.55);border-bottom:0;border-radius:999px 999px 0 0;pointer-events:none}
+
+/* problem */
+.problem{background:var(--ink);color:#E7E2D8;padding:110px 0}
+.problem .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px}
+.problem h2{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(34px,4.2vw,52px);line-height:1.1;color:#fff}
+.problem h2 em{color:#E4A592}
+.busy{list-style:none;margin-top:8px}
+.busy li{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:17px}
+.busy li span:last-child{color:#9AA59E;font-size:13px;letter-spacing:.18em;text-transform:uppercase}
+.problem p.turn{margin-top:34px;font-size:19px;color:#CFD5CC;max-width:30em}
+.problem p.turn b{color:#fff;font-weight:500}
+
+/* board */
+section{padding:110px 0}
+.eyebrow{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--wine);margin-bottom:16px}
+h2.t{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(34px,4.4vw,56px);line-height:1.08;max-width:15em}
+.sub{color:var(--muted);max-width:36em;margin-top:18px;font-size:18px}
+.board{margin-top:64px;display:grid;grid-template-columns:repeat(3,1fr) 1.15fr;border-top:1px solid var(--ink)}
+.piece{padding:34px 28px 36px 0;border-right:1px solid var(--line);position:relative}
+.piece+.piece{padding-left:28px}
+.piece .num{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:22px;color:var(--wine)}
+.piece h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:30px;margin:6px 0 10px}
+.piece p{color:var(--muted);font-size:16px}
+.piece.road{background:var(--ink);color:var(--stone);border-right:0;padding:34px 30px 36px}
+.piece.road .num{color:#E4A592}.piece.road p{color:#C9CFC6}
+.road svg{margin-top:18px;width:100%;height:auto}
+
+/* about */
+.about{background:var(--stone2)}
+.about .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:center}
+.photo{position:relative}
+.photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.photo .tag{position:absolute;left:-1px;bottom:28px;background:var(--stone);padding:14px 20px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--line);border-left:0}
+.about blockquote{font-family:"Cormorant Garamond",serif;font-size:clamp(26px,2.8vw,34px);line-height:1.3;font-style:italic;margin:22px 0 26px;color:var(--ink)}
+.about p{color:var(--ink2);margin-bottom:16px;max-width:34em}
+.creds{display:flex;gap:0;margin-top:30px;border-top:1px solid var(--line)}
+.creds div{flex:1;padding:18px 18px 0 0}
+.creds div+div{padding-left:18px;border-left:1px solid var(--line)}
+.creds b{display:block;font-family:"Cormorant Garamond",serif;font-size:34px;font-weight:600;line-height:1.1;color:var(--wine)}
+.creds span{font-size:14px;color:var(--muted)}
+
+/* record */
+.record .rows{margin-top:56px;border-top:1px solid var(--ink)}
+.rec{display:grid;grid-template-columns:280px 1fr;gap:40px;padding:30px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.rec h3{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(30px,3.2vw,40px);line-height:1.05;color:var(--wine)}
+.rec p{color:var(--ink2);font-size:18px;max-width:34em}
+.note{font-size:14px;color:var(--muted);margin-top:22px}
+
+/* who */
+.who .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+.card{background:#FBF8F2;border:1px solid var(--line);padding:34px 30px}
+.card .ic{width:44px;height:44px;border:1px solid var(--wine);border-radius:50%;display:grid;place-items:center;color:var(--wine);margin-bottom:22px}
+.card h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:26px;line-height:1.15;margin-bottom:10px}
+.card p{color:var(--muted);font-size:16px}
+.stories{margin-top:24px;border:1px dashed var(--line);padding:22px 26px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:15px}
+.stories i{font-family:"Cormorant Garamond",serif;font-size:22px;color:var(--ink)}
+
+/* how */
+.how .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:56px}
+.how .steps div{border-top:2px solid var(--wine);padding-top:22px}
+.how h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:26px;margin-bottom:8px}
+.how p{color:var(--muted);font-size:16px}
+
+/* contact */
+.contact{background:var(--ink);color:var(--stone)}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px}
+.contact h2{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(40px,5vw,64px);line-height:1.02;color:#fff}
+.contact h2 em{color:#E4A592}
+.contact p{color:#C9CFC6;margin:22px 0;max-width:28em}
+.contact .mail{font-family:"Cormorant Garamond",serif;font-size:26px;color:#fff;text-decoration:none;border-bottom:1px solid #E4A592;word-break:break-all}
+form{display:grid;gap:18px}
+label{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#9AA59E;display:grid;gap:8px}
+input,textarea,select{font:16px Karla,sans-serif;color:#fff;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.28);padding:10px 0;outline:none;width:100%;border-radius:0}
+select option{color:var(--ink)}
+input:focus,textarea:focus,select:focus{border-color:#E4A592}
+textarea{resize:vertical;min-height:90px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+form .btn{background:var(--wine);border-color:var(--wine);color:#fff;justify-self:start;margin-top:8px}
+form .btn:hover{background:#fff;color:var(--ink);border-color:#fff}
+
+footer{background:var(--ink);color:#8E9892;font-size:14px;border-top:1px solid rgba(255,255,255,.1);padding:28px 0}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,140px);background:var(--wine);color:#fff;padding:15px 22px;font-size:15px;transition:.4s;max-width:calc(100% - 32px);z-index:50;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.toast.show{transform:translate(-50%,0)}
+
+@media(max-width:960px){
+ nav{display:none}
+ .hero .wrap,.problem .wrap,.about .wrap,.contact .wrap{grid-template-columns:1fr;gap:44px}
+ .hero .cta{padding-bottom:0}.hero{padding:48px 0 0}
+ .arch{max-width:440px;aspect-ratio:1/1;margin:0 auto}
+ .board{grid-template-columns:1fr 1fr}
+ .piece:nth-child(2){border-right:0}
+ .piece:nth-child(3){padding-left:0}
+ .piece{border-bottom:1px solid var(--line)}
+ .who .grid,.how .steps{grid-template-columns:1fr}
+ .rec{grid-template-columns:1fr;gap:8px}
+ section,.problem{padding:76px 0}
+}
+@media(max-width:560px){
+ .wrap{padding:0 18px}
+ header .wrap{height:64px}.brand b{font-size:23px}.brand small{letter-spacing:.2em}
+ header .btn{padding:10px 14px;font-size:13px}
+ .board{grid-template-columns:1fr}
+ .piece,.piece+.piece{padding:28px 0;border-right:0}
+ .piece.road{padding:28px 22px}
+ .creds{flex-direction:column}.creds div+div{border-left:0;padding-left:0}
+ .row2{grid-template-columns:1fr}
+ .busy li{flex-direction:column;gap:2px}
+}
+</style>
+</head>
+<body>
+<div class="preview">Design preview made for Seton Strategies LLC · not a live site</div>
+<header><div class="wrap">
+  <a class="brand" href="#"><b>Seton Strategies</b><small>Communications</small></a>
+  <nav><a href="#approach">Approach</a><a href="#kate">About Kate</a><a href="#serve">Who we serve</a><a href="#contact">Contact</a></nav>
+  <a class="btn" href="#contact">Let's talk</a>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <div>
+    <div class="kicker">Communications strategy for mission-driven leaders</div>
+    <h1>See the whole board.<br><em>Move people</em> to act.</h1>
+    <p class="lede">Seton Strategies helps leaders in public affairs and mission-driven and faith-based advocacy align audience, message and infrastructure into one master roadmap, so the work you already do finally adds up.</p>
+    <div class="cta"><a class="btn" href="#contact">Book an intro call <span class="ar">&rarr;</span></a><a class="btn line" href="#approach">How we work</a></div>
+  </div>
+  <div class="arch"><img src="hero.jpg" alt="Morning light falling across stone columns"></div>
+</div></div>
+
+<div class="problem"><div class="wrap">
+  <div>
+    <div class="eyebrow" style="color:#E4A592">The pattern we see</div>
+    <h2>Busy on every front.<br><em>Flat results.</em></h2>
+  </div>
+  <div>
+    <ul class="busy">
+      <li><span>Creating content</span><span>Every week</span></li>
+      <li><span>Managing social channels</span><span>Every day</span></li>
+      <li><span>Pitching media</span><span>Every cycle</span></li>
+      <li><span>Running campaigns</span><span>Every season</span></li>
+    </ul>
+    <p class="turn">The effort is real. What's often missing is someone who sees the full game board, and <b>connects every piece into a plan that inspires action.</b></p>
+  </div>
+</div></div>
+
+<section id="approach"><div class="wrap">
+  <div class="eyebrow">The approach</div>
+  <h2 class="t">Three pieces, aligned into one master roadmap.</h2>
+  <p class="sub">Strong communications isn't more activity. It's the right message reaching the right people through systems built to carry it.</p>
+  <div class="board">
+    <div class="piece"><span class="num">i.</span><h3>Audience</h3><p>Who you truly need to reach, what they care about, and what will move them from awareness to action.</p></div>
+    <div class="piece"><span class="num">ii.</span><h3>Message</h3><p>A clear, credible story rooted in your mission, shaped for each audience and consistent across every channel.</p></div>
+    <div class="piece"><span class="num">iii.</span><h3>Infrastructure</h3><p>The channels, calendars, people and tools that carry the message reliably, campaign after campaign.</p></div>
+    <div class="piece road"><span class="num">The result</span><h3>Master roadmap</h3><p>One plan your whole team can follow, built to inspire action.</p>
+      <svg viewBox="0 0 240 70" fill="none" aria-hidden="true"><path d="M6 58 C60 58 60 14 120 14 S180 58 234 30" stroke="#E4A592" stroke-width="1.5" stroke-dasharray="4 5"/><circle cx="6" cy="58" r="5" fill="#E4A592"/><circle cx="120" cy="14" r="5" fill="#F4EFE6"/><circle cx="234" cy="30" r="7" stroke="#E4A592" stroke-width="1.5"/><circle cx="234" cy="30" r="2.5" fill="#E4A592"/></svg>
+    </div>
+  </div>
+</div></section>
+
+<section class="about" id="kate"><div class="wrap">
+  <div class="photo"><img src="table.jpg" alt="Quiet meeting table with notebooks in morning light"><div class="tag">Founded by Kate Alexander</div></div>
+  <div>
+    <div class="eyebrow">About the founder</div>
+    <blockquote>Two decades of communications leadership, now in service of your mission.</blockquote>
+    <p>Kate Alexander brings more than 20 years of communications leadership to Seton Strategies. Most recently she spent six years with Leadership Roundtable, helping heal and strengthen the Catholic Church.</p>
+    <p>She founded Seton Strategies to give mission-driven leaders a strategic partner who sees the full picture, and the craft to bring it to life.</p>
+    <div class="creds">
+      <div><b>20+</b><span>years of communications leadership</span></div>
+      <div><b>6</b><span>years with Leadership Roundtable</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="record"><div class="wrap">
+  <div class="eyebrow">Experience</div>
+  <h2 class="t">What strategy like this has done before.</h2>
+  <p class="sub">Across her career, Kate has built communications strategies that:</p>
+  <div class="rows">
+    <div class="rec"><h3>Tenfold</h3><p>Grew engagement tenfold and drove tens of thousands of supporter actions.</p></div>
+    <div class="rec"><h3>Policy</h3><p>Helped legislation pass.</p></div>
+    <div class="rec"><h3>Presence</h3><p>Doubled event attendance and increased philanthropic investment.</p></div>
+    <div class="rec"><h3>Persuasion</h3><p>Turned public opposition into support.</p></div>
+  </div>
+  <p class="note">Drawn from Kate Alexander's career experience prior to founding Seton Strategies.</p>
+</div></section>
+
+<section class="who" id="serve" style="padding-top:0"><div class="wrap">
+  <div class="eyebrow">Who we serve</div>
+  <h2 class="t">For leaders whose message carries a mission.</h2>
+  <div class="grid">
+    <div class="card"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V10M9 21V10M15 21V10M19 21V10M2 10l10-6 10 6"/></svg></div><h3>Public affairs</h3><p>Leaders shaping policy and public opinion who need every audience and channel pulling in the same direction.</p></div>
+    <div class="card"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.5-7-11a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 6.5-7 11-7 11z"/></svg></div><h3>Mission-driven advocacy</h3><p>Organizations rallying supporters around a cause, and needing that energy to turn into measurable action.</p></div>
+    <div class="card"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M7 8h10"/></svg></div><h3>Faith-based organizations</h3><p>Communities of faith and the institutions that serve them, communicating with care, clarity and credibility.</p></div>
+  </div>
+  <div class="stories"><i>Client stories coming soon.</i><span>Seton Strategies is newly founded and welcoming its first partners.</span></div>
+</div></section>
+
+<section class="how" style="padding-top:0"><div class="wrap">
+  <div class="eyebrow">Getting started</div>
+  <h2 class="t">A simple first step.</h2>
+  <div class="steps">
+    <div><h3>An intro call</h3><p>A conversation about your mission, your audiences and where your communications feel stuck.</p></div>
+    <div><h3>A view of the board</h3><p>An honest look at how your audience, message and infrastructure fit together today.</p></div>
+    <div><h3>A roadmap to act on</h3><p>A clear, prioritized plan that aligns your team and gives every effort a purpose.</p></div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <div>
+    <div class="eyebrow" style="color:#E4A592">Let's talk</div>
+    <h2>Ready for results that <em>match the effort?</em></h2>
+    <p>Book an intro call and tell Kate what you're working toward. Or write directly:</p>
+    <a class="mail" href="mailto:kate@setonstrategies.com">kate@setonstrategies.com</a>
+  </div>
+  <form id="form" novalidate>
+    <div class="row2"><label>Your name<input name="name" autocomplete="name"></label><label>Organization<input name="org" autocomplete="organization"></label></div>
+    <label>Email<input type="email" name="email" autocomplete="email"></label>
+    <label>Your work is in<select name="type"><option>Public affairs</option><option>Mission-driven advocacy</option><option>Faith-based organization</option><option>Something else</option></select></label>
+    <label>What are you hoping to move forward?<textarea name="msg"></textarea></label>
+    <button class="btn" type="submit">Request an intro call <span class="ar">&rarr;</span></button>
+  </form>
+</div></section>
+
+<footer><div class="wrap"><span>© Seton Strategies LLC</span><span>kate@setonstrategies.com</span></div></footer>
+<div class="toast" id="toast" role="status"></div>
+<script>
+document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();const t=document.getElementById('toast');
+ t.textContent='Preview only: on the live site this goes straight to your inbox.';t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),3800)});
+</script>
+</body>
+</html>
