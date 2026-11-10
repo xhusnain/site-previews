@@ -27,7 +27,7 @@ h1 i{color:var(--accent)}
 .lede{color:var(--muted);font-size:18px;margin:24px 0 34px;max-width:28em}
 .cta{display:flex;gap:12px;flex-wrap:wrap}
 .art{aspect-ratio:4/5;border-radius:220px 220px 16px 16px;background:linear-gradient(180deg,var(--blush),#EBD0C2);position:relative;overflow:hidden}
-.art svg{position:absolute;inset:0;width:100%;height:100%}
+.art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 section{padding:90px 0}
 h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(34px,4vw,52px);line-height:1.05;margin-bottom:14px}
 .center{text-align:center}.center .sub{margin:0 auto}
@@ -39,8 +39,8 @@ h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(34px,4
 .svc p{color:var(--muted);font-size:15px}
 .bar{background:var(--blush)}
 .bar .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.cart{background:var(--bg);border-radius:16px;aspect-ratio:1/1;display:grid;place-items:center}
-.cart svg{width:82%}
+.cart{border-radius:16px;aspect-ratio:1/1;overflow:hidden}
+.cart img{width:100%;height:100%;object-fit:cover;display:block}
 .bar ul{list-style:none;margin:22px 0 30px}
 .bar li{padding:10px 0;border-bottom:1px solid #e3c9bb;color:var(--ink)}
 .bar li::before{content:"✿";color:var(--accent);margin-right:12px}
@@ -80,14 +80,7 @@ footer .logo{display:block;margin-bottom:6px}
     <p class="lede">Floral design, event planning and custom experiences across Atlanta and the surrounding areas. Built on 10+ years in hospitality and six in event planning.</p>
     <div class="cta"><a class="btn" href="#inquire">Plan something special</a><a class="btn soft" href="#bar">Book the flower bar</a></div>
   </div>
-  <div class="art"><svg viewBox="0 0 400 500" aria-hidden="true">
-    <g stroke="#7d8a6c" stroke-width="3" fill="none"><path d="M200 500 C195 400 180 330 150 260"/><path d="M200 500 C205 390 230 320 265 250"/><path d="M200 500 C200 380 200 300 205 200"/></g>
-    <g fill="#A9B49A"><ellipse cx="165" cy="330" rx="26" ry="10" transform="rotate(-35 165 330)"/><ellipse cx="238" cy="320" rx="26" ry="10" transform="rotate(35 238 320)"/><ellipse cx="190" cy="390" rx="24" ry="9" transform="rotate(-20 190 390)"/></g>
-    <g transform="translate(150 250)"><circle r="44" fill="#C98F78"/><circle r="30" fill="#D9A592"/><circle r="15" fill="#B97A63"/></g>
-    <g transform="translate(265 245)"><circle r="38" fill="#E7C3B3"/><circle r="25" fill="#F2D8CC"/><circle r="11" fill="#C98F78"/></g>
-    <g transform="translate(205 190)"><circle r="50" fill="#9C6B4E"/><circle r="34" fill="#B5826A"/><circle r="17" fill="#8A5A40"/></g>
-    <g fill="#FAF5EF" opacity=".85"><circle cx="120" cy="200" r="7"/><circle cx="300" cy="190" r="6"/><circle cx="250" cy="150" r="5"/><circle cx="140" cy="300" r="5"/></g>
-  </svg></div>
+  <div class="art"><img src="softly-hero.jpg" alt="Blush and peach floral arrangement in a ceramic vase"></div>
 </div></div>
 
 <section id="services" class="center"><div class="wrap">
@@ -102,13 +95,7 @@ footer .logo{display:block;margin-bottom:6px}
 </div></section>
 
 <section class="bar" id="bar"><div class="wrap">
-  <div class="cart"><svg viewBox="0 0 300 260" aria-hidden="true">
-    <rect x="40" y="130" width="220" height="80" rx="8" fill="#9C6B4E"/><rect x="40" y="120" width="220" height="16" rx="4" fill="#7e5540"/>
-    <circle cx="80" cy="228" r="18" fill="#3B2A22"/><circle cx="220" cy="228" r="18" fill="#3B2A22"/>
-    <path d="M30 120 Q150 40 270 120" stroke="#3B2A22" stroke-width="5" fill="none"/>
-    <g><circle cx="75" cy="110" r="18" fill="#C98F78"/><circle cx="110" cy="102" r="15" fill="#F2D8CC"/><circle cx="145" cy="108" r="19" fill="#B5826A"/><circle cx="185" cy="100" r="15" fill="#E7C3B3"/><circle cx="222" cy="110" r="18" fill="#C98F78"/></g>
-    <text x="150" y="178" text-anchor="middle" fill="#FAF5EF" font-family="Cormorant Garamond" font-style="italic" font-size="26">flower bar</text>
-  </svg></div>
+  <div class="cart"><img src="softly-bar.jpg" alt="Pop-up flower bar cart on a rooftop at golden hour"></div>
   <div>
     <div class="kicker">The pop-up flower bar</div>
     <h2>Give guests something to take home</h2>
