@@ -6,132 +6,190 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Softly Arranged · design preview</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#FAF5EF;--blush:#F1DDD3;--ink:#3B2A22;--muted:#7A665B;--accent:#9C6B4E;--sage:#A9B49A;--line:#E8DACE}
+:root{
+  --paper:#FFFFFF;
+  --ink:#3B2620;      /* cocoa */
+  --soft:#6E5A52;     /* muted cocoa for body copy */
+  --blush:#F3DCD6;    /* flower bar block */
+  --stem:#4E5C43;     /* links, focus */
+  --line:#E6DDD8;
+}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--ink);font:16px/1.7 Jost,system-ui,sans-serif}
-.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
-.preview{background:var(--ink);color:#e9dcd2;font-size:13px;text-align:center;padding:7px 16px;letter-spacing:.02em}
-header .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
-.logo{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;font-style:italic;text-decoration:none;color:var(--ink)}
-nav{display:flex;gap:30px;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-nav a{text-decoration:none;color:inherit}nav a:hover{color:var(--ink)}
-.btn{display:inline-block;background:var(--ink);color:var(--bg);text-decoration:none;padding:13px 28px;border-radius:40px;font:500 14px Jost;letter-spacing:.1em;text-transform:uppercase;border:0;cursor:pointer}
-.btn.soft{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
-.hero{padding:40px 0 90px}
-.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.kicker{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
-h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(44px,6.2vw,80px);line-height:.98;letter-spacing:-.01em}
-h1 i{color:var(--accent)}
-.lede{color:var(--muted);font-size:18px;margin:24px 0 34px;max-width:28em}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-.art{aspect-ratio:4/5;border-radius:220px 220px 16px 16px;background:linear-gradient(180deg,var(--blush),#EBD0C2);position:relative;overflow:hidden}
-.art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-section{padding:90px 0}
-h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(34px,4vw,52px);line-height:1.05;margin-bottom:14px}
-.center{text-align:center}.center .sub{margin:0 auto}
-.sub{color:var(--muted);font-size:17px;max-width:34em}
-.svcs{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:52px}
-.svc{text-align:center;padding:10px}
-.svc .ic{width:86px;height:86px;border-radius:50%;background:var(--blush);display:grid;place-items:center;margin:0 auto 18px}
-.svc h3{font-family:'Cormorant Garamond',serif;font-size:25px;font-weight:600;margin-bottom:6px}
-.svc p{color:var(--muted);font-size:15px}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:Petrona,Georgia,serif;font-size:18px;line-height:1.65}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--stem);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--stem);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+.note{font-size:14px;color:var(--soft);background:#F7F4F2;text-align:center;padding:8px 16px}
+
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:22px;padding-bottom:22px}
+.mark{font-weight:700;font-size:24px;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+nav{display:flex;gap:28px;font-size:16px}
+nav a{color:var(--ink);text-decoration:none}
+nav a:hover{text-decoration:underline}
+.btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;font:500 16px Petrona,serif;padding:12px 22px;border-radius:3px;border:0;cursor:pointer}
+.btn:hover{background:#2a1a15}
+
+.hero{padding:40px 0 88px}
+.hero .wrap{display:grid;grid-template-columns:5fr 6fr;gap:56px;align-items:end}
+h1{font-weight:500;font-size:clamp(40px,5.4vw,66px);line-height:1.04;letter-spacing:-.025em;max-width:11ch}
+.lede{color:var(--soft);font-size:20px;margin:24px 0 32px;max-width:30em}
+.actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.hero figure img{border-radius:3px;aspect-ratio:3/2;object-fit:cover;width:100%}
+figcaption{font-size:14px;color:var(--soft);margin-top:10px}
+
+h2{font-weight:500;font-size:clamp(30px,3.4vw,42px);line-height:1.1;letter-spacing:-.02em;margin-bottom:16px}
+section{padding:88px 0}
+
+.offer{border-top:1px solid var(--line)}
+.offer .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:36px}
+.offer h3{font-size:22px;font-weight:700;margin-bottom:8px}
+.offer p{color:var(--soft)}
+
 .bar{background:var(--blush)}
-.bar .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.cart{border-radius:16px;aspect-ratio:1/1;overflow:hidden}
-.cart img{width:100%;height:100%;object-fit:cover;display:block}
-.bar ul{list-style:none;margin:22px 0 30px}
-.bar li{padding:10px 0;border-bottom:1px solid #e3c9bb;color:var(--ink)}
-.bar li::before{content:"✿";color:var(--accent);margin-right:12px}
-.recent{border:1px solid var(--line);border-radius:16px;padding:40px;display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center;margin-top:44px;background:#fff8f2}
-.recent .d{font-family:'Cormorant Garamond',serif;font-size:56px;color:var(--accent);line-height:1}
-.recent h3{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600}
-.recent p{color:var(--muted)}
-.inq .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:56px}
-form{background:#fff;border-radius:16px;padding:34px;border:1px solid var(--line)}
-label{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:16px 0 6px}
-input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font:15px Jost;background:var(--bg);color:var(--ink)}
-textarea{min-height:100px;resize:vertical}
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips button{border:1px solid var(--line);background:var(--bg);border-radius:30px;padding:8px 16px;font:14px Jost;cursor:pointer;color:var(--ink)}
-.chips button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-form .btn{width:100%;margin-top:24px}
-footer{padding:40px 0;text-align:center;color:var(--muted);font-size:14px}
-footer .logo{display:block;margin-bottom:6px}
-.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(120px);background:var(--ink);color:var(--bg);padding:14px 22px;border-radius:30px;font-size:14px;transition:.35s;max-width:calc(100% - 32px);text-align:center}
-.toast.show{transform:translateX(-50%) translateY(0)}
-@media(max-width:860px){nav{display:none}.hero .wrap,.bar .wrap,.inq .wrap{grid-template-columns:1fr}.svcs{grid-template-columns:1fr 1fr}.art{max-width:380px;margin:0 auto;width:100%}section{padding:60px 0}.recent{grid-template-columns:1fr;padding:28px}.row2{grid-template-columns:1fr}}
+.bar .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.bar .photo img{border-radius:3px;aspect-ratio:4/5;object-fit:cover;width:100%}
+.bar p{color:var(--soft);max-width:32em}
+.bar ol{list-style:none;counter-reset:s;margin:28px 0 30px;border-top:1px solid #E3C3BA}
+.bar li{counter-increment:s;display:grid;grid-template-columns:40px 1fr;padding:16px 0;border-bottom:1px solid #E3C3BA}
+.bar li::before{content:counter(s);font-weight:700;font-size:20px}
+.good{font-size:16px;color:var(--soft);margin-bottom:28px}
+.good b{color:var(--ink);font-weight:700}
+.bar .small{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:center;margin-bottom:32px}
+.bar .small img{border-radius:3px;aspect-ratio:1;object-fit:cover}
+.bar .small p{font-size:16px}
+
+.about .wrap{display:grid;grid-template-columns:5fr 6fr;gap:56px}
+.about p{color:var(--soft);margin-bottom:16px;max-width:34em}
+
+.inquire{border-top:1px solid var(--line)}
+.inquire .wrap{display:grid;grid-template-columns:5fr 6fr;gap:56px}
+.inquire .intro p{color:var(--soft);max-width:26em}
+form{display:grid;gap:18px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+label{display:block;font-size:16px;font-weight:500;margin-bottom:6px}
+input,select,textarea{width:100%;font:17px Petrona,serif;color:var(--ink);background:#fff;border:1px solid #D9CCC6;border-radius:3px;padding:11px 12px}
+textarea{min-height:120px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--stem);outline-offset:0;border-color:var(--stem)}
+.sent{font-size:16px;color:var(--stem);min-height:1.5em}
+
+footer{border-top:1px solid var(--line);padding:32px 0 48px;font-size:16px;color:var(--soft)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:860px){
+  nav{display:none}
+  .hero{padding:16px 0 56px}
+  .hero .wrap,.bar .wrap,.about .wrap,.inquire .wrap{grid-template-columns:1fr;gap:32px}
+  .offer .cols{grid-template-columns:1fr;gap:28px}
+  section{padding:60px 0}
+  .row{grid-template-columns:1fr}
+  header .btn{padding:10px 16px;font-size:15px}
+}
 </style>
 </head>
 <body>
-<div class="preview">Design preview made for Softly Arranged · not a live site</div>
+<p class="note">Design preview made for Softly Arranged. Photos are placeholders until we add yours.</p>
+
 <header><div class="wrap">
-  <a class="logo" href="#">Softly Arranged</a>
-  <nav><a href="#services">Services</a><a href="#bar">Flower bar</a><a href="#inquire">Inquire</a></nav>
-  <a class="btn" href="#inquire">Inquire</a>
+  <a class="mark" href="#">Softly Arranged</a>
+  <nav aria-label="Main"><a href="#bar">Flower bar</a><a href="#offer">Services</a><a href="#about">About</a></nav>
+  <a class="btn" href="#inquire">Send an inquiry</a>
 </div></header>
 
-<div class="hero"><div class="wrap">
+<main>
+<section class="hero" aria-labelledby="h"><div class="wrap">
   <div>
-    <div class="kicker">Floral design · Events · Atlanta</div>
-    <h1>Flowers &amp; moments, <i>softly</i> arranged.</h1>
-    <p class="lede">Floral design, event planning and custom experiences across Atlanta and the surrounding areas. Built on 10+ years in hospitality and six in event planning.</p>
-    <div class="cta"><a class="btn" href="#inquire">Plan something special</a><a class="btn soft" href="#bar">Book the flower bar</a></div>
+    <h1 id="h">Flowers for Atlanta parties, showers and pop-ups.</h1>
+    <p class="lede">I'm Teesha. I design florals and plan events around Atlanta, and I bring a build-your-own flower bar to rooftops, showers and brand events.</p>
+    <div class="actions">
+      <a class="btn" href="#inquire">Ask about a date</a>
+      <a href="#bar">See how the flower bar works</a>
+    </div>
   </div>
-  <div class="art"><img src="softly-hero.jpg" alt="Blush and peach floral arrangement in a ceramic vase"></div>
-</div></div>
+  <figure>
+    <img src="sa-hands.jpg" alt="Hands trimming rose and eucalyptus stems on a wooden work table" width="1200" height="800">
+    <figcaption>Prepping stems before an event.</figcaption>
+  </figure>
+</div></section>
 
-<section id="services" class="center"><div class="wrap">
-  <h2>What I offer</h2>
-  <p class="sub">From a single centerpiece to a fully planned celebration.</p>
-  <div class="svcs">
-    <div class="svc"><div class="ic"><svg width="40" height="40" viewBox="0 0 40 40"><circle cx="20" cy="16" r="9" fill="#9C6B4E"/><path d="M20 25v12" stroke="#7d8a6c" stroke-width="2"/></svg></div><h3>Floral design</h3><p>Arrangements, centerpieces and installations made for your space.</p></div>
-    <div class="svc"><div class="ic"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#9C6B4E" stroke-width="2"><rect x="7" y="9" width="26" height="24" rx="3"/><path d="M7 16h26M14 5v7M26 5v7"/></svg></div><h3>Event planning</h3><p>Thoughtful planning and coordination so you can enjoy the day.</p></div>
-    <div class="svc"><div class="ic"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#9C6B4E" stroke-width="2"><path d="M8 18h24l-3 15H11z"/><path d="M14 18c0-6 12-6 12 0"/></svg></div><h3>Pop-up flower bar</h3><p>A build-your-own bouquet station guests take home.</p></div>
-    <div class="svc"><div class="ic"><svg width="40" height="40" viewBox="0 0 40 40" fill="#9C6B4E"><path d="M20 6l3.5 9 9.5.5-7.5 6 2.5 9.5L20 26l-8 5 2.5-9.5-7.5-6 9.5-.5z"/></svg></div><h3>Custom experiences</h3><p>Something one-of-a-kind, designed around you and your guests.</p></div>
+<section class="bar" id="bar" aria-labelledby="bar-h"><div class="wrap">
+  <div class="photo"><img src="sa-bar.jpg" alt="Guests picking stems from buckets at a rooftop flower bar at dusk" width="960" height="1200" loading="lazy"></div>
+  <div>
+    <h2 id="bar-h">The flower bar</h2>
+    <p>A table of fresh stems your guests build into their own bouquet. It gives people something to do, something to talk about, and something to take home.</p>
+    <ol>
+      <li>Guests pick their stems from the buckets on the bar.</li>
+      <li>I help them put the bunch together.</li>
+      <li>It's wrapped in kraft paper and ribbon, ready to take home.</li>
+    </ol>
+    <div class="small">
+      <img src="sa-wrap.jpg" alt="A small bouquet wrapped in kraft paper with a brown ribbon" width="1050" height="1050" loading="lazy">
+      <p>Most recently I set up the flower bar at the Shades of Brown rooftop event.</p>
+    </div>
+    <p class="good"><b>Good for</b> rooftop parties, bridal and baby showers, brand events and community gatherings.</p>
+    <a class="btn" href="#inquire" data-pick="Flower bar">Check a date for the flower bar</a>
   </div>
 </div></section>
 
-<section class="bar" id="bar"><div class="wrap">
-  <div class="cart"><img src="softly-bar.jpg" alt="Pop-up flower bar cart on a rooftop at golden hour"></div>
-  <div>
-    <div class="kicker">The pop-up flower bar</div>
-    <h2>Give guests something to take home</h2>
-    <p class="sub">Guests build their own bouquet from a styled bar of seasonal stems, wrapped and ready to go.</p>
-    <ul><li>Rooftop parties &amp; brand events</li><li>Bridal and baby showers</li><li>Corporate and community gatherings</li></ul>
-    <a class="btn" href="#inquire" onclick="pick('Flower bar')">Check availability</a>
+<section class="offer" id="offer" aria-labelledby="offer-h"><div class="wrap">
+  <h2 id="offer-h">Other ways I can help</h2>
+  <div class="cols">
+    <div><h3>Floral design</h3><p>Centerpieces, arrangements and installs made for your venue and your colors.</p></div>
+    <div><h3>Event planning</h3><p>Planning and coordination on the day, so you get to enjoy your own event.</p></div>
+    <div><h3>Custom experiences</h3><p>Got an idea that doesn't fit a box? Tell me about it and we'll build it together.</p></div>
   </div>
 </div></section>
 
-<section style="padding-bottom:30px"><div class="wrap">
-  <h2 class="center">Recently</h2>
-  <div class="recent"><div class="d">✿</div><div><h3>Shades of Brown rooftop event</h3><p>A pop-up flower bar on the rooftop, where guests chose their own stems and left with a little something to take home.</p></div></div>
+<section class="about" id="about" aria-labelledby="about-h"><div class="wrap">
+  <h2 id="about-h">About Teesha</h2>
+  <div>
+    <p>I've spent more than ten years in hospitality and six in event planning. That's where I learned that the details guests remember are usually the small, personal ones.</p>
+    <p>Softly Arranged is how I bring that to events around Atlanta: thoughtful flowers, calm planning, and moments people take home with them.</p>
+  </div>
 </div></section>
 
-<section class="inq" id="inquire"><div class="wrap">
-  <div>
-    <h2>Let's plan something special</h2>
-    <p class="sub">Tell me a little about your event and I'll be in touch with ideas and availability.</p>
+<section class="inquire" id="inquire" aria-labelledby="inq-h"><div class="wrap">
+  <div class="intro">
+    <h2 id="inq-h">Tell me about your event</h2>
+    <p>Share a few details and I'll get back to you with ideas and availability.</p>
   </div>
-  <form onsubmit="return send(event)">
-    <label>I'm interested in</label>
-    <div class="chips" id="chips"><button type="button" class="on">Floral design</button><button type="button">Event planning</button><button type="button">Flower bar</button><button type="button">Something custom</button></div>
-    <div class="row2"><div><label>Name</label><input required></div><div><label>Email</label><input type="email" required></div></div>
-    <div class="row2"><div><label>Event date</label><input type="date"></div><div><label>Guest count</label><select><option>Under 25</option><option>25–75</option><option>75–150</option><option>150+</option></select></div></div>
-    <label>Tell me about it</label><textarea placeholder="Venue, vibe, colors you love..."></textarea>
-    <button class="btn">Send inquiry</button>
+  <form id="f" novalidate>
+    <div>
+      <label for="what">What are you planning?</label>
+      <select id="what"><option>Floral design</option><option>Event planning</option><option>Flower bar</option><option>Something custom</option></select>
+    </div>
+    <div class="row">
+      <div><label for="n">Your name</label><input id="n" autocomplete="name"></div>
+      <div><label for="e">Email</label><input id="e" type="email" autocomplete="email"></div>
+    </div>
+    <div class="row">
+      <div><label for="d">Event date</label><input id="d" type="date"></div>
+      <div><label for="g">Number of guests</label><select id="g"><option>Under 25</option><option>25 to 75</option><option>75 to 150</option><option>More than 150</option></select></div>
+    </div>
+    <div><label for="m">Venue, colors, anything else</label><textarea id="m"></textarea></div>
+    <div><button class="btn" type="submit">Send inquiry</button></div>
+    <p class="sent" id="sent" role="status"></p>
   </form>
 </div></section>
+</main>
 
-<footer><span class="logo">Softly Arranged</span>Floral design &amp; events · Atlanta, GA</footer>
-<div class="toast" id="toast">Preview only: on the live site your inquiry lands straight in Teesha's inbox.</div>
+<footer><div class="wrap">
+  <span>Softly Arranged, floral design and events in Atlanta, GA</span>
+  <a href="https://www.linkedin.com/in/teesha-prieto-648629250/">LinkedIn</a>
+</div></footer>
+
 <script>
-const chips=document.getElementById('chips');
-chips.onclick=e=>{if(e.target.tagName==='BUTTON')e.target.classList.toggle('on')};
-function pick(n){[...chips.children].forEach(b=>b.classList.toggle('on',b.textContent===n))}
-function send(e){e.preventDefault();const t=document.getElementById('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3500);return false}
+document.getElementById('f').addEventListener('submit',e=>{
+  e.preventDefault();
+  document.getElementById('sent').textContent='Inquiry sent. (This is a preview, so nothing went out. On the live site it lands in your inbox.)';
+});
+document.querySelectorAll('[data-pick]').forEach(a=>a.addEventListener('click',()=>{
+  document.getElementById('what').value=a.dataset.pick;
+}));
 </script>
 </body>
 </html>
