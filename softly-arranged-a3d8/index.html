@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Softly Arranged · design preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAF5EF;--blush:#F1DDD3;--ink:#3B2A22;--muted:#7A665B;--accent:#9C6B4E;--sage:#A9B49A;--line:#E8DACE}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.7 Jost,system-ui,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.preview{background:var(--ink);color:#e9dcd2;font-size:13px;text-align:center;padding:7px 16px;letter-spacing:.02em}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;font-style:italic;text-decoration:none;color:var(--ink)}
+nav{display:flex;gap:30px;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+nav a{text-decoration:none;color:inherit}nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);text-decoration:none;padding:13px 28px;border-radius:40px;font:500 14px Jost;letter-spacing:.1em;text-transform:uppercase;border:0;cursor:pointer}
+.btn.soft{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.hero{padding:40px 0 90px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.kicker{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(44px,6.2vw,80px);line-height:.98;letter-spacing:-.01em}
+h1 i{color:var(--accent)}
+.lede{color:var(--muted);font-size:18px;margin:24px 0 34px;max-width:28em}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.art{aspect-ratio:4/5;border-radius:220px 220px 16px 16px;background:linear-gradient(180deg,var(--blush),#EBD0C2);position:relative;overflow:hidden}
+.art svg{position:absolute;inset:0;width:100%;height:100%}
+section{padding:90px 0}
+h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(34px,4vw,52px);line-height:1.05;margin-bottom:14px}
+.center{text-align:center}.center .sub{margin:0 auto}
+.sub{color:var(--muted);font-size:17px;max-width:34em}
+.svcs{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:52px}
+.svc{text-align:center;padding:10px}
+.svc .ic{width:86px;height:86px;border-radius:50%;background:var(--blush);display:grid;place-items:center;margin:0 auto 18px}
+.svc h3{font-family:'Cormorant Garamond',serif;font-size:25px;font-weight:600;margin-bottom:6px}
+.svc p{color:var(--muted);font-size:15px}
+.bar{background:var(--blush)}
+.bar .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.cart{background:var(--bg);border-radius:16px;aspect-ratio:1/1;display:grid;place-items:center}
+.cart svg{width:82%}
+.bar ul{list-style:none;margin:22px 0 30px}
+.bar li{padding:10px 0;border-bottom:1px solid #e3c9bb;color:var(--ink)}
+.bar li::before{content:"✿";color:var(--accent);margin-right:12px}
+.recent{border:1px solid var(--line);border-radius:16px;padding:40px;display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center;margin-top:44px;background:#fff8f2}
+.recent .d{font-family:'Cormorant Garamond',serif;font-size:56px;color:var(--accent);line-height:1}
+.recent h3{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600}
+.recent p{color:var(--muted)}
+.inq .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:56px}
+form{background:#fff;border-radius:16px;padding:34px;border:1px solid var(--line)}
+label{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:16px 0 6px}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font:15px Jost;background:var(--bg);color:var(--ink)}
+textarea{min-height:100px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{border:1px solid var(--line);background:var(--bg);border-radius:30px;padding:8px 16px;font:14px Jost;cursor:pointer;color:var(--ink)}
+.chips button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+form .btn{width:100%;margin-top:24px}
+footer{padding:40px 0;text-align:center;color:var(--muted);font-size:14px}
+footer .logo{display:block;margin-bottom:6px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(120px);background:var(--ink);color:var(--bg);padding:14px 22px;border-radius:30px;font-size:14px;transition:.35s;max-width:calc(100% - 32px);text-align:center}
+.toast.show{transform:translateX(-50%) translateY(0)}
+@media(max-width:860px){nav{display:none}.hero .wrap,.bar .wrap,.inq .wrap{grid-template-columns:1fr}.svcs{grid-template-columns:1fr 1fr}.art{max-width:380px;margin:0 auto;width:100%}section{padding:60px 0}.recent{grid-template-columns:1fr;padding:28px}.row2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="preview">Design preview made for Softly Arranged · not a live site</div>
+<header><div class="wrap">
+  <a class="logo" href="#">Softly Arranged</a>
+  <nav><a href="#services">Services</a><a href="#bar">Flower bar</a><a href="#inquire">Inquire</a></nav>
+  <a class="btn" href="#inquire">Inquire</a>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <div>
+    <div class="kicker">Floral design · Events · Atlanta</div>
+    <h1>Flowers &amp; moments, <i>softly</i> arranged.</h1>
+    <p class="lede">Floral design, event planning and custom experiences across Atlanta and the surrounding areas. Built on 10+ years in hospitality and six in event planning.</p>
+    <div class="cta"><a class="btn" href="#inquire">Plan something special</a><a class="btn soft" href="#bar">Book the flower bar</a></div>
+  </div>
+  <div class="art"><svg viewBox="0 0 400 500" aria-hidden="true">
+    <g stroke="#7d8a6c" stroke-width="3" fill="none"><path d="M200 500 C195 400 180 330 150 260"/><path d="M200 500 C205 390 230 320 265 250"/><path d="M200 500 C200 380 200 300 205 200"/></g>
+    <g fill="#A9B49A"><ellipse cx="165" cy="330" rx="26" ry="10" transform="rotate(-35 165 330)"/><ellipse cx="238" cy="320" rx="26" ry="10" transform="rotate(35 238 320)"/><ellipse cx="190" cy="390" rx="24" ry="9" transform="rotate(-20 190 390)"/></g>
+    <g transform="translate(150 250)"><circle r="44" fill="#C98F78"/><circle r="30" fill="#D9A592"/><circle r="15" fill="#B97A63"/></g>
+    <g transform="translate(265 245)"><circle r="38" fill="#E7C3B3"/><circle r="25" fill="#F2D8CC"/><circle r="11" fill="#C98F78"/></g>
+    <g transform="translate(205 190)"><circle r="50" fill="#9C6B4E"/><circle r="34" fill="#B5826A"/><circle r="17" fill="#8A5A40"/></g>
+    <g fill="#FAF5EF" opacity=".85"><circle cx="120" cy="200" r="7"/><circle cx="300" cy="190" r="6"/><circle cx="250" cy="150" r="5"/><circle cx="140" cy="300" r="5"/></g>
+  </svg></div>
+</div></div>
+
+<section id="services" class="center"><div class="wrap">
+  <h2>What I offer</h2>
+  <p class="sub">From a single centerpiece to a fully planned celebration.</p>
+  <div class="svcs">
+    <div class="svc"><div class="ic"><svg width="40" height="40" viewBox="0 0 40 40"><circle cx="20" cy="16" r="9" fill="#9C6B4E"/><path d="M20 25v12" stroke="#7d8a6c" stroke-width="2"/></svg></div><h3>Floral design</h3><p>Arrangements, centerpieces and installations made for your space.</p></div>
+    <div class="svc"><div class="ic"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#9C6B4E" stroke-width="2"><rect x="7" y="9" width="26" height="24" rx="3"/><path d="M7 16h26M14 5v7M26 5v7"/></svg></div><h3>Event planning</h3><p>Thoughtful planning and coordination so you can enjoy the day.</p></div>
+    <div class="svc"><div class="ic"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#9C6B4E" stroke-width="2"><path d="M8 18h24l-3 15H11z"/><path d="M14 18c0-6 12-6 12 0"/></svg></div><h3>Pop-up flower bar</h3><p>A build-your-own bouquet station guests take home.</p></div>
+    <div class="svc"><div class="ic"><svg width="40" height="40" viewBox="0 0 40 40" fill="#9C6B4E"><path d="M20 6l3.5 9 9.5.5-7.5 6 2.5 9.5L20 26l-8 5 2.5-9.5-7.5-6 9.5-.5z"/></svg></div><h3>Custom experiences</h3><p>Something one-of-a-kind, designed around you and your guests.</p></div>
+  </div>
+</div></section>
+
+<section class="bar" id="bar"><div class="wrap">
+  <div class="cart"><svg viewBox="0 0 300 260" aria-hidden="true">
+    <rect x="40" y="130" width="220" height="80" rx="8" fill="#9C6B4E"/><rect x="40" y="120" width="220" height="16" rx="4" fill="#7e5540"/>
+    <circle cx="80" cy="228" r="18" fill="#3B2A22"/><circle cx="220" cy="228" r="18" fill="#3B2A22"/>
+    <path d="M30 120 Q150 40 270 120" stroke="#3B2A22" stroke-width="5" fill="none"/>
+    <g><circle cx="75" cy="110" r="18" fill="#C98F78"/><circle cx="110" cy="102" r="15" fill="#F2D8CC"/><circle cx="145" cy="108" r="19" fill="#B5826A"/><circle cx="185" cy="100" r="15" fill="#E7C3B3"/><circle cx="222" cy="110" r="18" fill="#C98F78"/></g>
+    <text x="150" y="178" text-anchor="middle" fill="#FAF5EF" font-family="Cormorant Garamond" font-style="italic" font-size="26">flower bar</text>
+  </svg></div>
+  <div>
+    <div class="kicker">The pop-up flower bar</div>
+    <h2>Give guests something to take home</h2>
+    <p class="sub">Guests build their own bouquet from a styled bar of seasonal stems, wrapped and ready to go.</p>
+    <ul><li>Rooftop parties &amp; brand events</li><li>Bridal and baby showers</li><li>Corporate and community gatherings</li></ul>
+    <a class="btn" href="#inquire" onclick="pick('Flower bar')">Check availability</a>
+  </div>
+</div></section>
+
+<section style="padding-bottom:30px"><div class="wrap">
+  <h2 class="center">Recently</h2>
+  <div class="recent"><div class="d">✿</div><div><h3>Shades of Brown rooftop event</h3><p>A pop-up flower bar on the rooftop, where guests chose their own stems and left with a little something to take home.</p></div></div>
+</div></section>
+
+<section class="inq" id="inquire"><div class="wrap">
+  <div>
+    <h2>Let's plan something special</h2>
+    <p class="sub">Tell me a little about your event and I'll be in touch with ideas and availability.</p>
+  </div>
+  <form onsubmit="return send(event)">
+    <label>I'm interested in</label>
+    <div class="chips" id="chips"><button type="button" class="on">Floral design</button><button type="button">Event planning</button><button type="button">Flower bar</button><button type="button">Something custom</button></div>
+    <div class="row2"><div><label>Name</label><input required></div><div><label>Email</label><input type="email" required></div></div>
+    <div class="row2"><div><label>Event date</label><input type="date"></div><div><label>Guest count</label><select><option>Under 25</option><option>25–75</option><option>75–150</option><option>150+</option></select></div></div>
+    <label>Tell me about it</label><textarea placeholder="Venue, vibe, colors you love..."></textarea>
+    <button class="btn">Send inquiry</button>
+  </form>
+</div></section>
+
+<footer><span class="logo">Softly Arranged</span>Floral design &amp; events · Atlanta, GA</footer>
+<div class="toast" id="toast">Preview only: on the live site your inquiry lands straight in Teesha's inbox.</div>
+<script>
+const chips=document.getElementById('chips');
+chips.onclick=e=>{if(e.target.tagName==='BUTTON')e.target.classList.toggle('on')};
+function pick(n){[...chips.children].forEach(b=>b.classList.toggle('on',b.textContent===n))}
+function send(e){e.preventDefault();const t=document.getElementById('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3500);return false}
+</script>
+</body>
+</html>
