@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Wasidah Francois · design preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F3F6;
+  --ink:#1D2140;      /* night indigo */
+  --soft:#555a78;
+  --mist:#DADCEB;
+  --night:#1D2140;
+  --glow:#E9C46A;     /* lamp gold, used sparingly */
+  --line:#CFD1E0;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:17px/1.65 "Hanken Grotesk",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+h1,h2{font-family:Gloock,Georgia,serif;font-weight:400;letter-spacing:-.01em}
+
+.note{font-size:14px;background:var(--night);color:#C9CCE4;padding:7px 16px;text-align:center}
+
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:20px;padding-bottom:20px}
+.mark{font-family:Gloock,serif;font-size:23px;text-decoration:none}
+nav{display:flex;gap:26px;font-size:15px;font-weight:500}
+nav a{text-decoration:none}
+nav a:hover{text-decoration:underline}
+.btn{display:inline-block;background:var(--ink);color:#fff;border:0;border-radius:999px;padding:12px 22px;font:600 15px "Hanken Grotesk",sans-serif;text-decoration:none;cursor:pointer}
+.btn:hover{background:#2d3260}
+.sm{display:none}
+.btn.light{background:var(--glow);color:var(--ink)}
+.btn.light:hover{background:#f2d27f}
+
+.hero{padding:28px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:6fr 5fr;gap:56px;align-items:center}
+h1{font-size:clamp(40px,6vw,74px);line-height:1.02;max-width:12ch}
+.lede{font-size:19px;color:var(--soft);max-width:31em;margin:22px 0 30px}
+.roles{font-size:15px;color:var(--soft);margin-top:28px;max-width:32em;border-left:2px solid var(--ink);padding-left:14px}
+.hero img{border-radius:180px 180px 6px 6px;aspect-ratio:4/5;object-fit:cover;width:100%}
+
+/* the 2027 band: memorable element */
+.year{background:var(--night);color:#fff;padding:64px 0 70px}
+.year .top{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:30px}
+.year h2{font-size:clamp(34px,4.4vw,54px);line-height:1.05;max-width:14ch}
+.year p{color:#C9CCE4;max-width:28em}
+.months{display:grid;grid-template-columns:repeat(12,1fr);border-top:1px solid #3b4170}
+.months button{background:none;border:0;border-right:1px solid #3b4170;color:#fff;font:500 15px "Hanken Grotesk",sans-serif;padding:18px 8px 54px;text-align:left;cursor:pointer;position:relative}
+.months button:last-child{border-right:0}
+.months button span{display:block;font-family:Gloock,serif;font-size:30px;line-height:1}
+.months button:hover,.months button[aria-pressed=true]{background:var(--glow);color:var(--ink)}
+.months small{display:block;margin-top:6px;font-size:13px;opacity:.75}
+.year .hint{font-size:14px;margin-top:16px}
+
+section{padding:88px 0}
+h2{font-size:clamp(30px,3.6vw,46px);line-height:1.08;margin-bottom:16px}
+
+.doula .wrap{display:grid;grid-template-columns:4fr 7fr;gap:64px}
+.doula blockquote{font-family:Gloock,serif;font-size:26px;line-height:1.3;margin-top:28px;padding-top:22px;border-top:1px solid var(--line)}
+.doula cite{display:block;font:500 15px "Hanken Grotesk",sans-serif;color:var(--soft);font-style:normal;margin-top:12px}
+.steps{list-style:none}
+.steps li{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:26px 0;border-bottom:1px solid var(--line)}
+.steps li:first-child{border-top:1px solid var(--line)}
+.steps h3{font-size:19px;font-weight:700;line-height:1.35}
+.steps p{color:var(--soft)}
+.doula .pic{margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:end}
+.doula .pic img{border-radius:6px;aspect-ratio:3/2;object-fit:cover}
+.doula .pic p{font-size:15px;color:var(--soft)}
+
+.sound{background:var(--mist)}
+.sound .wrap{display:grid;grid-template-columns:7fr 5fr;gap:56px;align-items:center}
+.sound img{border-radius:6px;aspect-ratio:3/2;object-fit:cover;width:100%}
+.sound p{color:var(--soft);max-width:30em;margin-bottom:14px}
+
+.move .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.move article{padding-top:8px}
+.move img{border-radius:6px;aspect-ratio:3/2;object-fit:cover;margin-bottom:24px}
+.move p{color:var(--soft);max-width:30em;margin-bottom:14px}
+.move .corp{border-left:1px solid var(--line);padding-left:56px}
+.move ul{margin:10px 0 0 18px;color:var(--soft)}
+.move li{margin-bottom:6px}
+
+.ask{border-top:1px solid var(--line)}
+.ask .wrap{display:grid;grid-template-columns:5fr 6fr;gap:56px}
+.ask .intro p{color:var(--soft);max-width:26em;margin-bottom:14px}
+form{display:grid;gap:18px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+label,legend{display:block;font-size:15px;font-weight:600;margin-bottom:6px}
+input,select,textarea{width:100%;font:16px "Hanken Grotesk",sans-serif;color:var(--ink);background:#fff;border:1px solid #C3C6DA;border-radius:8px;padding:11px 12px}
+textarea{min-height:120px;resize:vertical}
+fieldset{border:0}
+.checks{display:flex;flex-wrap:wrap;gap:8px}
+.checks label{font-weight:500;margin:0;border:1px solid #C3C6DA;background:#fff;border-radius:999px;padding:8px 14px;cursor:pointer;display:flex;gap:8px;align-items:center}
+.checks input{width:auto;accent-color:var(--ink)}
+.checks label:has(input:checked){background:var(--ink);color:#fff;border-color:var(--ink)}
+.sent{font-size:15px;min-height:1.5em;font-weight:500}
+
+.about .wrap{display:grid;grid-template-columns:5fr 6fr;gap:56px}
+.about p{color:var(--soft);max-width:34em;margin-bottom:14px}
+.about dl{display:grid;grid-template-columns:1fr;border-top:1px solid var(--line)}
+.about dl div{padding:12px 0;border-bottom:1px solid var(--line);font-weight:500}
+
+footer{background:var(--night);color:#C9CCE4;padding:34px 0 44px;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:#fff}
+
+@media (max-width:900px){
+  nav{display:none}
+  .hero .wrap,.doula .wrap,.sound .wrap,.move .wrap,.ask .wrap,.about .wrap{grid-template-columns:1fr;gap:32px}
+  .hero img{max-width:420px}
+  .move .corp{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:40px}
+  .months{grid-template-columns:repeat(4,1fr)}
+  .months button{border-bottom:1px solid #3b4170;padding-bottom:28px}
+  .months button:nth-child(4n){border-right:0}
+  section{padding:60px 0}
+}
+@media (max-width:560px){
+  header .btn{padding:10px 16px;font-size:14px}
+  header .lg{display:none} header .sm{display:inline}
+  .steps li{grid-template-columns:1fr;gap:6px}
+  .doula .pic{grid-template-columns:1fr}
+  .row{grid-template-columns:1fr}
+  .months button span{font-size:24px}
+}
+</style>
+</head>
+<body>
+<p class="note">Design preview made for Wasidah Francois · photos are placeholders</p>
+
+<header><div class="wrap">
+  <a class="mark" href="#">Wasidah Francois</a>
+  <nav aria-label="Main"><a href="#doula">Doula support</a><a href="#sound">Sound baths</a><a href="#move">Pilates</a><a href="#move-corp">Corporate</a><a href="#about">About</a></nav>
+  <a class="btn" href="#ask"><span class="lg">Ask about your due date</span><span class="sm">Inquire</span></a>
+</div></header>
+
+<main>
+<section class="hero" aria-labelledby="h"><div class="wrap">
+  <div>
+    <h1 id="h">Prepared and supported, from pregnancy to the fourth trimester.</h1>
+    <p class="lede">I'm Wasidah, a doula and women's wellness coach. I support pregnant moms in New York and New Jersey, and I bring sound baths, meditation and Pilates to people and workplaces who need a moment to breathe.</p>
+    <a class="btn" href="#ask">Ask about your due date</a>
+    <p class="roles">Doula, women's wellness coach, certified sound therapy and sound bath practitioner, meditation and Pilates, corporate holistic health and wellness specialist.</p>
+  </div>
+  <img src="img/prenatal.jpg" alt="A pregnant woman resting her hands on her belly on a sofa by a window" width="1200" height="800">
+</div></section>
+
+<section class="year" aria-labelledby="y-h"><div class="wrap">
+  <div class="top">
+    <h2 id="y-h">Now booking 2027 due dates.</h2>
+    <p>In New York and New Jersey. Pick your due month to start an inquiry.</p>
+  </div>
+  <div class="months" id="months" role="group" aria-label="2027 due months"></div>
+  <p class="hint">Not sure of the exact date yet? That's fine, an estimate is plenty to start.</p>
+</div></section>
+
+<section class="doula" id="doula" aria-labelledby="d-h"><div class="wrap">
+  <div>
+    <h2 id="d-h">Doula support</h2>
+    <p style="color:var(--soft)">Steady, practical support so you walk into birth and the weeks after knowing what you want.</p>
+    <blockquote>“Every pregnant mom deserves to feel prepared and supported.”<cite>Wasidah</cite></blockquote>
+  </div>
+  <div>
+    <ol class="steps">
+      <li><h3>Prenatal prep</h3><p>Time together before the birth to talk through what's coming, answer your questions and get you and your partner ready.</p></li>
+      <li><h3>Birth preferences</h3><p>We put your wishes into a clear birth preferences plan you can share with your care team, so your voice is in the room.</p></li>
+      <li><h3>Fourth-trimester planning</h3><p>A plan for the weeks after the baby arrives: rest, recovery, help at home and who to call when you need it.</p></li>
+    </ol>
+    <div class="pic">
+      <img src="img/studio.jpg" alt="A quiet, softly lit room with bolsters and blankets on the floor" width="1280" height="1600" loading="lazy" style="aspect-ratio:4/5">
+      <p>Birth preferences and planning for the fourth trimester are topics I share about often. Ask me anything about them in your inquiry.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="sound" id="sound" aria-labelledby="s-h"><div class="wrap">
+  <img src="img/bowls.jpg" alt="Singing bowls and mallets arranged on a woven mat" width="1600" height="1067" loading="lazy">
+  <div>
+    <h2 id="s-h">Sound baths and meditation</h2>
+    <p>As a certified sound therapy and sound bath practitioner, I lead sessions where you lie back, close your eyes and let the sound of the bowls do the work.</p>
+    <p>Guided meditation sits alongside, for anyone who wants a calmer mind, whether you're expecting or not.</p>
+    <a class="btn" href="#ask" data-pick="Sound bath">Ask about a sound bath</a>
+  </div>
+</div></section>
+
+<section class="move" id="move" aria-labelledby="p-h"><div class="wrap">
+  <article>
+    <img src="img/pilates.jpg" alt="A Pilates mat with a small ball, ring and resistance band" width="1600" height="1067" loading="lazy">
+    <h2 id="p-h">Pilates</h2>
+    <p>Gentle, focused Pilates to build strength, steadiness and breath, taught at a pace that suits your body.</p>
+    <a href="#ask" data-pick="Pilates">Ask about Pilates sessions</a>
+  </article>
+  <article class="corp" id="move-corp">
+    <h2>Corporate wellness</h2>
+    <p>As a corporate holistic health and wellness specialist, I bring calm into the workday for teams.</p>
+    <ul>
+      <li>Sound baths for your team</li>
+      <li>Guided meditation</li>
+      <li>Pilates and movement breaks</li>
+      <li>Holistic health and wellness sessions</li>
+    </ul>
+    <p style="margin-top:18px">Tell me about your team and what you have in mind, and we'll shape something that fits.</p>
+    <a class="btn" href="#ask" data-pick="Corporate wellness">Plan a session for your team</a>
+  </article>
+</div></section>
+
+<section class="ask" id="ask" aria-labelledby="a-h"><div class="wrap">
+  <div class="intro">
+    <h2 id="a-h">Tell me about your due date</h2>
+    <p>Share a few details and I'll get back to you about availability and next steps.</p>
+    <p>Prefer email? Write to <a href="mailto:wasidah@gmail.com">wasidah@gmail.com</a>.</p>
+  </div>
+  <form id="f" novalidate>
+    <div class="row">
+      <div><label for="n">Your name</label><input id="n" autocomplete="name"></div>
+      <div><label for="e">Email</label><input id="e" type="email" autocomplete="email"></div>
+    </div>
+    <div class="row">
+      <div><label for="dd">Due date (or best guess)</label><input id="dd" type="date" min="2026-11-01"></div>
+      <div><label for="loc">Location</label><select id="loc"><option>New York</option><option>New Jersey</option></select></div>
+    </div>
+    <fieldset>
+      <legend>Services you're interested in</legend>
+      <div class="checks">
+        <label><input type="checkbox" name="svc" value="Doula support" checked> Doula support</label>
+        <label><input type="checkbox" name="svc" value="Sound bath"> Sound bath</label>
+        <label><input type="checkbox" name="svc" value="Meditation"> Meditation</label>
+        <label><input type="checkbox" name="svc" value="Pilates"> Pilates</label>
+        <label><input type="checkbox" name="svc" value="Corporate wellness"> Corporate wellness</label>
+      </div>
+    </fieldset>
+    <div><label for="m">Message</label><textarea id="m" placeholder="Anything you'd like me to know"></textarea></div>
+    <div><button class="btn" type="submit">Send inquiry</button></div>
+    <p class="sent" id="sent" role="status"></p>
+  </form>
+</div></section>
+
+<section class="about" id="about" aria-labelledby="ab-h"><div class="wrap">
+  <div>
+    <h2 id="ab-h">About Wasidah</h2>
+    <p>I'm a women's wellness coach and doula supporting moms in New York and New Jersey. I believe every pregnant mom deserves to feel prepared and supported.</p>
+    <p>Alongside birth work, I'm a certified sound therapy and sound bath practitioner, I teach meditation and Pilates, and I work with companies as a corporate holistic health and wellness specialist.</p>
+  </div>
+  <dl>
+    <div>Doula</div>
+    <div>Women's wellness coach</div>
+    <div>Certified sound therapy and sound bath practitioner</div>
+    <div>Meditation and Pilates</div>
+    <div>Corporate holistic health and wellness specialist</div>
+  </dl>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <span>Wasidah Francois, doula and women's wellness, New York and New Jersey</span>
+  <a href="mailto:wasidah@gmail.com">wasidah@gmail.com</a>
+</div></footer>
+
+<script>
+const names=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const box=document.getElementById('months'), dd=document.getElementById('dd');
+names.forEach((n,i)=>{
+  const b=document.createElement('button');b.type='button';b.setAttribute('aria-pressed','false');
+  b.innerHTML='<span>'+String(i+1).padStart(2,'0')+'</span><small>'+n+' 2027</small>';
+  b.addEventListener('click',()=>{
+    box.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed','false'));
+    b.setAttribute('aria-pressed','true');
+    dd.value='2027-'+String(i+1).padStart(2,'0')+'-15';
+    document.getElementById('ask').scrollIntoView({behavior:'smooth'});
+  });
+  box.appendChild(b);
+});
+document.querySelectorAll('[data-pick]').forEach(a=>a.addEventListener('click',()=>{
+  document.querySelectorAll('input[name=svc]').forEach(c=>{c.checked=c.value===a.dataset.pick});
+}));
+document.getElementById('f').addEventListener('submit',e=>{
+  e.preventDefault();
+  document.getElementById('sent').textContent='Thank you. This is a design preview, so nothing was sent. On the live site your inquiry would go straight to Wasidah.';
+});
+</script>
+</body>
+</html>

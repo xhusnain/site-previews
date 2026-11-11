@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Danielle Weis · design preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,500;62..125,700;62..125,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF;
+  --ink:#0E1116;
+  --soft:#525866;
+  --blue:#1F3FD1;    /* cobalt */
+  --ice:#E8EEFF;
+  --line:#DFE2EA;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:17px/1.6 Archivo,system-ui,sans-serif;font-stretch:100%;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--blue);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-stretch:118%;letter-spacing:-.02em}
+
+.note{font-size:14px;background:var(--ink);color:#CDD3E0;padding:7px 16px;text-align:center}
+
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:18px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.mark{text-decoration:none;color:var(--ink);font-weight:800;font-stretch:118%;font-size:20px;line-height:1.1}
+.mark small{display:block;font-weight:500;font-stretch:100%;font-size:13px;color:var(--soft);letter-spacing:0}
+nav{display:flex;gap:26px;font-size:15px;font-weight:500}
+nav a{color:var(--ink);text-decoration:none}
+nav a:hover{color:var(--blue)}
+.btn{display:inline-block;background:var(--blue);color:#fff;border:0;border-radius:4px;padding:13px 22px;font:700 15px Archivo,sans-serif;text-decoration:none;cursor:pointer}
+.btn:hover{background:#1530a8}
+.btn.dark{background:var(--ink)}
+
+.hero{padding:56px 0 0}
+h1{font-weight:800;font-size:clamp(40px,6.6vw,88px);line-height:.98;max-width:13ch}
+.hero .sub{display:grid;grid-template-columns:6fr 5fr;gap:48px;align-items:end;margin-top:30px}
+.lede{font-size:20px;color:var(--soft);max-width:30em}
+.hero .actions{display:flex;gap:20px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.hero .pic{margin-top:48px}
+.hero .pic img{width:100%;aspect-ratio:21/9;object-fit:cover;border-radius:4px}
+
+section{padding:96px 0}
+h2{font-weight:800;font-size:clamp(32px,4.2vw,54px);line-height:1.02;margin-bottom:16px}
+
+/* activation menu: memorable element */
+.menu .head{display:grid;grid-template-columns:6fr 5fr;gap:48px;align-items:end;margin-bottom:36px}
+.menu .head p{color:var(--soft)}
+.board{display:grid;grid-template-columns:7fr 4fr;gap:40px;align-items:start}
+.items{list-style:none;border-top:2px solid var(--ink)}
+.items li{border-bottom:1px solid var(--line)}
+.items button{all:unset;box-sizing:border-box;width:100%;display:grid;grid-template-columns:52px 1fr auto;gap:16px;align-items:center;padding:20px 4px;cursor:pointer}
+.items button:focus-visible{outline:2px solid var(--blue)}
+.items .n{font-weight:500;color:var(--soft);font-variant-numeric:tabular-nums}
+.items .t{font-weight:700;font-stretch:112%;font-size:clamp(20px,2.3vw,28px);line-height:1.15}
+.items .t em{display:block;font-style:normal;font-weight:400;font-stretch:100%;font-size:15px;color:var(--soft);margin-top:4px}
+.items .add{width:34px;height:34px;border:1.5px solid var(--ink);border-radius:4px;display:grid;place-items:center;font-size:22px;line-height:1;transition:background .15s}
+.items button[aria-pressed=true] .add{background:var(--blue);border-color:var(--blue);color:#fff}
+.items button[aria-pressed=true] .add::before{content:"\2713";font-size:17px}
+.items button[aria-pressed=false] .add::before{content:"+"}
+.items button:hover .t{color:var(--blue)}
+.tray{position:sticky;top:20px;background:var(--ice);border-radius:4px;padding:26px}
+.tray h3{font-size:22px;margin-bottom:6px}
+.tray .count{font-weight:800;font-stretch:125%;font-size:64px;line-height:1;color:var(--blue);margin:14px 0 2px}
+.tray ul{list-style:none;margin:14px 0 20px;font-size:15px;min-height:24px}
+.tray ul li{padding:6px 0;border-bottom:1px solid #C9D4F7}
+.tray .empty{color:var(--soft);font-size:15px}
+.tray img{border-radius:4px;aspect-ratio:3/2;object-fit:cover;margin-top:22px}
+
+/* events */
+.events{background:var(--ink);color:#fff}
+.events .wrap{display:grid;grid-template-columns:5fr 7fr;gap:56px}
+.events h2{color:#fff}
+.events p{color:#B9C0D0;max-width:28em}
+.events ul{list-style:none}
+.events li{font-weight:700;font-stretch:120%;font-size:clamp(24px,3.4vw,44px);line-height:1.1;padding:14px 0;border-bottom:1px solid #2a2f3a}
+.events li:first-child{border-top:1px solid #2a2f3a}
+
+/* photos */
+.duo .wrap{display:grid;grid-template-columns:4fr 7fr;gap:28px;align-items:end}
+.duo img{border-radius:4px;object-fit:cover;width:100%}
+.duo .a{aspect-ratio:4/5}
+.duo .b{aspect-ratio:3/2}
+.duo figcaption{font-size:14px;color:var(--soft);margin-top:10px}
+.duo{padding-bottom:0}
+
+/* how */
+.how ol{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);margin-top:36px;border-top:2px solid var(--ink)}
+.how li{padding:24px 28px 0 0}
+.how li+li{padding-left:28px;border-left:1px solid var(--line)}
+.how b{display:block;font-weight:800;font-stretch:125%;font-size:44px;color:var(--blue);line-height:1;margin-bottom:14px}
+.how h3{font-size:22px;margin-bottom:8px}
+.how p{color:var(--soft)}
+
+/* form */
+.book{background:var(--ice)}
+.book .wrap{display:grid;grid-template-columns:4fr 7fr;gap:56px}
+.book .intro p{color:var(--soft);margin-bottom:14px}
+form{display:grid;gap:18px;background:#fff;padding:32px;border-radius:4px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+label,legend{display:block;font-size:15px;font-weight:700;margin-bottom:6px}
+input,select,textarea{width:100%;font:16px Archivo,sans-serif;color:var(--ink);background:#fff;border:1px solid #C5CAD6;border-radius:4px;padding:11px 12px}
+textarea{min-height:110px;resize:vertical}
+fieldset{border:0}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:8px 18px}
+.checks label{display:flex;gap:10px;align-items:flex-start;font-weight:400;margin:0;font-size:15px;cursor:pointer}
+.checks input{width:18px;height:18px;margin-top:2px;flex:none;accent-color:var(--blue)}
+.sent{font-size:15px;font-weight:500;color:var(--blue);min-height:1.5em}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:5fr 6fr;gap:56px;align-items:start}
+.about .creds{max-width:none;margin:0;font-weight:800;font-stretch:125%;font-size:clamp(40px,6vw,76px);line-height:.95;color:var(--blue)}
+.about p{color:var(--soft);max-width:34em;margin-bottom:14px}
+.about dl{margin-top:22px;border-top:1px solid var(--line)}
+.about dl div{display:grid;grid-template-columns:80px 1fr;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.about dt{font-weight:800}
+
+footer{border-top:1px solid var(--line);padding:30px 0 44px;font-size:15px;color:var(--soft)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:900px){
+  nav{display:none}
+  .hero{padding-top:36px}
+  .hero .sub,.menu .head,.board,.events .wrap,.duo .wrap,.book .wrap,.about .wrap{grid-template-columns:1fr;gap:32px}
+  .hero .actions{justify-content:flex-start}
+  .hero .pic img{aspect-ratio:3/2}
+  .tray{position:static}
+  .how ol{grid-template-columns:1fr}
+  .how li,.how li+li{padding:24px 0;border-left:0;border-bottom:1px solid var(--line)}
+  section{padding:64px 0}
+}
+@media (max-width:560px){
+  header .btn{padding:10px 14px;font-size:14px}
+  .row,.checks{grid-template-columns:1fr}
+  form{padding:20px}
+  .items button{grid-template-columns:34px 1fr auto;gap:12px}
+}
+</style>
+</head>
+<body>
+<p class="note">Design preview made for Danielle Weis · photos are placeholders</p>
+
+<header><div class="wrap">
+  <a class="mark" href="#">Danielle Weis<small>PT, DPT, OCS</small></a>
+  <nav aria-label="Main"><a href="#menu">Activation menu</a><a href="#events">Events</a><a href="#how">How it works</a><a href="#about">About</a></nav>
+  <a class="btn" href="#book">Book an activation</a>
+</div></header>
+
+<main>
+<section class="hero" aria-labelledby="h"><div class="wrap">
+  <h1 id="h">Recovery stations for your next corporate event.</h1>
+  <div class="sub">
+    <p class="lede">Bring wellness, recovery, and a little luxury to your next corporate event. I'm Danielle Weis, a Doctor of Physical Therapy, and I now offer customized, interactive wellness activations that help guests recharge, relax and feel their best.</p>
+    <div class="actions">
+      <a class="btn" href="#book">Book an activation</a>
+      <a href="#menu">See the menu</a>
+    </div>
+  </div>
+  <div class="pic"><img src="img/station.jpg" alt="A wellness station at a corporate event with compression boots on a lounge chair and a massage chair" width="1600" height="1067"></div>
+</div></section>
+
+<section class="menu" id="menu" aria-labelledby="m-h"><div class="wrap">
+  <div class="head">
+    <h2 id="m-h">The activation menu</h2>
+    <p>Mix and match. Tap what you'd like at your event and it carries straight into your booking inquiry.</p>
+  </div>
+  <div class="board">
+    <ol class="items" id="items">
+      <li><button type="button" aria-pressed="false" data-v="Cupping therapy"><span class="n">01</span><span class="t">Cupping therapy</span><span class="add"></span></button></li>
+      <li><button type="button" aria-pressed="false" data-v="Therapeutic massage"><span class="n">02</span><span class="t">Therapeutic massage</span><span class="add"></span></button></li>
+      <li><button type="button" aria-pressed="false" data-v="Normatec compression boots"><span class="n">03</span><span class="t">Normatec compression boots</span><span class="add"></span></button></li>
+      <li><button type="button" aria-pressed="false" data-v="Kinesiology taping"><span class="n">04</span><span class="t">Kinesiology taping</span><span class="add"></span></button></li>
+      <li><button type="button" aria-pressed="false" data-v="Guided stretching and mobility"><span class="n">05</span><span class="t">Guided stretching and mobility sessions</span><span class="add"></span></button></li>
+      <li><button type="button" aria-pressed="false" data-v="Hydration boosters"><span class="n">06</span><span class="t">Hydration boosters</span><span class="add"></span></button></li>
+      <li><button type="button" aria-pressed="false" data-v="Immunity elixirs and wellness shots"><span class="n">07</span><span class="t">Immunity elixirs and wellness shots</span><span class="add"></span></button></li>
+      <li><button type="button" aria-pressed="false" data-v="Something else"><span class="n">08</span><span class="t">And more<em>Have something specific in mind? Ask.</em></span><span class="add"></span></button></li>
+    </ol>
+    <aside class="tray" aria-live="polite">
+      <h3>Your activation</h3>
+      <div class="count" id="count">0</div>
+      <p class="empty" id="countLabel">stations picked so far</p>
+      <ul id="picked"></ul>
+      <a class="btn" href="#book">Send these with an inquiry</a>
+      <img src="img/shots.jpg" alt="A tray of wellness shots and hydration drinks on a table" width="1600" height="1067" loading="lazy">
+    </aside>
+  </div>
+</div></section>
+
+<section class="events" id="events" aria-labelledby="e-h"><div class="wrap">
+  <div>
+    <h2 id="e-h">Made for the events you're already planning</h2>
+    <p>Every activation is customized to your event and your guests, so it fits whether it's a party or a retreat.</p>
+  </div>
+  <ul>
+    <li>Holiday parties</li>
+    <li>Employee appreciation events</li>
+    <li>Company retreats</li>
+    <li>Wellness-focused gatherings</li>
+    <li>Brand activations</li>
+  </ul>
+</div></section>
+
+<section class="duo" aria-label="Photos"><div class="wrap">
+  <figure><img class="a" src="img/cupping.jpg" alt="Clear cupping cups on a person's upper back and shoulder" width="1280" height="1600" loading="lazy"><figcaption>Cupping therapy</figcaption></figure>
+  <figure><img class="b" src="img/stretching.jpg" alt="Coworkers doing a guided standing stretch in an office, seen from behind" width="1600" height="1067" loading="lazy"><figcaption>Guided stretching and mobility</figcaption></figure>
+</div></section>
+
+<section class="how" id="how" aria-labelledby="h-h"><div class="wrap">
+  <h2 id="h-h">How booking works</h2>
+  <ol>
+    <li><b>1</b><h3>Tell us about your event</h3><p>The date, the crowd, the space and what you'd like guests to walk away feeling.</p></li>
+    <li><b>2</b><h3>Get a tailored plan</h3><p>You get a plan built around your event, with the right mix from the menu.</p></li>
+    <li><b>3</b><h3>We set up and run it</h3><p>On the day, we arrive, set up the stations and look after your guests.</p></li>
+  </ol>
+</div></section>
+
+<section class="book" id="book" aria-labelledby="b-h"><div class="wrap">
+  <div class="intro">
+    <h2 id="b-h">Book an activation</h2>
+    <p>Send the details and Danielle will follow up to shape the plan.</p>
+    <p>Or email <a href="mailto:wiseorthopt@gmail.com">wiseorthopt@gmail.com</a>.</p>
+  </div>
+  <form id="f" novalidate>
+    <div class="row">
+      <div><label for="n">Your name</label><input id="n" autocomplete="name"></div>
+      <div><label for="e">Work email</label><input id="e" type="email" autocomplete="email"></div>
+    </div>
+    <div class="row">
+      <div><label for="co">Company</label><input id="co" autocomplete="organization"></div>
+      <div><label for="ev">Event type</label><select id="ev">
+        <option>Holiday party</option><option>Employee appreciation event</option><option>Company retreat</option><option>Wellness-focused gathering</option><option>Brand activation</option><option>Something else</option>
+      </select></div>
+    </div>
+    <div class="row">
+      <div><label for="dt">Event date</label><input id="dt" type="date"></div>
+      <div><label for="g">Guest count</label><input id="g" type="number" min="1" inputmode="numeric" placeholder="Roughly how many"></div>
+    </div>
+    <div><label for="loc">Event location</label><input id="loc" placeholder="Venue or city"></div>
+    <fieldset>
+      <legend>Offerings of interest</legend>
+      <div class="checks" id="checks"></div>
+    </fieldset>
+    <div><label for="m">Anything else</label><textarea id="m"></textarea></div>
+    <div><button class="btn" type="submit">Send inquiry</button></div>
+    <p class="sent" id="sent" role="status"></p>
+  </form>
+</div></section>
+
+<section class="about" id="about" aria-labelledby="a-h"><div class="wrap">
+  <div>
+    <h2 id="a-h">About Danielle</h2>
+    <p class="creds">PT, DPT, OCS</p>
+  </div>
+  <div>
+    <p>Danielle Weis is a Doctor of Physical Therapy and an Orthopedic Clinical Specialist. She now brings that background to corporate events, with wellness activations designed to help guests recharge, relax and feel their best.</p>
+    <dl>
+      <div><dt>PT</dt><dd>Physical Therapist</dd></div>
+      <div><dt>DPT</dt><dd>Doctor of Physical Therapy</dd></div>
+      <div><dt>OCS</dt><dd>Orthopedic Clinical Specialist</dd></div>
+    </dl>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <span>Danielle Weis, PT, DPT, OCS. Corporate wellness activations.</span>
+  <a href="mailto:wiseorthopt@gmail.com">wiseorthopt@gmail.com</a>
+</div></footer>
+
+<script>
+const btns=[...document.querySelectorAll('#items button')];
+const checks=document.getElementById('checks');
+btns.forEach(b=>{
+  const l=document.createElement('label');
+  l.innerHTML='<input type="checkbox" name="off" value="'+b.dataset.v+'"> '+b.dataset.v;
+  checks.appendChild(l);
+});
+const boxes=[...checks.querySelectorAll('input')];
+function sync(){
+  const on=btns.filter(b=>b.getAttribute('aria-pressed')==='true').map(b=>b.dataset.v);
+  document.getElementById('count').textContent=on.length;
+  document.getElementById('countLabel').textContent=on.length===1?'station picked so far':'stations picked so far';
+  document.getElementById('picked').innerHTML=on.map(v=>'<li>'+v+'</li>').join('');
+  boxes.forEach(c=>c.checked=on.includes(c.value));
+}
+btns.forEach(b=>b.addEventListener('click',()=>{b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');sync()}));
+boxes.forEach(c=>c.addEventListener('change',()=>{
+  btns.find(b=>b.dataset.v===c.value).setAttribute('aria-pressed',c.checked?'true':'false');sync();
+}));
+document.getElementById('f').addEventListener('submit',e=>{
+  e.preventDefault();
+  document.getElementById('sent').textContent='Thanks. This is a design preview, so nothing was sent. On the live site this inquiry would go to Danielle by email.';
+});
+</script>
+</body>
+</html>
