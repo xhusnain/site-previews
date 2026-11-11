@@ -1,0 +1,1262 @@
+<!doctype html>
+<!--
+  Free website template by 8B: https://8b.com/templates/moth-marigold/
+  Source: https://github.com/8bsite/florist-website-template
+  MIT License (code) https://8b.com/ · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+  GSAP build (GSAP, ScrollTrigger, Lenis). The main file, index.html, is the same design without libraries.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Softly Arranged — flowers, experiences and event planning in Atlanta</title>
+<meta name="description" content="Softly Arranged by Teesha Prieto: custom flowers, pop-up flower bar experiences and event planning in Atlanta, Georgia and surrounding areas. Thoughtfully planned. Beautifully arranged.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Softly Arranged — flowers, experiences and event planning in Atlanta">
+<meta property="og:description" content="Softly Arranged by Teesha Prieto: custom flowers, pop-up flower bar experiences and event planning in Atlanta, Georgia and surrounding areas. Thoughtfully planned. Beautifully arranged.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%23331917'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23d4899a'%3ES%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/brygada1918/v27/pe0pMI6eKpdGqlF5LANrM--qBP5v.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsbDdQ.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Brygada 1918';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/brygada1918/v27/pe0pMI6eKpdGqlF5LANrM--qCf5vS1U.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Brygada 1918';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/brygada1918/v27/pe0pMI6eKpdGqlF5LANrM--qAP5vS1U.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Brygada 1918';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/brygada1918/v27/pe0pMI6eKpdGqlF5LANrM--qB_5vS1U.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Brygada 1918';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/brygada1918/v27/pe0pMI6eKpdGqlF5LANrM--qC_5vS1U.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Brygada 1918';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/brygada1918/v27/pe0pMI6eKpdGqlF5LANrM--qCv5vS1U.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Brygada 1918';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/brygada1918/v27/pe0pMI6eKpdGqlF5LANrM--qBP5v.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* fallback */
+@font-face {
+  font-family: 'Playwrite US Trad';
+  font-style: normal;
+  font-weight: 200 340;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playwriteustrad/v11/fdNk9tyHsnVPjW9trmV7wQ0stdwRBZ0r.woff2) format('woff2');
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 400 900;
+  font-stretch: 100% 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsvDddtC.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 400 900;
+  font-stretch: 100% 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsLDddtC.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 400 900;
+  font-stretch: 100% 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsXDddtC.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 400 900;
+  font-stretch: 100% 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsnDddtC.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 400 900;
+  font-stretch: 100% 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsjDddtC.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 400 900;
+  font-stretch: 100% 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsbDdQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #eecbc0;
+  --color-2: #331917;
+  --color-3: #d4899a;
+  --color-4: #7a1f3d;
+  --font-1: "TikTok Sans", "TikTok Sans Fallback", Arial, sans-serif;
+  --font-2: "Brygada 1918", "Brygada 1918 Fallback", Georgia, serif;
+  --font-3: "Playwrite US Trad", "Playwrite US Trad Fallback", Georgia, Arial, cursive;
+  --space-1: clamp(16px, 2vw, 28px);
+  --bn-h: 26px;
+  --nav-h: calc(60px + var(--bn-h));
+}
+@media (max-width: 640px) { :root { --nav-h: calc(56px + var(--bn-h)); } }
+@media (max-width: 520px) { :root { --bn-h: 34px; } }
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+/* fallback faces */
+@font-face { font-family: "TikTok Sans Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 105.5%; ascent-override: 94.8%; descent-override: 28.4%; line-gap-override: 0%; }
+@font-face { font-family: "TikTok Sans Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 106.8%; ascent-override: 93.7%; descent-override: 28.1%; line-gap-override: 0%; }
+@font-face { font-family: "TikTok Sans Fallback"; src: local("Arial Black"), local("Arial-Black"), local("Arial Bold"); font-weight: 800 1000; size-adjust: 113%; ascent-override: 88.5%; descent-override: 26.5%; line-gap-override: 0%; }
+@font-face { font-family: "Brygada 1918 Fallback"; src: local("Georgia"); font-weight: 100 549; size-adjust: 98.6%; ascent-override: 93.3%; descent-override: 25.4%; line-gap-override: 0%; }
+@font-face { font-family: "Playwrite US Trad Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 121.9%; ascent-override: 117.3%; descent-override: 41%; line-gap-override: 0%; }
+/* end fallback faces */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis-stopped { overflow: clip; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body { margin: 0; background: var(--color-1); color: var(--color-2); font-family: var(--font-1); font-size: 16px; line-height: 1.55; font-weight: 400; font-stretch: 100%; overflow-x: clip; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+button, input, textarea, select { font: inherit; color: inherit; }
+h1, h2, h3, h4, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip { position: absolute; left: var(--space-1); top: -60px; z-index: 100; background: var(--color-2); color: var(--color-1); padding: 10px 14px; }
+.skip:focus-visible { top: 10px; outline-color: var(--color-2); }
+.preview-banner { position: fixed; inset: 0 0 auto; z-index: 41; display: flex; align-items: center; justify-content: center; height: var(--bn-h); margin: 0; padding: 0 var(--space-1); background: var(--color-2); color: var(--color-1); font-family: var(--font-1); font-size: 12px; line-height: 1.25; letter-spacing: 0.02em; text-align: center; }
+@media (max-width: 520px) { .preview-banner { font-size: 11px; } }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: 16px; line-height: 1.55; font-weight: 400; font-stretch: 100%; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-2); font-size: clamp(34px, 4.6vw, 64px); line-height: 1; font-weight: 400; letter-spacing: -0.015em; text-transform: uppercase; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: 13px; line-height: 1.3; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; font-style: normal; }
+.m-text-4 { font-family: var(--font-2); font-size: clamp(20px, 2.2vw, 30px); line-height: 1.1; font-weight: 400; letter-spacing: -0.01em; text-transform: uppercase; font-style: normal; }
+.m-text-5 { font-family: var(--font-3); font-size: min(19vw, (100vw - 2 * var(--space-1)) / (var(--len, 10) * 0.6)); line-height: 1.75; font-weight: 200; font-stretch: 100%; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-3); white-space: nowrap; }
+.m-text-6 { font-family: var(--font-3); font-size: min(19vw, (100vw - 2 * var(--space-1)) / (var(--len, 10) * 0.6)); line-height: 1.75; font-weight: 200; font-stretch: 100%; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-4); white-space: nowrap; }
+.m-text-7 { font-family: var(--font-1); font-size: clamp(64px, 12vw, 180px); line-height: 0.86; font-weight: 900; font-stretch: 125%; letter-spacing: -0.02em; text-transform: uppercase; font-style: normal; }
+.m-text-8 { font-family: var(--font-1); font-size: 14px; line-height: 1.4; font-weight: 400; letter-spacing: 0.01em; text-transform: none; font-style: normal; opacity: 0.78; }
+
+.m-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 22px; border: 0; border-radius: 0; background: var(--color-2); color: var(--color-1); font-family: var(--font-1); font-size: 15px; font-weight: 500; letter-spacing: 0.01em; text-decoration: none; cursor: pointer; isolation: isolate; overflow: hidden; }
+.m-btn::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-3); clip-path: ellipse(40% 0% at 50% 100%); transition: clip-path .5s cubic-bezier(.5, 0, .1, 1); }
+.m-btn__label { position: relative; transition: color .3s; }
+.m-btn:focus-visible { outline-color: var(--color-2); }
+.m-btn-2 { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 22px; border: 0; border-radius: 0; background: var(--color-1); color: var(--color-2); font-family: var(--font-1); font-size: 15px; font-weight: 500; letter-spacing: 0.01em; text-decoration: none; cursor: pointer; isolation: isolate; overflow: hidden; }
+.m-btn-2::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-3); clip-path: ellipse(40% 0% at 50% 100%); transition: clip-path .5s cubic-bezier(.5, 0, .1, 1); }
+.m-btn-2:focus-visible { outline-color: var(--color-1); }
+@media (hover: hover) {
+  .m-btn:hover::before, .m-btn-2:hover::before { clip-path: ellipse(90% 150% at 50% 100%); }
+  .m-btn:hover .m-btn__label { color: var(--color-2); }
+}
+.m-link { display: inline; font-family: var(--font-1); font-size: 15px; font-weight: 500; letter-spacing: 0.01em; color: inherit; text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat; padding-bottom: 2px; }
+.m-link-2 { display: inline; font-family: var(--font-1); font-size: 15px; font-weight: 400; letter-spacing: 0; color: inherit; text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 0% 1px no-repeat; padding-bottom: 2px; }
+@media (hover: hover) {
+  .m-link:hover { animation: m-link-redraw .55s cubic-bezier(.6, 0, .2, 1); }
+  .m-link-2:hover { background-size: 100% 1px; transition: background-size .45s cubic-bezier(.6, 0, .2, 1); }
+}
+@keyframes m-link-redraw { 0% { background-size: 100% 1px; background-position: 100% 100%; } 45% { background-size: 0% 1px; background-position: 100% 100%; } 46% { background-position: 0 100%; } 100% { background-size: 100% 1px; background-position: 0 100%; } }
+.m-icon { display: inline-grid; place-items: center; width: 30px; height: 30px; flex: 0 0 30px; padding: 0; border: 1px solid currentColor; border-radius: 0; background: transparent; color: inherit; cursor: pointer; transition: background-color .3s, border-color .3s; }
+.m-icon svg { display: block; color: currentColor; transition: translate .35s cubic-bezier(.5, 0, .1, 1), color .3s; }
+@media (hover: hover) {
+  .m-icon:hover, a:hover > .m-icon { background-color: var(--color-3); border-color: var(--color-3); }
+  .m-icon:hover svg, a:hover > .m-icon svg { color: var(--color-2); translate: 3px 0; }
+}
+.m-rowlink { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0 0; color: inherit; text-decoration: none; font-family: var(--font-1); font-size: 16px; font-weight: 500; letter-spacing: 0; }
+.m-rowlink__line { position: absolute; left: 0; right: 0; top: 0; height: 1px; background: currentColor; transform-origin: 0 50%; }
+.m-rowlink__label { background: linear-gradient(currentColor, currentColor) 0 100% / 0% 1px no-repeat; padding-bottom: 2px; }
+@media (hover: hover) { .m-rowlink:hover .m-rowlink__label { background-size: 100% 1px; transition: background-size .45s cubic-bezier(.6, 0, .2, 1); } }
+.m-surface { background: var(--color-1); color: var(--color-2); padding: clamp(18px, 2.4vw, 32px); border-radius: 0; box-shadow: none; }
+.m-field { display: grid; gap: 4px; }
+.m-field__label { font-family: var(--font-1); font-size: 13px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; }
+.m-field__input { width: 100%; min-height: 40px; padding: 6px 0; border: 0; border-bottom: 1px solid currentColor; border-radius: 0; background: transparent; font-family: var(--font-1); font-size: 16px; }
+.m-field__input:focus-visible { outline: 2px solid var(--color-2); outline-offset: 2px; }
+textarea.m-field__input { min-height: 72px; resize: vertical; }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+#navigation { position: fixed; inset: var(--bn-h, 0px) 0 auto; z-index: 40; display: flex; align-items: center; gap: clamp(16px, 2.4vw, 34px); height: 60px; padding: 0 var(--space-1); background: var(--color-1); color: var(--color-2); transition: translate .45s cubic-bezier(.5, 0, .1, 1); }
+#navigation.is-hidden { translate: 0 -100%; }
+#navigation .nav__brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-family: var(--font-1); font-size: 15px; font-weight: 700; letter-spacing: 0.01em; }
+#navigation .nav__brand svg { width: 44px; height: 21px; display: block; }
+#navigation .nav__links { display: flex; gap: clamp(14px, 1.8vw, 26px); }
+#navigation .nav__cta { margin-left: auto; display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-size: 15px; font-weight: 500; }
+#navigation .nav__menu { display: none; margin-left: auto; }
+#navigation .nav__menu svg { width: 16px; height: 16px; }
+@media (max-width: 1080px) { #navigation .nav__links { display: none; } }
+@media (max-width: 640px) {
+  #navigation { height: 56px; }
+  #navigation .nav__cta { display: none; }
+  #navigation .nav__menu { display: inline-grid; }
+}
+@media (prefers-reduced-motion: reduce) { #navigation { transition: none; } }
+#navigation .menu { position: fixed; inset: 0; z-index: 60; display: flex; flex-direction: column; padding: 14px var(--space-1) 28px; background: var(--color-2); color: var(--color-1); overflow-y: auto; }
+#navigation .menu[hidden] { display: none; }
+#navigation .menu .menu__top { display: flex; justify-content: space-between; align-items: center; }
+#navigation .menu .menu__links { display: grid; gap: 6px; margin: auto 0; padding: 28px 0; }
+#navigation .menu .menu__links a { font-family: var(--font-2); font-size: clamp(30px, 9vw, 48px); line-height: 1.1; text-transform: uppercase; text-decoration: none; }
+#navigation .menu .menu__foot { display: grid; gap: 8px; }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; background: var(--color-2); color: var(--color-1); }
+#opening .op__hold { position: sticky; top: 0; z-index: 0; height: 100svh; min-height: 580px; display: flex; flex-direction: column; background: var(--color-1); color: var(--color-2); overflow: clip visible; }
+#opening .op__top { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: clamp(14px, 2.2vh, 26px) 24px; padding: calc(var(--nav-h, 60px) + clamp(12px, 3.4vh, 44px)) var(--space-1) clamp(16px, 2.8vh, 30px); }
+#opening .op__mark { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; font-size: min(9vw, (100vw - 2 * var(--space-1)) / (var(--len) * 0.71)); line-height: 0.8; }
+#opening .op__w, #opening .op__word { display: block; }
+#opening .op__and { position: relative; flex: 1 1 auto; align-self: stretch; min-width: 1.1em; }
+#opening .op__and-in { position: absolute; left: 50%; top: 50%; translate: -50% -54%; rotate: -9deg; font-size: 1.25em; line-height: 1; }
+#opening .op__tag { max-width: 22ch; }
+#opening .op__right { display: grid; justify-items: end; gap: clamp(12px, 2vh, 20px); text-align: right; }
+#opening .op__actions { display: flex; align-items: center; gap: 22px; }
+#opening .op__photo { position: relative; flex: 1 1 auto; min-height: 0; overflow: clip; }
+#opening .op__drift { position: absolute; inset: 0 -48px; }
+#opening .op__drift img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 58%; }
+#opening .op__night { position: relative; z-index: 1; min-height: 100svh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: clamp(18px, 3.4vh, 38px); padding: clamp(84px, 13vh, 150px) var(--space-1) clamp(56px, 9vh, 110px); background: var(--color-2); color: var(--color-1); text-align: center; overflow: clip; }
+#opening .op__statement { max-width: 32ch; font-size: clamp(24px, 3.1vw, 44px); }
+#opening .op__ribbon { align-self: stretch; text-align: center; }
+#opening .op__close { max-width: 40ch; }
+@media (max-width: 760px) {
+  #opening .op__top { grid-template-columns: 1fr; }
+  #opening .op__mark { flex-wrap: wrap; row-gap: 0.06em; font-size: min(17vw, (100vw - 2 * var(--space-1)) / (var(--len) * 0.39)); }
+  #opening .op__w--2 { flex: 0 0 100%; }
+  #opening .op__right { justify-items: start; text-align: left; }
+  #opening .op__tag--l { max-width: none; }
+  #opening .op__photo .op__drift img { object-position: 42% 50%; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op__word { animation: op-rise .9s cubic-bezier(.2, .7, .1, 1) backwards; }
+  #opening .op__w--2 .op__word { animation-delay: .07s; }
+  #opening .op__and-in { animation: op-and .75s .35s cubic-bezier(.2, .7, .1, 1) backwards, op-breathe 5.5s 1.1s ease-in-out infinite alternate; }
+  #opening .op__photo { animation: op-open 1.05s .1s cubic-bezier(.6, 0, .1, 1) backwards; }
+  #opening .op__drift { animation: op-drift 9s ease-in-out infinite alternate; }
+  #opening .op__tag, #opening .op__actions { animation: op-up .8s .2s cubic-bezier(.2, .7, .1, 1) backwards; }
+  #opening.is-off .op__drift, #opening.is-off .op__and-in { animation-play-state: paused; }
+}
+@keyframes op-rise { from { translate: 0 0.3em; } }
+@keyframes op-and { from { opacity: 0; scale: .55; } }
+@keyframes op-open { from { clip-path: inset(7% var(--space-1) 0 var(--space-1)); } }
+@keyframes op-up { from { opacity: 0; translate: 0 14px; } }
+@keyframes op-drift { from { transform: translateX(-40px); } to { transform: translateX(40px); } }
+@keyframes op-breathe { from { font-weight: 200; } to { font-weight: 340; } }
+}
+</style>
+<style data-8b-part="scene-style:dusk">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #opening[data-dusk] .op__night { will-change: clip-path; }
+}
+}
+</style>
+<style data-8b-part="section:season">
+@layer sections {
+#season { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); grid-template-rows: auto 1fr auto; gap: 0 clamp(24px, 4.5vw, 72px); padding: clamp(90px, 12vw, 170px) var(--space-1) clamp(80px, 10vw, 140px); background: var(--color-1); color: var(--color-2); }
+#season .bench__head { grid-column: 2; grid-row: 1; display: grid; gap: 18px; padding-bottom: clamp(34px, 6vh, 64px); }
+#season .bench__intro { max-width: 46ch; }
+#season .bench__frame { grid-column: 1; grid-row: 1 / 4; align-self: start; position: sticky; top: calc(var(--nav-h, 60px) + 3vh); height: min(80svh, 56vw); z-index: 2; }
+#season .bench__deck { position: relative; height: 100%; overflow: clip; background: var(--color-2); }
+#season .bench__ph { position: absolute; inset: 0; z-index: 0; overflow: clip; }
+#season .bench__ph:first-child { z-index: 1; }
+#season .bench__ph img { width: 100%; height: 100%; object-fit: cover; }
+#season .bench__rows { grid-column: 2; grid-row: 2; border-top: 1px solid currentColor; }
+#season .bench__row { display: grid; grid-template-columns: minmax(0, 1fr); align-content: center; gap: 10px; min-height: clamp(190px, 36svh, 330px); padding: 28px 0; border-bottom: 1px solid color-mix(in oklab, var(--color-2) 28%, transparent); }
+#season .bench__name { font-size: clamp(30px, 4.3vw, 62px); line-height: 1; }
+#season .bench__note { max-width: 42ch; }
+#season .bench__more { grid-column: 2; grid-row: 3; margin-top: clamp(30px, 4vw, 48px); }
+@media (max-width: 760px) {
+  #season { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; }
+  #season .bench__head, #season .bench__rows, #season .bench__more, #season .bench__frame { grid-column: 1; grid-row: auto; }
+  #season .bench__frame { top: 10px; height: 27svh; margin-bottom: 8px; }
+  #season .bench__row { min-height: 30svh; }
+}
+}
+</style>
+<style data-8b-part="section:work">
+@layer sections {
+#work { padding: clamp(90px, 12vw, 170px) var(--space-1) clamp(70px, 9vw, 120px); background: var(--color-2); color: var(--color-1); overflow: clip; }
+#work .work__head { display: grid; justify-items: center; gap: 18px; text-align: center; }
+#work .work__ribbon { text-align: center; margin: clamp(0px, 1vw, 12px) 0 clamp(18px, 3vw, 40px); }
+#work .work__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(30px, 4vw, 56px) 8px; }
+#work .work__ph { aspect-ratio: 4 / 5; overflow: clip; background: color-mix(in oklab, var(--color-1) 14%, var(--color-2)); }
+#work .work__ph img { width: 100%; height: 100%; object-fit: cover; }
+#work figcaption { display: grid; gap: 4px; padding-top: 12px; }
+#work .m-rowlink { margin-top: clamp(44px, 6vw, 84px); }
+@media (max-width: 760px) { #work .work__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 8px; } }
+}
+</style>
+<style data-8b-part="section:dusk">
+@layer sections {
+#dusk { background: var(--color-1); color: var(--color-2); }
+#dusk .dusk__head { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); align-items: end; gap: 18px clamp(24px, 4vw, 64px); padding: clamp(90px, 12vw, 170px) var(--space-1) clamp(30px, 5vw, 64px); }
+#dusk .dusk__head .m-text-3 { grid-column: 1 / -1; }
+#dusk .dusk__intro { max-width: 44ch; }
+#dusk .dusk__panel { position: relative; display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); grid-template-rows: auto 1fr; gap: 24px clamp(24px, 4vw, 64px); min-height: 88svh; padding: clamp(84px, 12vh, 124px) var(--space-1) clamp(40px, 7vh, 72px); overflow: clip; }
+#dusk .dusk__hour { grid-column: 1; grid-row: 1; font-size: clamp(72px, 14vw, 220px); white-space: nowrap; }
+#dusk .dusk__copy { grid-column: 1; grid-row: 2; align-self: end; display: grid; gap: 14px; max-width: 42ch; }
+#dusk .dusk__copy .m-text-4 { font-size: clamp(26px, 3vw, 42px); }
+#dusk .dusk__night { font-size: clamp(64px, 8.4vw, 128px); line-height: 1.25; margin-top: 4px; }
+#dusk .dusk__ph { grid-column: 2; grid-row: 1 / span 2; align-self: center; aspect-ratio: 4 / 5; max-height: 72svh; overflow: clip; }
+#dusk .dusk__ph img { width: 100%; height: 100%; object-fit: cover; }
+#dusk .dusk__panel:nth-child(2) { background: var(--color-3); color: var(--color-2); }
+#dusk .dusk__panel:nth-child(3) { background: var(--color-4); color: var(--color-1); }
+#dusk .dusk__panel:nth-child(4) { background: color-mix(in oklab, var(--color-4) 42%, var(--color-2)); color: var(--color-1); }
+#dusk .dusk__panel:nth-child(5) { background: var(--color-2); color: var(--color-1); }
+@media (max-width: 760px) {
+  #dusk .dusk__head { grid-template-columns: minmax(0, 1fr); }
+  #dusk .dusk__panel { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto 1fr; gap: 18px; min-height: 0; padding-top: 64px; padding-bottom: 48px; }
+  #dusk .dusk__hour { font-size: clamp(64px, 21vw, 96px); }
+  #dusk .dusk__ph { grid-column: 1; grid-row: 2; aspect-ratio: 4 / 3; max-height: 34svh; width: 100%; }
+  #dusk .dusk__copy { grid-row: 3; }
+  #dusk .dusk__night { font-size: clamp(52px, 16vw, 80px); }
+}
+}
+</style>
+<style data-8b-part="scene-style:hours">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #dusk[data-hours] .dusk__run { height: calc(100svh + (var(--panels, 5) - 1) * 80svh); }
+  #dusk[data-hours] .dusk__stage { position: sticky; top: 0; height: 100svh; overflow: clip; container-type: inline-size; }
+  #dusk[data-hours] .dusk__track { display: flex; width: max-content; height: 100%; }
+  #dusk[data-hours] .dusk__panel { flex: 0 0 100cqw; width: 100cqw; height: 100%; min-height: 0; }
+}
+}
+</style>
+<style data-8b-part="section:standing">
+@layer sections {
+#standing { padding: clamp(90px, 12vw, 170px) var(--space-1) clamp(80px, 10vw, 140px); background: var(--color-1); color: var(--color-2); }
+#standing .so__head { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); align-items: end; gap: 18px clamp(24px, 4vw, 64px); padding-bottom: clamp(36px, 5vw, 64px); }
+#standing .so__head .m-text-3 { grid-column: 1 / -1; }
+#standing .so__intro { max-width: 46ch; }
+#standing .so__cols { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 5fr) minmax(0, 2fr) minmax(0, 2fr) minmax(0, 1.4fr); gap: 0 24px; padding-bottom: 12px; opacity: .78; }
+#standing .so__row { position: relative; display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 5fr) minmax(0, 2fr) minmax(0, 2fr) minmax(0, 1.4fr); align-items: baseline; gap: 10px 24px; padding: clamp(22px, 3vw, 36px) 0; }
+#standing .so__line { position: absolute; left: 0; right: 0; top: 0; height: 1px; background: currentColor; transform-origin: 0 50%; }
+#standing .so__name { font-size: clamp(28px, 2.9vw, 42px); line-height: 1; }
+#standing .so__price { font-family: var(--font-2); font-size: clamp(20px, 1.9vw, 26px); line-height: 1.1; text-transform: uppercase; }
+#standing .so__row .m-link { justify-self: end; }
+#standing .so__foot { position: relative; padding-top: 18px; max-width: 60ch; }
+@media (max-width: 860px) {
+  #standing .so__head { grid-template-columns: minmax(0, 1fr); }
+  #standing .so__cols { display: none; }
+  #standing .so__row { grid-template-columns: minmax(0, 1fr) auto; }
+  #standing .so__what { grid-column: 1 / -1; }
+  #standing .so__row .m-link { justify-self: start; }
+}
+}
+</style>
+<style data-8b-part="section:events">
+@layer sections {
+#events { padding: clamp(90px, 12vw, 170px) var(--space-1) clamp(90px, 11vw, 150px); background: var(--color-2); color: var(--color-1); overflow: clip; }
+#events .ev__head { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 6fr); gap: 22px clamp(24px, 4vw, 64px); align-items: start; padding-bottom: clamp(44px, 6vw, 80px); }
+#events .ev__title { display: grid; gap: 18px; }
+#events .ev__side { display: grid; gap: 24px; justify-items: start; }
+#events .ev__kinds { display: grid; gap: 0; width: 100%; border-top: 1px solid color-mix(in oklab, var(--color-1) 40%, transparent); }
+#events .ev__kinds li { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 18px; padding: 14px 0; border-bottom: 1px solid color-mix(in oklab, var(--color-1) 40%, transparent); }
+#events .ev__board { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-areas: "a b c d" "a e f d"; gap: 8px; }
+#events .ev__ph { position: relative; aspect-ratio: 1; overflow: clip; background: color-mix(in oklab, var(--color-1) 14%, var(--color-2)); }
+#events .ev__ph:nth-child(1) { grid-area: a; aspect-ratio: auto; }
+#events .ev__ph:nth-child(2) { grid-area: b; }
+#events .ev__ph:nth-child(3) { grid-area: c; }
+#events .ev__ph:nth-child(4) { grid-area: d; aspect-ratio: auto; }
+#events .ev__ph:nth-child(5) { grid-area: e; }
+#events .ev__ph:nth-child(6) { grid-area: f; }
+#events .ev__ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 760px) {
+  #events .ev__head { grid-template-columns: minmax(0, 1fr); }
+  #events .ev__board { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-areas: "a b" "a c" "e d" "f d"; }
+}
+}
+</style>
+<style data-8b-part="section:school">
+@layer sections {
+#school { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 32px clamp(24px, 4vw, 64px); align-items: start; padding: clamp(90px, 12vw, 170px) var(--space-1) clamp(80px, 10vw, 140px); background: var(--color-4); color: var(--color-1); }
+#school .sc__body { display: grid; gap: 20px; justify-items: start; }
+#school .sc__lead { max-width: 46ch; }
+#school .sc__classes { width: 100%; margin-top: 12px; }
+#school .sc__class { position: relative; display: grid; grid-template-columns: 8.5em minmax(0, 1fr) auto; align-items: baseline; gap: 6px 20px; padding: 18px 0; }
+#school .sc__line { position: absolute; left: 0; right: 0; top: 0; height: 1px; background: currentColor; transform-origin: 0 50%; }
+#school .sc__class .m-text-4 { font-size: clamp(21px, 2vw, 28px); }
+#school .sc__ph { position: sticky; top: calc(var(--nav-h, 60px) + 4vh); aspect-ratio: 4 / 5; overflow: clip; background: color-mix(in oklab, var(--color-2) 40%, var(--color-4)); }
+#school .sc__ph img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%; }
+@media (max-width: 760px) {
+  #school { grid-template-columns: minmax(0, 1fr); }
+  #school .sc__ph { position: relative; top: auto; aspect-ratio: 4 / 3; }
+  #school .sc__class { grid-template-columns: minmax(0, 1fr) auto; }
+  #school .sc__class .m-text-4 { grid-column: 1 / -1; grid-row: 2; }
+}
+}
+</style>
+<style data-8b-part="section:notes">
+@layer sections {
+#notes { padding: clamp(90px, 12vw, 170px) var(--space-1) clamp(80px, 10vw, 140px); background: var(--color-2); color: var(--color-1); overflow: clip; }
+#notes .nt__head { display: grid; justify-items: center; gap: 18px; text-align: center; }
+#notes .nt__ribbon { text-align: center; margin: 0 0 clamp(18px, 3vw, 40px); }
+#notes .nt__feature { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(20px, 3vw, 48px); align-items: start; }
+#notes .nt__frame { position: sticky; top: calc(var(--nav-h, 60px) + 4vh); height: min(78svh, 62vw); overflow: clip; background: color-mix(in oklab, var(--color-1) 14%, var(--color-2)); }
+#notes .nt__frame img { width: 100%; height: 138%; object-fit: cover; }
+#notes .nt__letter { display: grid; gap: 18px; align-content: start; }
+#notes .nt__title { font-size: clamp(32px, 4vw, 56px); }
+#notes .nt__q { font-family: var(--font-2); font-size: clamp(19px, 1.7vw, 23px); line-height: 1.35; }
+#notes .nt__a { max-width: 58ch; }
+#notes .nt__sign { font-family: var(--font-3); font-size: clamp(30px, 3vw, 42px); line-height: 1.6; font-weight: 200; color: var(--color-4); }
+#notes .nt__more { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px clamp(20px, 3vw, 48px); margin-top: clamp(30px, 4vw, 56px); }
+#notes .nt__more li { display: grid; gap: 10px; align-content: start; padding-top: 18px; border-top: 1px solid color-mix(in oklab, var(--color-1) 40%, transparent); }
+@media (max-width: 760px) {
+  #notes .nt__feature, #notes .nt__more { grid-template-columns: minmax(0, 1fr); }
+  #notes .nt__frame { position: relative; top: auto; height: 62svh; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 24px clamp(24px, 4vw, 64px); padding: clamp(90px, 12vw, 170px) var(--space-1) clamp(80px, 10vw, 140px); background: var(--color-1); color: var(--color-2); }
+#faq .fq__head { display: grid; gap: 18px; align-content: start; }
+#faq .fq__item { position: relative; }
+#faq .fq__line { position: absolute; left: 0; right: 0; top: 0; height: 1px; background: currentColor; transform-origin: 0 50%; }
+#faq summary { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; cursor: pointer; list-style: none; }
+#faq summary::-webkit-details-marker { display: none; }
+#faq summary .m-text-4 { font-size: clamp(20px, 1.9vw, 26px); }
+#faq .fq__sign { position: relative; flex: 0 0 18px; height: 18px; }
+#faq .fq__sign::before, #faq .fq__sign::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1.5px; background: currentColor; transition: rotate .35s cubic-bezier(.5, 0, .1, 1); }
+#faq .fq__sign::after { rotate: 90deg; }
+#faq details[open] .fq__sign::after { rotate: 0deg; }
+#faq .fq__item p { max-width: 60ch; padding: 0 0 24px; }
+#faq .fq__list { border-bottom: 1px solid currentColor; }
+@media (max-width: 760px) { #faq { grid-template-columns: minmax(0, 1fr); } }
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { position: relative; display: grid; place-items: center; min-height: 100svh; padding: clamp(100px, 14vh, 160px) var(--space-1); background: var(--color-2); color: var(--color-2); overflow: clip; }
+#contact .ct__room { position: absolute; inset: 0; z-index: 0; overflow: clip; }
+#contact .ct__room img { width: 100%; height: 100%; object-fit: cover; }
+#contact .ct__card { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 26px clamp(24px, 3.5vw, 52px); width: min(100%, 1040px); }
+#contact .ct__top { grid-column: 1 / -1; display: grid; gap: 14px; }
+#contact .ct__form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 24px; align-content: start; }
+#contact .ct__wide { grid-column: 1 / -1; }
+#contact .ct__form .m-btn { justify-self: start; }
+#contact .ct__done { grid-column: 1 / -1; }
+#contact .ct__info { display: grid; gap: 16px; align-content: start; padding-left: clamp(0px, 2vw, 28px); border-left: 1px solid color-mix(in oklab, var(--color-2) 30%, transparent); }
+#contact .ct__info div { display: grid; gap: 4px; }
+#contact .ct__info dd { margin: 0; }
+@media (max-width: 760px) {
+  #contact { display: block; min-height: 0; padding: 0 0 48px; }
+  #contact .ct__room { position: relative; height: 56svh; }
+  #contact .ct__card { grid-template-columns: minmax(0, 1fr); width: auto; margin: -72px var(--space-1) 0; }
+  #contact .ct__form { grid-template-columns: minmax(0, 1fr); }
+  #contact .ct__info { padding-left: 0; border-left: 0; padding-top: 18px; border-top: 1px solid color-mix(in oklab, var(--color-2) 30%, transparent); }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { background: var(--color-2); color: var(--color-1); padding: clamp(56px, 9vw, 120px) var(--space-1) 22px; overflow: clip; }
+#footer .ft__mark { display: grid; grid-template-columns: 33fr 15fr 52fr; height: clamp(170px, 33vw, 470px); color: var(--color-1); }
+#footer .ft__rect, #footer .ft__bar, #footer .ft__dome { display: block; background: currentColor; }
+#footer .ft__bar { align-self: center; height: 5%; }
+#footer .ft__dome { border-radius: 50% 50% 0 0 / 100% 100% 0 0; }
+#footer .ft__cols { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px 24px; padding: clamp(28px, 4vw, 44px) 0; }
+#footer .ft__col { display: grid; align-content: start; gap: 8px; }
+#footer .ft__col .m-text-3 { margin-bottom: 6px; opacity: .78; }
+#footer .ft__col a { justify-self: start; overflow-wrap: anywhere; }
+#footer .ft__base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; padding-top: 16px; border-top: 1px solid color-mix(in oklab, var(--color-1) 35%, transparent); }
+@media (max-width: 760px) { #footer .ft__cols { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<p class="preview-banner" role="note">Design preview made for Softly Arranged · photos are placeholders</p>
+<!-- navigation: top bar: brand mark and name, section links, Start an inquiry button; phone menu overlay with service area and Instagram -->
+<header id="navigation" data-8b-section="navigation">
+  <a class="nav__brand" href="#opening" aria-label="Softly Arranged, to the top">
+    <svg viewBox="0 0 46 22" aria-hidden="true"><rect x="0" y="0" width="15" height="22" fill="currentColor"/><rect x="15" y="10" width="7" height="2" fill="currentColor"/><path d="M22 22 A12 22 0 0 1 46 22 Z" fill="currentColor"/></svg>
+    <span>Softly Arranged</span>
+  </a>
+  <nav class="nav__links" aria-label="Main">
+    <a class="m-link-2" href="#season">Flowers</a>
+    <a class="m-link-2" href="#work">Our work</a>
+    <a class="m-link-2" href="#dusk">How it works</a>
+    <a class="m-link-2" href="#events">Event planning</a>
+    <a class="m-link-2" href="#school">Flower bar</a>
+    <a class="m-link-2" href="#notes">Meet Teesha</a>
+  </nav>
+  <a class="nav__cta" href="#contact">Start an inquiry <span class="m-icon" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a>
+  <button class="nav__menu m-icon" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open the menu"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 4.5h14M1 11.5h14" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+  <div class="menu" id="menu" data-lenis-prevent hidden role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="menu__top">
+      <span class="m-text-3">Softly Arranged</span>
+      <button class="menu__close m-icon" type="button" aria-label="Close the menu"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    </div>
+    <nav class="menu__links" aria-label="Menu">
+      <a href="#season">Flowers</a>
+      <a href="#work">Our work</a>
+      <a href="#dusk">How it works</a>
+      <a href="#events">Event planning</a>
+      <a href="#school">Flower bar</a>
+      <a href="#notes">Meet Teesha</a>
+      <a href="#contact">Start an inquiry</a>
+    </nav>
+    <div class="menu__foot">
+      <p class="m-text-8">Atlanta, Georgia and surrounding areas</p>
+      <a class="m-link" href="https://www.instagram.com/softlyarranged/">@softlyarranged on Instagram</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<!-- opening: first screen: width-filling brand wordmark, two taglines, two actions and a photo; then a dark statement screen ("beautifully arranged") (animation: scene:dusk) -->
+<section id="opening" data-8b-section="opening" aria-label="Softly Arranged">
+  <div class="op__hold">
+    <div class="op__top">
+      <h1 class="op__mark m-text-7" style="--len:18">
+        <span class="op__w op__w--1"><span class="op__word">Softly</span></span>
+        <span class="op__and" aria-hidden="true"><span class="op__and-in m-text-6">~</span></span>
+        <span class="op__w op__w--2"><span class="op__word">Arranged</span></span>
+      </h1>
+      <p class="op__tag op__tag--l m-text-4">Flowers, experiences<br>&amp; events</p>
+      <div class="op__right">
+        <p class="op__tag op__tag--r m-text-4">Atlanta, Georgia<br>&amp; surrounding areas</p>
+        <div class="op__actions">
+          <a class="m-btn" href="#contact"><span class="m-btn__label">Start an inquiry</span></a>
+          <a class="m-link" href="#standing">Explore services</a>
+        </div>
+      </div>
+    </div>
+    <figure class="op__photo">
+      <div class="op__drift"><img style="background:#260c0c" src="img/sa-00.jpg" width="1350" height="900" alt="Roses arranged on an event table" fetchpriority="high"></div>
+    </figure>
+  </div>
+  <div class="op__night">
+    <p class="op__label m-text-3">Flowers. Experiences. Events.</p>
+    <p class="op__statement m-text-4">Softly Arranged is Teesha Prieto: your event planner and florist, bringing over seven years of experience to meaningful celebrations.</p>
+    <p class="op__ribbon m-text-5" aria-hidden="true" style="--len:20">beautifully arranged</p>
+    <p class="op__close m-text-3">Thoughtfully planned. Beautifully arranged.</p>
+  </div>
+</section>
+<!-- season: the flowers menu: six options beside one held photo frame (animation: scene:bench) -->
+<section id="season" data-8b-section="season" aria-labelledby="season-title">
+  <header class="bench__head">
+    <p class="m-text-3">The flowers menu</p>
+    <h2 id="season-title" class="m-text-2" data-8b-motion="lift">Roses and custom bouquets</h2>
+    <p class="bench__intro m-text">Every order is custom. Choose your colors, occasion and preferred date. We'll contact you to discuss design, availability and pricing.</p>
+  </header>
+  <div class="bench__frame">
+    <div class="bench__deck">
+      <figure class="bench__ph"><img style="background:#0c260c" src="img/sa-01.jpg" width="960" height="1440" alt="A bouquet of twelve roses" loading="lazy"></figure>
+      <figure class="bench__ph"><img style="background:#26260c" src="img/sa-02.jpg" width="1024" height="1536" alt="A bouquet of twenty-four roses" loading="lazy"></figure>
+      <figure class="bench__ph"><img style="background:#8cc040" src="img/sa-03.jpg" width="960" height="1440" alt="An arrangement of fifty roses" loading="lazy"></figure>
+      <figure class="bench__ph"><img style="background:#a67359" src="img/sa-04.jpg" width="1024" height="1536" alt="An arrangement of one hundred roses" loading="lazy"></figure>
+      <figure class="bench__ph"><img style="background:#262626" src="img/sa-05.jpg" width="720" height="1080" alt="A large display of several hundred roses" loading="lazy"></figure>
+      <figure class="bench__ph"><img style="background:#59730c" src="img/sa-06.jpg" width="1024" height="1536" alt="A custom bouquet of mixed flowers" loading="lazy"></figure>
+    </div>
+  </div>
+  <ol class="bench__rows">
+    <li class="bench__row">
+      <h3 class="bench__name m-text-4">12 Roses</h3>
+      <p class="m-text-8">One dozen · Inquire</p>
+      <p class="bench__note m-text">A dozen roses in the colors you choose, arranged for your occasion.</p>
+    </li>
+    <li class="bench__row">
+      <h3 class="bench__name m-text-4">24 Roses</h3>
+      <p class="m-text-8">Two dozen · Inquire</p>
+      <p class="bench__note m-text">Two dozen roses for a fuller arrangement, in your colors.</p>
+    </li>
+    <li class="bench__row">
+      <h3 class="bench__name m-text-4">50 Roses</h3>
+      <p class="m-text-8">Fifty stems · Inquire</p>
+      <p class="bench__note m-text">Fifty roses for a gesture that fills the room.</p>
+    </li>
+    <li class="bench__row">
+      <h3 class="bench__name m-text-4">100 Roses</h3>
+      <p class="m-text-8">One hundred stems · Inquire</p>
+      <p class="bench__note m-text">One hundred roses, arranged around your occasion and date.</p>
+    </li>
+    <li class="bench__row">
+      <h3 class="bench__name m-text-4">200–400 Roses</h3>
+      <p class="m-text-8">For the biggest moments · Custom quote</p>
+      <p class="bench__note m-text">Hundreds of roses for the moments that call for something unforgettable.</p>
+    </li>
+    <li class="bench__row">
+      <h3 class="bench__name m-text-4">Custom Bouquet</h3>
+      <p class="m-text-8">Your colors, your occasion · Inquire</p>
+      <p class="bench__note m-text">Tell us the colors, the occasion and the date, and we'll design a bouquet around them.</p>
+    </li>
+  </ol>
+  <a class="bench__more m-rowlink" href="#contact"><span class="m-rowlink__line" aria-hidden="true"></span><span class="m-rowlink__label">Start a flower order</span><span class="m-icon" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a>
+</section>
+
+<!-- work: grid of six kinds of work, each with a title and a short caption (animation: scene:drift) -->
+<section id="work" data-8b-section="work" aria-labelledby="work-title">
+  <header class="work__head">
+    <p class="m-text-3">Our work</p>
+    <h2 id="work-title" class="m-text-2" data-8b-motion="lift">Made for the occasion</h2>
+  </header>
+  <p class="work__ribbon m-text-5" aria-hidden="true" data-8b-motion="ribbon" style="--len:14">every occasion</p>
+  <ul class="work__grid">
+    <li class="work__item"><figure><div class="work__ph"><img style="background:#262626" src="img/sa-07.jpg" width="960" height="1440" alt="Guests choosing stems at a rooftop pop-up flower bar" loading="lazy"></div><figcaption><span class="m-text-3">Shades of Brown rooftop event</span><span class="m-text-8">A pop-up flower bar for the guests</span></figcaption></figure></li>
+    <li class="work__item"><figure><div class="work__ph"><img style="background:#f3f3f3" src="img/sa-08.jpg" width="900" height="1350" alt="A custom bouquet in soft colors" loading="lazy"></div><figcaption><span class="m-text-3">Custom bouquet</span><span class="m-text-8">Your colors, your occasion</span></figcaption></figure></li>
+    <li class="work__item"><figure><div class="work__ph"><img style="background:#404040" src="img/sa-09.jpg" width="900" height="1350" alt="Flowers set up for a bridal shower" loading="lazy"></div><figcaption><span class="m-text-3">Bridal shower</span><span class="m-text-8">Flowers or a flower bar for the guests</span></figcaption></figure></li>
+    <li class="work__item"><figure><div class="work__ph"><img style="background:#594040" src="img/sa-10.jpg" width="1024" height="1536" alt="Floral arrangements at a corporate gathering" loading="lazy"></div><figcaption><span class="m-text-3">Corporate gathering</span><span class="m-text-8">Planning, coordination and flowers</span></figcaption></figure></li>
+    <li class="work__item"><figure><div class="work__ph"><img style="background:#d9d9d9" src="img/sa-11.jpg" width="1024" height="1536" alt="A tall floral stand" loading="lazy"></div><figcaption><span class="m-text-3">Floral stand</span><span class="m-text-8">A standing arrangement for your event</span></figcaption></figure></li>
+    <li class="work__item"><figure><div class="work__ph"><img style="background:#a6a6a6" src="img/sa-12.jpg" width="800" height="1200" alt="A pop-up flower shop with buckets of fresh flowers" loading="lazy"></div><figcaption><span class="m-text-3">Pop-up flower shop</span><span class="m-text-8">Fresh flowers, set up at your event</span></figcaption></figure></li>
+  </ul>
+  <a class="m-rowlink" href="https://www.instagram.com/softlyarranged/"><span class="m-rowlink__line" aria-hidden="true" data-8b-motion="rule"></span><span class="m-rowlink__label">See more on Instagram</span><span class="m-icon" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a>
+</section>
+
+<!-- dusk: how it works: five step panels (01 to 05) on a horizontal track, each a shade darker (animation: scene:hours) -->
+<section id="dusk" data-8b-section="dusk" aria-labelledby="dusk-title">
+  <header class="dusk__head">
+    <p class="m-text-3">How it works</p>
+    <h2 id="dusk-title" class="m-text-2" data-8b-motion="lift">From inquiry to celebration</h2>
+    <p class="dusk__intro m-text">Whether it is a bouquet, a flower bar or a whole event, every order starts the same way: with your colors, your occasion and your date.</p>
+  </header>
+  <div class="dusk__run">
+    <div class="dusk__stage">
+      <ol class="dusk__track">
+        <li class="dusk__panel">
+          <p class="dusk__hour m-text-7">01</p>
+          <div class="dusk__copy"><h3 class="m-text-4">Inquire</h3><p class="m-text">Tell us what we can arrange: flowers, an experience or event planning, with your date, occasion and vision.</p></div>
+          <figure class="dusk__ph"><img style="background:#260c26" src="img/sa-13.jpg" width="1536" height="1024" alt="A notebook and fresh flowers, ready for an inquiry" loading="lazy"></figure>
+        </li>
+        <li class="dusk__panel">
+          <p class="dusk__hour m-text-7">02</p>
+          <div class="dusk__copy"><h3 class="m-text-4">Consult</h3><p class="m-text">We'll contact you to talk through colors, occasion and your preferred date, and to discuss design, availability and pricing.</p></div>
+          <figure class="dusk__ph"><img style="background:#26260c" src="img/sa-14.jpg" width="1440" height="960" alt="Color choices and flowers laid out for a consultation" loading="lazy"></figure>
+        </li>
+        <li class="dusk__panel">
+          <p class="dusk__hour m-text-7">03</p>
+          <div class="dusk__copy"><h3 class="m-text-4">Design</h3><p class="m-text">Every order is custom. Your flowers or your event are planned around your culture, your style and your priorities.</p></div>
+          <figure class="dusk__ph"><img style="background:#d9d9d9" src="img/sa-15.jpg" width="1536" height="1024" alt="Hands arranging a custom bouquet" loading="lazy"></figure>
+        </li>
+        <li class="dusk__panel">
+          <p class="dusk__hour m-text-7">04</p>
+          <div class="dusk__copy"><h3 class="m-text-4">Set up on the day</h3><p class="m-text">For events, Teesha and her team bring it together with trusted vendor connections, so you can be a guest at your own celebration.</p></div>
+          <figure class="dusk__ph"><img style="background:#a6a6a6" src="img/sa-16.jpg" width="1350" height="900" alt="Flowers being set up at an event venue" loading="lazy"></figure>
+        </li>
+        <li class="dusk__panel">
+          <p class="dusk__hour m-text-7">05</p>
+          <div class="dusk__copy"><h3 class="m-text-4">Celebrate</h3><p class="m-text">Enjoy the day. At a flower bar, every guest leaves with a bouquet they built themselves, wrapped to take home.</p><p class="dusk__night m-text-5" aria-hidden="true" style="--len:9">celebrate</p></div>
+          <figure class="dusk__ph"><img style="background:#260c0c" src="img/sa-17.jpg" width="1536" height="1024" alt="A guest holding a wrapped bouquet to take home" loading="lazy"></figure>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+<!-- standing: the three services as table rows (Flowers, Experiences, Event Planning) -->
+<section id="standing" data-8b-section="standing" aria-labelledby="standing-title">
+  <div class="so__head">
+    <p class="m-text-3">What we arrange</p>
+    <h2 id="standing-title" class="m-text-2" data-8b-motion="lift">Flowers. Experiences. Events.</h2>
+    <p class="so__intro m-text">Three ways to work with Softly Arranged. Every order is custom, so pricing is discussed once we know your colors, occasion and date.</p>
+  </div>
+  <div class="so__cols m-text-3" aria-hidden="true"><span>Service</span><span>What it is</span><span>Good for</span><span>Pricing</span><span></span></div>
+  <ul class="so__rows">
+    <li class="so__row">
+      <span class="so__line" aria-hidden="true" data-8b-motion="rule"></span>
+      <h3 class="so__name m-text-4">Flowers</h3>
+      <p class="so__what m-text">Roses from a dozen to hundreds of stems, custom bouquets, floral stands and a pop-up flower shop.</p>
+      <p class="m-text-8">Gifts, occasions and events</p>
+      <p class="so__price">Custom quote</p>
+      <a class="m-link" href="#contact">Order flowers</a>
+    </li>
+    <li class="so__row">
+      <span class="so__line" aria-hidden="true" data-8b-motion="rule"></span>
+      <h3 class="so__name m-text-4">Experiences</h3>
+      <p class="so__what m-text">A pop-up flower bar: guests build their own bouquet from a bar of fresh stems, wrapped to take home.</p>
+      <p class="m-text-8">Rooftop parties, showers, brand and community events</p>
+      <p class="so__price">Custom quote</p>
+      <a class="m-link" href="#contact">Book a flower bar</a>
+    </li>
+    <li class="so__row">
+      <span class="so__line" aria-hidden="true" data-8b-motion="rule"></span>
+      <h3 class="so__name m-text-4">Event Planning</h3>
+      <p class="so__what m-text">Planning and coordination with Teesha's team and trusted vendor connections, shaped around your culture, style and priorities.</p>
+      <p class="m-text-8">Intimate gatherings to corporate events</p>
+      <p class="so__price">Custom quote</p>
+      <a class="m-link" href="#contact">Plan an event</a>
+    </li>
+  </ul>
+  <p class="so__foot m-text-8"><span class="so__line" aria-hidden="true" data-8b-motion="rule"></span>Serving Atlanta, Georgia and surrounding areas.</p>
+</section>
+
+<!-- events: event planning services, a button, and a board of six event photos (animation: scene:gather) -->
+<section id="events" data-8b-section="events" aria-labelledby="events-title">
+  <div class="ev__head">
+    <div class="ev__title">
+      <p class="m-text-3">Event planning</p>
+      <h2 id="events-title" class="m-text-2" data-8b-motion="lift">From intimate gatherings to corporate events</h2>
+    </div>
+    <div class="ev__side">
+      <p class="m-text">Planning and coordination by Teesha and her team, with trusted vendor connections. Every occasion is created to reflect your culture, your style and your priorities.</p>
+      <ul class="ev__kinds">
+        <li><span class="m-text-4">Planning &amp; coordination</span><span class="m-text-8">Custom quote</span></li>
+        <li><span class="m-text-4">Floral stands</span><span class="m-text-8">Inquire</span></li>
+        <li><span class="m-text-4">Pop-up flower shop</span><span class="m-text-8">Inquire</span></li>
+      </ul>
+      <a class="m-btn-2" href="#contact"><span class="m-btn__label">Plan an event</span></a>
+    </div>
+  </div>
+  <ul class="ev__board">
+    <li class="ev__ph"><img style="background:#26260c" src="img/sa-18.jpg" width="800" height="1200" alt="A floral stand at an event" loading="lazy"></li>
+    <li class="ev__ph"><img style="background:#40260c" src="img/sa-19.jpg" width="960" height="1440" alt="Guests gathered around a table decorated with flowers" loading="lazy"></li>
+    <li class="ev__ph"><img style="background:#c0a68c" src="img/sa-20.jpg" width="800" height="1200" alt="An event space decorated with flowers" loading="lazy"></li>
+    <li class="ev__ph"><img style="background:#26260c" src="img/sa-21.jpg" width="960" height="1440" alt="A table set with flowers and candles for a gathering" loading="lazy"></li>
+    <li class="ev__ph"><img style="background:#260c0c" src="img/sa-22.jpg" width="800" height="1200" alt="A pop-up flower shop at an event" loading="lazy"></li>
+    <li class="ev__ph"><img style="background:#260c0c" src="img/sa-23.jpg" width="900" height="1350" alt="Guests celebrating at a decorated event" loading="lazy"></li>
+  </ul>
+</section>
+
+<!-- school: experiences: the pop-up flower bar, the occasions it suits, a button and one photo -->
+<section id="school" data-8b-section="school" aria-labelledby="school-title">
+  <div class="sc__body">
+    <p class="m-text-3">Experiences</p>
+    <h2 id="school-title" class="m-text-2" data-8b-motion="lift">A pop-up flower bar</h2>
+    <p class="sc__lead m-text">Guests build their own bouquet from a bar of fresh stems, and each one is wrapped to take home. Most recently, a pop-up flower bar at the Shades of Brown rooftop event.</p>
+    <ul class="sc__classes">
+      <li class="sc__class"><span class="sc__line" aria-hidden="true" data-8b-motion="rule"></span><span class="m-text-3">Good for</span><span class="m-text-4">Rooftop parties</span><span class="m-text">Inquire</span></li>
+      <li class="sc__class"><span class="sc__line" aria-hidden="true" data-8b-motion="rule"></span><span class="m-text-3">Good for</span><span class="m-text-4">Bridal &amp; baby showers</span><span class="m-text">Inquire</span></li>
+      <li class="sc__class"><span class="sc__line" aria-hidden="true" data-8b-motion="rule"></span><span class="m-text-3">Good for</span><span class="m-text-4">Brand events</span><span class="m-text">Inquire</span></li>
+      <li class="sc__class"><span class="sc__line" aria-hidden="true" data-8b-motion="rule"></span><span class="m-text-3">Good for</span><span class="m-text-4">Community gatherings</span><span class="m-text">Inquire</span></li>
+    </ul>
+    <a class="m-btn-2" href="#contact"><span class="m-btn__label">Book a flower bar</span></a>
+  </div>
+  <figure class="sc__ph" data-8b-motion="window"><img style="background:#f3f3f3" src="img/sa-24.jpg" width="1200" height="800" alt="Guests building their own bouquets at a pop-up flower bar" loading="lazy"></figure>
+</section>
+<!-- notes: about: Meet Teesha beside a tall photo, two short notes (animation: scene:letter) -->
+<section id="notes" data-8b-section="notes" aria-labelledby="notes-title">
+  <header class="nt__head">
+    <p class="m-text-3">Your event planner and florist</p>
+    <h2 id="notes-title" class="m-text-2" data-8b-motion="lift">Meet Teesha</h2>
+  </header>
+  <p class="nt__ribbon m-text-5" aria-hidden="true" data-8b-motion="ribbon" style="--len:11">meet teesha</p>
+  <article class="nt__feature">
+    <div class="nt__frame"><img style="background:#26260c" src="img/sa-25.jpg" width="800" height="1200" alt="A florist holding a bouquet" loading="lazy"></div>
+    <div class="nt__letter m-surface">
+      <p class="m-text-3">Founder, Softly Arranged</p>
+      <h3 class="nt__title m-text-2">Teesha Prieto</h3>
+      <p class="nt__q">“Your event planner and florist, bringing over seven years of experience to meaningful celebrations.”</p>
+      <p class="nt__a m-text">Teesha brings more than ten years in hospitality and six in event planning to every order. With her team and trusted vendor connections, she plans and coordinates occasions from intimate gatherings to corporate events.</p>
+      <p class="nt__a m-text">Each one is created to reflect the people in it: their culture, their style and their priorities. Flowers, experiences and events, thoughtfully planned and beautifully arranged.</p>
+      <p class="nt__sign" aria-hidden="true">Teesha</p>
+      <a class="m-rowlink" href="https://www.instagram.com/softlyarranged/"><span class="m-rowlink__line" aria-hidden="true"></span><span class="m-rowlink__label">Follow @softlyarranged</span><span class="m-icon" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a>
+    </div>
+  </article>
+  <ul class="nt__more">
+    <li><p class="m-text-3">Experience</p><h3 class="m-text-4">Hospitality first</h3><p class="m-text">Over ten years in hospitality and six in event planning, now brought together as Softly Arranged.</p></li>
+    <li><p class="m-text-3">Recently</p><h3 class="m-text-4">Shades of Brown rooftop</h3><p class="m-text">A pop-up flower bar for the guests at the Shades of Brown rooftop event.</p></li>
+  </ul>
+</section>
+
+<!-- faq: questions and answers (native <details>) -->
+<section id="faq" data-8b-section="faq" aria-labelledby="faq-title">
+  <div class="fq__head">
+    <p class="m-text-3">Questions</p>
+    <h2 id="faq-title" class="m-text-2" data-8b-motion="lift">Before you inquire</h2>
+    <p class="m-text">Anything else, ask in the inquiry form and we'll contact you.</p>
+  </div>
+  <div class="fq__list">
+    <details class="fq__item"><summary><span class="fq__line" aria-hidden="true" data-8b-motion="rule"></span><span class="m-text-4">How much does an order cost?</span><span class="fq__sign" aria-hidden="true"></span></summary><p class="m-text">Every order is custom. Choose your colors, occasion and preferred date, and we'll contact you to discuss design, availability and pricing.</p></details>
+    <details class="fq__item"><summary><span class="fq__line" aria-hidden="true" data-8b-motion="rule"></span><span class="m-text-4">Where do you work?</span><span class="fq__sign" aria-hidden="true"></span></summary><p class="m-text">Atlanta, Georgia and surrounding areas.</p></details>
+    <details class="fq__item"><summary><span class="fq__line" aria-hidden="true" data-8b-motion="rule"></span><span class="m-text-4">What can you arrange for my event?</span><span class="fq__sign" aria-hidden="true"></span></summary><p class="m-text">Flowers, a pop-up flower bar experience, or full event planning and coordination, from intimate gatherings to corporate events.</p></details>
+    <details class="fq__item"><summary><span class="fq__line" aria-hidden="true" data-8b-motion="rule"></span><span class="m-text-4">How does the flower bar work?</span><span class="fq__sign" aria-hidden="true"></span></summary><p class="m-text">Guests build their own bouquet from a bar of fresh stems, and each bouquet is wrapped to take home.</p></details>
+    <details class="fq__item"><summary><span class="fq__line" aria-hidden="true" data-8b-motion="rule"></span><span class="m-text-4">How do I start?</span><span class="fq__sign" aria-hidden="true"></span></summary><p class="m-text">Fill in the inquiry form below with what we can arrange, your date, occasion and vision. You can also find us on Instagram at @softlyarranged.</p></details>
+  </div>
+</section>
+
+<!-- contact: inquiry form on a card over a photo, with service area and Instagram (animation: scene:card) -->
+<section id="contact" data-8b-section="contact" aria-labelledby="contact-title">
+  <figure class="ct__room"><img style="background:#404026" src="img/sa-26.jpg" width="1536" height="1024" alt="Fresh flowers and arrangements on a counter" loading="lazy"></figure>
+  <div class="ct__card m-surface">
+    <div class="ct__top">
+      <p class="m-text-3">Inquire</p>
+      <h2 id="contact-title" class="m-text-2">What can we arrange?</h2>
+    </div>
+    <form data-8b-placeholder="form" class="ct__form" action="#contact" method="post">
+      <label class="m-field ct__wide"><span class="m-field__label">What can we arrange?</span><select class="m-field__input" name="service" required><option>Flowers</option><option>Experiences</option><option>Event Planning</option></select></label>
+      <label class="m-field"><span class="m-field__label">Your name</span><input class="m-field__input" name="name" type="text" autocomplete="name" required></label>
+      <label class="m-field"><span class="m-field__label">Email</span><input class="m-field__input" name="email" type="email" autocomplete="email" required></label>
+      <label class="m-field"><span class="m-field__label">Phone</span><input class="m-field__input" name="phone" type="tel" autocomplete="tel"></label>
+      <label class="m-field"><span class="m-field__label">Requested date</span><input class="m-field__input" name="date" type="date"></label>
+      <label class="m-field"><span class="m-field__label">Budget range</span><input class="m-field__input" name="budget" type="text"></label>
+      <label class="m-field"><span class="m-field__label">Occasion or event type</span><input class="m-field__input" name="occasion" type="text"></label>
+      <label class="m-field"><span class="m-field__label">Estimated guest count</span><input class="m-field__input" name="guests" type="text" inputmode="numeric"></label>
+      <label class="m-field"><span class="m-field__label">Venue or location</span><input class="m-field__input" name="venue" type="text"></label>
+      <label class="m-field ct__wide"><span class="m-field__label">Your vision</span><textarea class="m-field__input" name="vision" rows="3"></textarea></label>
+      <button class="m-btn" type="submit"><span class="m-btn__label">Send inquiry</span></button>
+      <p class="ct__done m-text" role="status" hidden>Thank you. This is a design preview, so nothing was sent.</p>
+    </form>
+    <dl class="ct__info">
+      <div><dt class="m-text-3">Serving</dt><dd class="m-text">Atlanta, Georgia<br>and surrounding areas</dd></div>
+      <div><dt class="m-text-3">Your planner</dt><dd class="m-text">Teesha Prieto</dd></div>
+      <div><dt class="m-text-3">Follow</dt><dd><a class="m-link" href="https://www.instagram.com/softlyarranged/">@softlyarranged</a></dd></div>
+    </dl>
+  </div>
+</section>
+</main>
+
+<!-- footer: large brand mark built from three blocks, link columns, service area and Instagram, copyright -->
+<footer id="footer" data-8b-section="footer">
+  <div class="ft__mark" aria-hidden="true"><span class="ft__rect"></span><span class="ft__bar"></span><span class="ft__dome"></span></div>
+  <div class="ft__cols">
+    <nav class="ft__col" aria-label="Footer">
+      <p class="m-text-3">Softly Arranged</p>
+      <a class="m-link-2" href="#season">Flowers</a>
+      <a class="m-link-2" href="#work">Our work</a>
+      <a class="m-link-2" href="#dusk">How it works</a>
+      <a class="m-link-2" href="#standing">Services</a>
+    </nav>
+    <nav class="ft__col" aria-label="More">
+      <p class="m-text-3">Gatherings</p>
+      <a class="m-link-2" href="#events">Event planning</a>
+      <a class="m-link-2" href="#school">Flower bar</a>
+      <a class="m-link-2" href="#notes">Meet Teesha</a>
+      <a class="m-link-2" href="#faq">Questions</a>
+    </nav>
+    <div class="ft__col">
+      <p class="m-text-3">Find us</p>
+      <p>Atlanta, Georgia<br>and surrounding areas</p>
+      <a class="m-link-2" href="#contact">Start an inquiry</a>
+    </div>
+    <div class="ft__col">
+      <p class="m-text-3">Follow</p>
+      <a class="m-link-2" href="https://www.instagram.com/softlyarranged/">Instagram</a>
+      <p class="m-text-8">@softlyarranged</p>
+    </div>
+  </div>
+  <div class="ft__base m-text-8">
+    <p>© Softly Arranged · Atlanta, Georgia</p>
+    <a class="m-link-2" href="#opening">Back to the top</a>
+  </div>
+</footer>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const nav = document.getElementById('navigation');
+  const menu = document.getElementById('menu');
+  const openBtn = nav.querySelector('.nav__menu');
+  const closeBtn = menu.querySelector('.menu__close');
+  let lastY = window.scrollY, hidden = false;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY, dy = y - lastY;
+    if (Math.abs(dy) < 3) return;
+    const hide = dy > 0 && y > 140 && menu.hidden;
+    if (hide !== hidden) { hidden = hide; nav.classList.toggle('is-hidden', hide); }
+    lastY = y;
+  }, { passive: true });
+  const setMenu = open => {
+    menu.hidden = !open;
+    openBtn.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); closeBtn.focus(); } else { window.lenis?.start(); openBtn.focus(); }
+  };
+  openBtn.addEventListener('click', () => setMenu(true));
+  closeBtn.addEventListener('click', () => setMenu(false));
+  menu.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+  menu.querySelectorAll('.menu__links a').forEach(a => a.addEventListener('click', () => { menu.hidden = true; openBtn.setAttribute('aria-expanded', 'false'); window.lenis?.start(); }));
+})();
+</script>
+<script data-8b-part="section-script:opening">
+(() => {
+  const section = document.getElementById('opening');
+  const hold = section.querySelector('.op__hold');
+  if (!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([entry]) => section.classList.toggle('is-off', !entry.isIntersecting)).observe(hold);
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+function navHeight() {
+  const nav = document.getElementById('navigation');
+  return nav ? nav.offsetHeight + (parseFloat(getComputedStyle(nav).top) || 0) : 0;
+}
+function refreshScroll() {
+  document.documentElement.style.setProperty('--nav-h', navHeight() + 'px');
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: 0.085, wheelMultiplier: 0.95, anchors: { offset: -navHeight() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  ribbon(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { xPercent: 34 }, { xPercent: 0, ease: 'none' });
+  },
+  lift(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element,
+      { yPercent: 35, clipPath: 'inset(0% 0% 100% 0%)' },
+      { yPercent: 0, clipPath: 'inset(0% 0% -25% 0%)', duration: 1, ease: 'power3.out', clearProps: 'clipPath,transform' });
+  },
+  rule(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { scaleX: 0, transformOrigin: '0% 50%' }, { scaleX: 1, duration: 1.1, ease: 'power2.inOut', clearProps: 'transform' });
+  },
+  window(element, vars = {}) {
+    const img = element.querySelector('img');
+    const timeline = gsap.timeline(vars).fromTo(element,
+      { clipPath: 'inset(0% 42% 0% 42%)' },
+      { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.25, ease: 'power3.inOut', clearProps: 'clipPath' });
+    if (img) timeline.fromTo(img, { scale: 1.18 }, { scale: 1, duration: 1.7, ease: 'power2.out', clearProps: 'transform' }, 0);
+    return timeline;
+  }
+};
+const effectBindings = {
+  ribbon: element => ({ start: 'top bottom', end: 'center 58%', scrub: 0.6 }),
+  lift: element => ({ start: 'top 88%', once: true }),
+  rule: element => ({ start: 'top 92%', once: true }),
+  window: element => ({ start: 'top 85%', once: true })
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(effectBindings).forEach(name => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => {
+        const binding = effectBindings[name](element);
+        const animation = effects[name](element, { paused: !binding.scrub });
+        ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, ...binding, animation });
+      });
+    }), section.getBoundingClientRect().top < window.innerHeight ? { first: true, id } : { near: section, id });
+  });
+});
+</script>
+<script data-8b-part="scene:dusk">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('opening');
+    const night = section.querySelector('.op__night');
+    const img = section.querySelector('.op__photo img');
+    const word1 = section.querySelector('.op__w--1');
+    const word2 = section.querySelector('.op__w--2');
+    const and = section.querySelector('.op__and');
+    const statement = section.querySelector('.op__statement');
+    const ribbon = section.querySelector('.op__ribbon');
+    const geometry = { rx: 0, ry: 0 };
+    const measure = () => {
+      const w = night.clientWidth, h = window.innerHeight;
+      geometry.rx = w * (w < 760 ? 0.62 : 0.55);
+      geometry.ry = h * 0.9;
+    };
+    const dome = progress => {
+      if (progress >= 0.999) { night.style.clipPath = 'none'; return; }
+      const t = Math.max(0, progress - 0.55) / 0.45;
+      const grow = 1 + 80 * t * t * t;
+      const rx = geometry.rx * grow, ry = geometry.ry * grow;
+      night.style.clipPath = `ellipse(${rx.toFixed(1)}px ${ry.toFixed(1)}px at 50% ${ry.toFixed(1)}px)`;
+    };
+    section.setAttribute('data-dusk', '');
+    measure();
+    const timeline = gsap.timeline({
+      scrollTrigger: {
+        id: 'dusk', trigger: night, start: 'top bottom', end: 'top top', scrub: 0.4,
+        invalidateOnRefresh: true,
+        onRefresh: self => { measure(); dome(self.progress); },
+        onUpdate: self => dome(self.progress)
+      }
+    });
+    timeline
+      .fromTo(img, { scale: 1, filter: 'brightness(1) saturate(1)' }, { scale: 1.14, filter: 'brightness(0.5) saturate(1.2)', ease: 'none', duration: 1 }, 0)
+      .to(word1, { xPercent: () => (window.innerWidth < 760 ? -10 : -16), ease: 'none', duration: 1 }, 0)
+      .to(word2, { xPercent: () => (window.innerWidth < 760 ? 5 : 8), ease: 'none', duration: 1 }, 0)
+      .to(and, { scale: 1.6, ease: 'none', duration: 1 }, 0)
+      .fromTo(statement, { y: () => window.innerHeight * 0.16 }, { y: 0, ease: 'none', duration: 0.8 }, 0.2)
+      .add(effects.ribbon(ribbon).duration(0.7), 0.3);
+    dome(0);
+    return () => { night.style.clipPath = ''; section.removeAttribute('data-dusk'); };
+  });
+}, { first: true });
+</script>
+<script data-8b-part="scene:bench">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('season');
+    const photos = [...section.querySelectorAll('.bench__ph')];
+    const rows = [...section.querySelectorAll('.bench__row')];
+    const count = Math.min(photos.length, rows.length);
+    if (count < 2) return;
+    const names = rows.slice(0, count).map(row => row.querySelector('.bench__name'));
+    const accent = getComputedStyle(document.documentElement).getPropertyValue('--color-4').trim();
+    const ink = getComputedStyle(names[0]).color;
+    section.setAttribute('data-bench', '');
+    photos.slice(0, count).forEach((photo, i) => gsap.set(photo, { zIndex: count - i }));
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'bench', trigger: section.querySelector('.bench__rows'), start: 'top 62%', end: 'bottom 62%', scrub: 0.5 }
+    });
+    photos.slice(0, count - 1).forEach((photo, i) => {
+      const at = i + 0.55;
+      timeline.fromTo(photo, { xPercent: 0 }, { xPercent: -100, duration: 0.45, ease: 'power2.inOut' }, at);
+      const next = photos[i + 1].querySelector('img');
+      if (next) timeline.fromTo(next, { scale: 1.14 }, { scale: 1, duration: 0.6, ease: 'power1.out' }, at);
+    });
+    names.forEach((name, i) => {
+      timeline.fromTo(name, { fontWeight: 400, color: ink }, { fontWeight: 600, color: accent, duration: 0.25, immediateRender: i === 0 }, Math.max(0, i - 0.3));
+      if (i < count - 1) timeline.to(name, { fontWeight: 400, color: ink, duration: 0.25 }, i + 0.7);
+    });
+    timeline.set({}, {}, count);
+    return () => section.removeAttribute('data-bench');
+  });
+}, { near: document.getElementById('season') });
+</script>
+<script data-8b-part="scene:drift">
+queueMotion(() => {
+  const section = document.getElementById('work');
+  const grid = section.querySelector('.work__grid');
+  const items = [...grid.querySelectorAll('.work__item')];
+  if (!items.length) return;
+  const build = pattern => {
+    const lefts = [...new Set(items.map(item => Math.round(item.offsetLeft)))].sort((a, b) => a - b);
+    const timeline = gsap.timeline({ scrollTrigger: { id: 'drift', trigger: grid, start: 'top bottom', end: 'center 55%', scrub: 0.6 } });
+    items.forEach(item => {
+      const column = Math.max(0, lefts.indexOf(Math.round(item.offsetLeft)));
+      timeline.fromTo(item, { y: `${pattern[column % pattern.length]}vh` }, { y: 0, ease: 'power1.out' }, 0);
+    });
+  };
+  const media = gsap.matchMedia();
+  media.add('(prefers-reduced-motion: no-preference) and (min-width: 761px)', () => build([18, -12, 30]));
+  media.add('(prefers-reduced-motion: no-preference) and (max-width: 760px)', () => build([16, -10]));
+}, { near: document.getElementById('work') });
+</script>
+<script data-8b-part="scene:hours">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('dusk');
+    const run = section.querySelector('.dusk__run');
+    const stage = section.querySelector('.dusk__stage');
+    const track = section.querySelector('.dusk__track');
+    const panels = [...track.querySelectorAll('.dusk__panel')];
+    if (panels.length < 2) return;
+    section.style.setProperty('--panels', panels.length);
+    section.setAttribute('data-hours', '');
+    const distance = () => track.scrollWidth - stage.clientWidth;
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'hours', trigger: run, start: 'top top', end: 'bottom bottom', scrub: 0.5, invalidateOnRefresh: true }
+    });
+    timeline.to(track, { x: () => -distance(), duration: panels.length - 1 }, 0);
+    panels.slice(1).forEach((panel, i) => {
+      const hour = panel.querySelector('.dusk__hour');
+      const img = panel.querySelector('.dusk__ph img');
+      if (hour) timeline.fromTo(hour, { xPercent: 28 }, { xPercent: 0, duration: 1 }, i);
+      if (img) timeline.fromTo(img, { xPercent: -12, scale: 1.3 }, { xPercent: 0, scale: 1, duration: 1 }, i);
+    });
+    return () => { section.removeAttribute('data-hours'); section.style.removeProperty('--panels'); };
+  });
+});
+</script>
+<script data-8b-part="scene:gather">
+queueMotion(() => {
+  const section = document.getElementById('events');
+  const board = section.querySelector('.ev__board');
+  const photos = [...board.querySelectorAll('.ev__ph')];
+  if (!photos.length) return;
+  const turns = [-11, 7, -5, 9, -8, 4];
+  const build = () => {
+    const b = board.getBoundingClientRect();
+    const timeline = gsap.timeline({ scrollTrigger: { id: 'gather', trigger: board, start: 'top 78%', end: 'center 52%', scrub: 0.6 } });
+    const middle = (photos.length - 1) / 2;
+    photos.forEach((photo, i) => {
+      const p = photo.getBoundingClientRect();
+      const xPercent = (b.left + b.width / 2 - (p.left + p.width / 2)) * 0.86 / p.width * 100;
+      const yPercent = (b.top + b.height * 0.2 - (p.top + p.height / 2)) * 0.86 / p.height * 100;
+      timeline.fromTo(photo, { xPercent, yPercent, rotation: turns[i % turns.length], scale: 0.72 },
+        { xPercent: 0, yPercent: 0, rotation: 0, scale: 1, ease: 'power2.inOut', duration: 1 }, Math.abs(i - middle) * 0.06);
+    });
+  };
+  const media = gsap.matchMedia();
+  media.add('(prefers-reduced-motion: no-preference) and (min-width: 761px)', build);
+  media.add('(prefers-reduced-motion: no-preference) and (max-width: 760px)', build);
+}, { near: document.getElementById('events') });
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .ct__form');
+  const done = form.querySelector('.ct__done');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    done.hidden = false;
+    form.reset();
+  });
+})();
+</script>
+<script data-8b-part="scene:letter">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('notes');
+    const frame = section.querySelector('.nt__frame');
+    const img = frame && frame.querySelector('img');
+    const letter = section.querySelector('.nt__letter');
+    if (!img || !letter) return;
+    gsap.timeline({
+      scrollTrigger: { id: 'letter', trigger: window.innerWidth < 760 ? frame : letter, start: 'top 70%', end: 'bottom 70%', scrub: 0.6, invalidateOnRefresh: true }
+    }).fromTo(img, { y: 0 }, { y: () => frame.clientHeight - img.offsetHeight, ease: 'none' }, 0);
+  });
+}, { near: document.getElementById('notes') });
+</script>
+<script data-8b-part="scene:card">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('contact');
+    const card = section.querySelector('.ct__card');
+    const img = section.querySelector('.ct__room img');
+    if (!card || !img) return;
+    gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'card', trigger: section, start: 'top bottom', end: 'top 30%', scrub: 0.5 }
+    })
+      .fromTo(card, { x: '62vw', rotation: 4 }, { x: 0, rotation: 0, ease: 'power2.out' }, 0)
+      .fromTo(img, { xPercent: -6, scale: 1.14 }, { xPercent: 0, scale: 1 }, 0);
+  });
+}, { near: document.getElementById('contact') });
+</script>
+<script data-8b-part="scene:mark">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('footer');
+    const mark = section.querySelector('.ft__mark');
+    if (!mark) return;
+    gsap.timeline({
+      scrollTrigger: { id: 'mark', trigger: mark, start: 'top bottom', end: 'bottom bottom', scrub: 0.5 }
+    })
+      .fromTo(mark.querySelector('.ft__rect'), { xPercent: -70 }, { xPercent: 0, ease: 'power2.out' }, 0)
+      .fromTo(mark.querySelector('.ft__dome'), { yPercent: 75 }, { yPercent: 0, ease: 'power2.out' }, 0)
+      .fromTo(mark.querySelector('.ft__bar'), { scaleX: 0, transformOrigin: '0% 50%' }, { scaleX: 1, ease: 'power1.inOut', duration: 0.6 }, 0.4);
+  });
+}, { near: document.getElementById('footer') });
+</script>
+</body>
+</html>
