@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Lasting Florals · design preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FFFFFF;
+  --ink:#1D2A21;      /* green-black */
+  --soft:#4D5B51;     /* body copy */
+  --leaf:#2E5A3A;     /* buttons, bands */
+  --leaf-dark:#22452C;
+  --mint:#EDF3EA;     /* pale leaf block */
+  --bloom:#C7346A;    /* peony pink, used sparingly */
+  --sun:#F6D35B;      /* zip highlight */
+  --line:#DCE5D8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:"Libre Franklin",Arial,sans-serif;font-size:17px;line-height:1.6;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--leaf);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--bloom);outline-offset:3px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Young Serif",Georgia,serif;font-weight:400;letter-spacing:-.01em}
+
+.note{font-size:14px;color:var(--soft);background:var(--mint);padding:7px 16px;text-align:center}
+
+/* header */
+header .wrap{display:flex;align-items:center;gap:32px;padding-top:20px;padding-bottom:20px}
+.mark{font-family:"Young Serif",Georgia,serif;font-size:26px;color:var(--ink);text-decoration:none;line-height:1}
+.mark span{color:var(--bloom)}
+nav{display:flex;gap:24px;font-size:15px;font-weight:500;margin-left:auto}
+nav a{color:var(--ink);text-decoration:none}
+nav a:hover{text-decoration:underline}
+.tel{font-weight:600;color:var(--ink);text-decoration:none;white-space:nowrap}
+.btn{display:inline-block;background:var(--leaf);color:#fff;text-decoration:none;font:600 16px "Libre Franklin",sans-serif;padding:13px 22px;border-radius:4px;border:0;cursor:pointer}
+.btn:hover{background:var(--leaf-dark)}
+.btn.line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.btn.line:hover{background:var(--ink);color:#fff}
+
+/* hero */
+.hero{padding:28px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:center}
+h1{font-size:clamp(40px,5.2vw,68px);line-height:1.04;max-width:12ch}
+.lede{color:var(--soft);font-size:19px;margin:22px 0 30px;max-width:30em}
+.actions{display:flex;gap:14px;flex-wrap:wrap}
+.online{margin-top:28px;font-size:15px;color:var(--soft);border-left:3px solid var(--bloom);padding-left:14px;max-width:30em}
+.hero figure img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+figcaption{font-size:14px;color:var(--soft);margin-top:10px}
+
+section{padding:88px 0}
+h2{font-size:clamp(30px,3.6vw,46px);line-height:1.08;margin-bottom:14px}
+.sub{color:var(--soft);max-width:34em}
+
+/* occasions: big type list */
+.occ .wrap{display:grid;grid-template-columns:4fr 8fr;gap:56px;align-items:start}
+.occ ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;column-gap:40px;border-top:2px solid var(--ink)}
+.occ li{border-bottom:1px solid var(--line)}
+.occ li a{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:20px 0;text-decoration:none;color:var(--ink)}
+.occ li b{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:clamp(22px,2.3vw,28px);line-height:1.15}
+.occ li small{font-size:14px;color:var(--soft);text-align:right}
+.occ li a:hover b{color:var(--bloom)}
+.occ .wrapping{margin-top:32px}
+.occ .wrapping img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px}
+
+/* delivery band: the memorable bit */
+.deliver{background:var(--leaf);color:#fff}
+.deliver h2{color:#fff}
+.deliver .sub{color:#D5E3D2}
+.deliver .top{display:grid;grid-template-columns:6fr 5fr;gap:56px;align-items:end}
+.checker label{display:block;font-weight:600;margin-bottom:8px}
+.checker .field{display:flex;gap:10px}
+.checker input{flex:1;min-width:0;font:600 22px "Libre Franklin",sans-serif;letter-spacing:.06em;padding:12px 14px;border:0;border-radius:4px;color:var(--ink)}
+.checker button{background:var(--sun);color:var(--ink);font:700 16px "Libre Franklin",sans-serif;border:0;border-radius:4px;padding:0 20px;cursor:pointer}
+.checker button:hover{background:#FFE27F}
+.answer{min-height:3.2em;margin-top:12px;font-size:16px}
+.answer a{color:var(--sun)}
+.zips{display:flex;flex-wrap:wrap;gap:8px 34px;margin:56px 0 44px;padding:28px 0;border-top:1px solid rgba(255,255,255,.25);border-bottom:1px solid rgba(255,255,255,.25)}
+.zips span{font-family:"Young Serif",Georgia,serif;font-size:clamp(34px,5.6vw,72px);line-height:1;color:rgba(255,255,255,.42);transition:color .2s}
+.zips span.hit{color:var(--sun)}
+.places{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;font-size:16px;color:#D5E3D2}
+.places h3{font-size:21px;color:#fff;margin-bottom:6px}
+.places ul{list-style:none}
+.van{margin-top:48px}
+.van img{width:100%;aspect-ratio:21/8;object-fit:cover;object-position:50% 60%;border-radius:4px}
+.van p{color:#D5E3D2;font-size:15px;margin-top:10px}
+@media (max-width:560px){.van img{aspect-ratio:4/3}}
+
+/* weddings */
+.wed .wrap{display:grid;grid-template-columns:7fr 5fr;gap:56px;align-items:center}
+.wed img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:4px}
+.wed p{color:var(--soft);margin-bottom:14px;max-width:32em}
+.wed ul{margin:6px 0 26px 20px;color:var(--soft)}
+
+/* sympathy */
+.symp{background:var(--mint)}
+.symp .wrap{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
+.symp img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+.symp p{color:var(--soft);margin-bottom:16px;max-width:32em}
+.homes{list-style:none;margin:8px 0 28px;border-top:1px solid #C9D8C4}
+.homes li{padding:12px 0;border-bottom:1px solid #C9D8C4;font-weight:500}
+
+/* reviews */
+.rev .big{font-family:"Young Serif",Georgia,serif;font-size:clamp(26px,3.2vw,40px);line-height:1.25;max-width:26em;margin:20px 0 14px}
+.rev .big::before{content:"\201C";color:var(--bloom)}
+.rev .big::after{content:"\201D";color:var(--bloom)}
+.who{font-weight:600;font-size:15px}
+.more{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:52px;padding-top:32px;border-top:1px solid var(--line)}
+.more blockquote p{font-size:18px;margin-bottom:10px}
+
+/* order form */
+.order{border-top:1px solid var(--line)}
+.order .wrap{display:grid;grid-template-columns:4fr 7fr;gap:56px}
+.order .intro p{color:var(--soft);margin-bottom:14px;max-width:26em}
+form{display:grid;gap:18px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+label{display:block;font-size:15px;font-weight:600;margin-bottom:6px}
+.hint{font-weight:400;color:var(--soft)}
+input,select,textarea{width:100%;font:16px "Libre Franklin",sans-serif;color:var(--ink);background:#fff;border:1px solid #BFCDBA;border-radius:4px;padding:11px 12px}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--leaf);outline-offset:0;border-color:var(--leaf)}
+.sent{font-size:16px;color:var(--leaf);font-weight:500;min-height:1.5em}
+
+footer{background:var(--ink);color:#C9D3CB;padding:48px 0 56px;font-size:15px}
+footer .wrap{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px}
+footer a{color:#fff}
+footer .mark{color:#fff;font-size:24px;display:inline-block;margin-bottom:10px}
+footer h3{font-family:"Libre Franklin",sans-serif;font-weight:600;font-size:15px;color:#fff;margin-bottom:6px}
+
+@media (max-width:900px){
+  nav{display:none}
+  header .wrap{justify-content:space-between;gap:16px}
+  .hero{padding:12px 0 56px}
+  .hero .wrap,.occ .wrap,.deliver .top,.wed .wrap,.symp .wrap,.order .wrap{grid-template-columns:1fr;gap:32px}
+  .wed figure{order:-1}
+  .occ .wrapping{display:none}
+  .places{grid-template-columns:1fr;gap:24px}
+  .more{grid-template-columns:1fr;gap:32px}
+  footer .wrap{grid-template-columns:1fr 1fr}
+  section{padding:60px 0}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .mark{font-size:22px}
+  .occ ul{grid-template-columns:1fr}
+  .row{grid-template-columns:1fr}
+  .zips{gap:6px 22px;margin:40px 0 32px}
+  footer .wrap{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<p class="note">Design preview made for Lasting Florals · photos are placeholders</p>
+
+<header><div class="wrap">
+  <a class="mark" href="#">Lasting Florals</a>
+  <nav aria-label="Main"><a href="#occasions">Occasions</a><a href="#delivery">Delivery</a><a href="#weddings">Weddings &amp; events</a><a href="#sympathy">Sympathy</a><a href="#reviews">Reviews</a></nav>
+  <a class="tel" href="tel:+18048391047">(804) 839-1047</a>
+</div></header>
+
+<main>
+<section class="hero" aria-labelledby="h"><div class="wrap">
+  <div>
+    <h1 id="h">Midlothian's neighborhood florist for over 20 years.</h1>
+    <p class="lede">Custom flower designs from our shop on Clintwood Road, with same-day delivery across Midlothian, Moseley, Chesterfield and Richmond.</p>
+    <div class="actions">
+      <a class="btn" href="#order">Order flowers</a>
+      <a class="btn line" href="tel:+18048391047">Call (804) 839-1047</a>
+    </div>
+    <p class="online">You can now order straight from this site. Tell us the occasion, the date and who it's for, and we'll take it from there.</p>
+  </div>
+  <figure>
+    <img src="img/counter.jpg" alt="A mixed seasonal arrangement in a glass vase on the shop counter" width="1280" height="853">
+    <figcaption>A seasonal mix on the counter, ready to go out.</figcaption>
+  </figure>
+</div></section>
+
+<section class="occ" id="occasions" aria-labelledby="occ-h"><div class="wrap">
+  <div>
+    <h2 id="occ-h">What's the occasion?</h2>
+    <p class="sub">Flowers and gifts for every occasion and holiday. Pick one and we'll start your order.</p>
+    <figure class="wrapping"><img src="img/wrapping.jpg" alt="A florist's hands wrapping a pink and white bouquet in kraft paper" width="960" height="1200" loading="lazy"></figure>
+  </div>
+  <ul>
+    <li><a href="#order" data-occ="Birthday"><b>Birthday</b><small>Order</small></a></li>
+    <li><a href="#order" data-occ="Anniversary"><b>Anniversary</b><small>Order</small></a></li>
+    <li><a href="#order" data-occ="Sympathy"><b>Sympathy</b><small>Order</small></a></li>
+    <li><a href="#order" data-occ="Get well / hospital"><b>Get well &amp; hospital</b><small>Order</small></a></li>
+    <li><a href="#order" data-occ="Wedding"><b>Wedding</b><small>Ask us</small></a></li>
+    <li><a href="#order" data-occ="Just because"><b>Just because</b><small>Order</small></a></li>
+  </ul>
+</div></section>
+
+<section class="deliver" id="delivery" aria-labelledby="del-h"><div class="wrap">
+  <div class="top">
+    <div>
+      <h2 id="del-h">Same-day delivery across Chesterfield and Richmond.</h2>
+      <p class="sub">We deliver same day to Midlothian, Moseley, Chesterfield, N Chesterfield and Richmond, and we've been delivering to Brandermill and Woodlake for over 15 years. Sending further? We arrange national delivery too.</p>
+    </div>
+    <form class="checker" id="zipform" novalidate>
+      <label for="zip">Check a delivery zip code</label>
+      <div class="field">
+        <input id="zip" inputmode="numeric" maxlength="5" placeholder="Zip code" autocomplete="postal-code">
+        <button type="submit">Check</button>
+      </div>
+      <p class="answer" id="answer" role="status"></p>
+    </form>
+  </div>
+
+  <div class="zips" aria-label="Same-day delivery zip codes">
+    <span>23112</span><span>23113</span><span>23114</span><span>23120</span><span>23235</span><span>23236</span><span>23832</span>
+  </div>
+
+  <div class="places">
+    <div>
+      <h3>Towns we cover</h3>
+      <ul><li>Midlothian</li><li>Moseley</li><li>Chesterfield and N Chesterfield</li><li>Richmond</li></ul>
+    </div>
+    <div>
+      <h3>Hospitals</h3>
+      <ul><li>St. Francis Medical Center</li><li>Johnston-Willis Hospital</li><li>Chippenham Hospital</li><li>Brandermill Woods</li></ul>
+    </div>
+    <div>
+      <h3>Outside the area</h3>
+      <p>We send flowers nationally as well. Call us and we'll set it up.</p>
+    </div>
+  </div>
+
+  <div class="van">
+    <img src="img/delivery.jpg" alt="Wrapped arrangements secured in the back of a delivery van" width="1280" height="853" loading="lazy">
+    <p>Need it there today? Order here or call us during customer service hours, 10am to 5pm EST.</p>
+  </div>
+</div></section>
+
+<section class="wed" id="weddings" aria-labelledby="wed-h"><div class="wrap">
+  <div>
+    <h2 id="wed-h">Weddings, parties and events</h2>
+    <p>Wedding flowers and decor for RVA weddings, plus holiday parties and events large or small.</p>
+    <p>Tell us your date and what you have in mind, and we'll talk it through with you.</p>
+    <a class="btn" href="#order" data-occ="Wedding">Ask about your date</a>
+  </div>
+  <figure><img src="img/wedding.jpg" alt="A white and blush wedding bouquet with boutonnieres on a linen table" width="1280" height="853" loading="lazy"></figure>
+</div></section>
+
+<section class="symp" id="sympathy" aria-labelledby="sym-h"><div class="wrap">
+  <figure><img src="img/sympathy.jpg" alt="A sympathy arrangement of white lilies and white roses in soft light" width="1440" height="960" loading="lazy"></figure>
+  <div>
+    <h2 id="sym-h">Sympathy and funeral flowers</h2>
+    <p>When you're sending flowers to a service, call us or order here and we'll take care of it with the attention it deserves. We deliver to local funeral homes, including:</p>
+    <ul class="homes"><li>Bennett Funeral Home</li><li>Woody Funeral Home</li><li>Bliley's Funeral Home</li><li>Morrisett Funeral Home</li></ul>
+    <a class="btn" href="#order" data-occ="Sympathy">Send sympathy flowers</a>
+  </div>
+</div></section>
+
+<section class="rev" id="reviews" aria-labelledby="rev-h"><div class="wrap">
+  <h2 id="rev-h">From our customers</h2>
+  <blockquote>
+    <p class="big">Lasting Florals is hands down the best florist in the Richmond area. It's hard to find a florist these days that cares as much as Lasting Florals does.</p>
+    <p class="who">Brandon</p>
+  </blockquote>
+  <div class="more">
+    <blockquote><p>"Absolutely beautiful arrangement and delivered with care. Thank you for helping me to send love and warmth to my mom."</p><p class="who">Brittany, PA</p></blockquote>
+    <blockquote><p>"Lasting Florals is the best florist in Midlothian, VA by far! I have used them for 5 years for all occasions and every flower arrangement has been gorgeous."</p><p class="who">Linda, VA</p></blockquote>
+  </div>
+</div></section>
+
+<section class="order" id="order" aria-labelledby="ord-h"><div class="wrap">
+  <div class="intro">
+    <h2 id="ord-h">Order flowers</h2>
+    <p>Tell us what you need and who it's for, and we'll be in touch about the details.</p>
+    <p>Rather talk it through? Call <a href="tel:+18048391047">(804) 839-1047</a>, 10am to 5pm EST, or email <a href="mailto:deborah@lastingflorals.com">deborah@lastingflorals.com</a>.</p>
+  </div>
+  <form id="f" novalidate>
+    <div class="row">
+      <div><label for="occ">Occasion</label>
+        <select id="occ"><option>Birthday</option><option>Anniversary</option><option>Sympathy</option><option>Get well / hospital</option><option>Wedding</option><option>Just because</option><option>Holiday</option><option>Event</option></select></div>
+      <div><label for="date">Delivery date</label><input id="date" type="date"></div>
+    </div>
+    <div class="row">
+      <div><label for="rzip">Recipient zip code</label><input id="rzip" inputmode="numeric" maxlength="5" autocomplete="off"></div>
+      <div><label for="budget">Budget <span class="hint">(roughly)</span></label><input id="budget" placeholder="e.g. around $75"></div>
+    </div>
+    <div><label for="card">Message for the card</label><textarea id="card"></textarea></div>
+    <div class="row">
+      <div><label for="n">Your name</label><input id="n" autocomplete="name"></div>
+      <div><label for="p">Phone</label><input id="p" type="tel" autocomplete="tel"></div>
+    </div>
+    <div><label for="e">Email</label><input id="e" type="email" autocomplete="email"></div>
+    <div><button class="btn" type="submit">Send order request</button></div>
+    <p class="sent" id="sent" role="status"></p>
+  </form>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div>
+    <span class="mark">Lasting Florals</span>
+    <p>Independently owned florist in Midlothian, VA.</p>
+  </div>
+  <div><h3>Visit</h3><p>3541 Clintwood Rd<br>Midlothian, VA 23112</p></div>
+  <div><h3>Call or email</h3><p><a href="tel:+18048391047">(804) 839-1047</a><br><a href="mailto:deborah@lastingflorals.com">deborah@lastingflorals.com</a></p></div>
+  <div><h3>Customer service</h3><p>10am to 5pm EST</p></div>
+</div></footer>
+
+<script>
+const ZIPS=['23112','23113','23114','23120','23235','23236','23832'];
+const zip=document.getElementById('zip'),ans=document.getElementById('answer'),spans=[...document.querySelectorAll('.zips span')];
+function light(v){spans.forEach(s=>s.classList.toggle('hit',v.length>0&&s.textContent.startsWith(v)));}
+zip.addEventListener('input',()=>{zip.value=zip.value.replace(/\D/g,'');light(zip.value);ans.textContent='';});
+document.getElementById('zipform').addEventListener('submit',e=>{
+  e.preventDefault();const v=zip.value;
+  if(!/^\d{5}$/.test(v)){ans.textContent='Please enter a 5-digit zip code.';return;}
+  if(ZIPS.includes(v)){ans.innerHTML='Yes, we deliver same day to '+v+'. <a href="#order">Start your order</a>.';document.getElementById('rzip').value=v;}
+  else{ans.innerHTML=v+' isn’t in our same-day area, but we may still be able to get flowers there. Call <a href="tel:+18048391047">(804) 839-1047</a> and we’ll sort it out.';}
+});
+document.querySelectorAll('[data-occ]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('occ').value=a.dataset.occ;}));
+document.getElementById('f').addEventListener('submit',e=>{
+  e.preventDefault();
+  document.getElementById('sent').textContent='Thanks, your order request is in. (This is a design preview, so nothing was sent. On the live site it goes straight to the shop.)';
+});
+</script>
+</body>
+</html>
