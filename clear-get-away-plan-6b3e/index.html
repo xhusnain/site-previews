@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>A growth plan for Clear Get Away</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#22262A;--soft:#5B6168;--line:#E3E5E7;--yellow:#F2C230;--green:#2F6B4F;--red:#B3261E;--bg:#FFFFFF;--tint:#F6F7F5}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:18px/1.6 "Atkinson Hyperlegible",system-ui,sans-serif}
+a{color:var(--green)}
+:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:18px;padding-bottom:18px;font-size:15px;color:var(--soft)}
+header b{color:var(--ink)}
+h1{font-size:clamp(34px,5vw,50px);line-height:1.08;letter-spacing:-.02em;margin:56px 0 18px}
+h1 mark{background:linear-gradient(transparent 62%,var(--yellow) 62%);color:inherit}
+.lede{font-size:20px;color:var(--soft);max-width:36em}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+h2{font-size:30px;line-height:1.15;letter-spacing:-.01em;margin-bottom:14px}
+p+p{margin-top:12px}
+.muted{color:var(--soft)}
+.fix{background:var(--tint);border-left:4px solid var(--red);padding:22px 24px;margin:22px 0;border-radius:2px}
+.fix code,.code{font:15px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace}
+.code{display:block;background:#fff;border:1px solid var(--line);padding:14px 16px;margin:12px 0;overflow-x:auto;white-space:pre}
+.del{color:var(--red)}.add{color:var(--green)}
+ol.steps{list-style:none;counter-reset:s;margin-top:22px}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:6px;padding:16px 0;border-top:1px solid var(--line)}
+ol.steps li::before{content:counter(s);width:30px;height:30px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;font-weight:700;font-size:16px}
+ol.steps b{display:block}
+.demo{border:2px solid var(--ink);border-radius:4px;padding:26px;margin-top:22px}
+.demo label{display:block;font-weight:700;font-size:16px;margin:16px 0 6px}
+.demo input,.demo select{width:100%;font:17px "Atkinson Hyperlegible",sans-serif;padding:11px 12px;border:1px solid #C9CDD1;border-radius:3px;background:#fff}
+.loads{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.loads button{font:16px "Atkinson Hyperlegible",sans-serif;padding:12px 6px;border:1px solid #C9CDD1;background:#fff;border-radius:3px;cursor:pointer;color:var(--ink)}
+.loads button[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.btn{display:inline-block;background:var(--ink);color:#fff;font:700 17px "Atkinson Hyperlegible",sans-serif;padding:13px 22px;border:0;border-radius:3px;cursor:pointer;text-decoration:none;margin-top:20px}
+.result{margin-top:18px;padding:16px 18px;background:var(--tint);border-radius:3px;display:none}
+.result.show{display:block}
+.result strong{font-size:24px}
+.build{display:grid;grid-template-columns:1fr 1fr;gap:22px 36px;margin-top:22px}
+.build h3{font-size:19px;margin-bottom:4px}
+.build p{color:var(--soft);font-size:17px}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+.plan{border:1px solid var(--line);border-radius:4px;padding:24px}
+.plan.pick{border:2px solid var(--ink)}
+.plan .price{font-size:34px;font-weight:700;margin:6px 0 10px}
+.plan ul{padding-left:20px;color:var(--soft);font-size:17px}
+.plan li{margin:6px 0}
+.extras{margin-top:22px;color:var(--soft)}
+.extras li{margin:6px 0 6px 20px}
+footer{padding:40px 0 64px;color:var(--soft);font-size:16px}
+@media(max-width:720px){.build,.plans,.row{grid-template-columns:1fr}.loads{grid-template-columns:1fr 1fr}h1{margin-top:36px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><span>Prepared for <b>Clear Get Away Ltd</b></span><span>by Husnain Babar, web developer</span></div></header>
+<main class="wrap">
+
+<h1>More booked jobs from the site you <mark>already have</mark>.</h1>
+<p class="lede">Your website is a good start: clear services, your carrier licence, and photo-based pricing. Here's one thing to fix straight away, and how we could turn the site into something that quotes and books jobs while you're out on the van.</p>
+
+<section aria-labelledby="fix-h">
+  <h2 id="fix-h">One thing to fix first</h2>
+  <p>Your site tells Google that its real address is <b>cleangetaway.uk</b>, with an "n". That domain doesn't exist. It appears 18 times in the page code, including the tag Google uses to decide which address to show in search results, and in your business details, where the email <b>job@cleangetaway.uk</b> would bounce.</p>
+  <div class="fix">
+    <p><b>What it can cost you:</b> Google may not index cleargetaway.uk properly, and the address it picks up for your business is wrong. Fixing it takes a few minutes, and I'm happy to do it for free.</p>
+    <span class="code"><span class="del">- &lt;link rel="canonical" href="https://cleangetaway.uk/"&gt;</span>
+<span class="add">+ &lt;link rel="canonical" href="https://cleargetaway.uk/"&gt;</span></span>
+  </div>
+</section>
+
+<section aria-labelledby="how-h">
+  <h2 id="how-h">How a waste job usually reaches you</h2>
+  <p class="muted">Every extra step someone has to take is a chance for them to ring the next company on Google instead.</p>
+  <ol class="steps">
+    <li><span><b>They search</b>"rubbish removal Daventry", "garage clearance Rugby", "WEEE collection Northampton". Showing up here is SEO, and town-by-town pages help a lot.</span></li>
+    <li><span><b>They check you out</b>Reviews, photos of real jobs, your licence and insurance. This is where trust is won or lost.</span></li>
+    <li><span><b>They ask for a price</b>Today that means sending photos by email or phone and waiting. The faster the answer, the more jobs you win.</span></li>
+    <li><span><b>They book</b>A date, a time window and a confirmation by text. Same-day slots are your edge, so the site should show them.</span></li>
+    <li><span><b>After the job</b>Waste transfer note emailed automatically, then a request for a Google review. Reviews feed straight back into step 1.</span></li>
+  </ol>
+</section>
+
+<section aria-labelledby="demo-h">
+  <h2 id="demo-h">Try it: a quote from photos</h2>
+  <p class="muted">A working demo of step 3. On the live version, AI looks at the photos and suggests the load size, and you approve the fixed price before anything is booked.</p>
+  <form class="demo" id="q" novalidate>
+    <label for="ph">Photos of the waste</label>
+    <input id="ph" type="file" accept="image/*" multiple>
+    <label id="lz">Roughly how much is there?</label>
+    <div class="loads" role="group" aria-labelledby="lz">
+      <button type="button" data-l="0">A few items</button>
+      <button type="button" data-l="1" aria-pressed="true">Quarter van</button>
+      <button type="button" data-l="2">Half van</button>
+      <button type="button" data-l="3">Full van</button>
+    </div>
+    <div class="row">
+      <div><label for="pc">Collection postcode</label><input id="pc" placeholder="NN11 4AB"></div>
+      <div><label for="dt">When?</label><select id="dt"><option>Today if possible</option><option>Tomorrow</option><option>This week</option><option>Pick a date</option></select></div>
+    </div>
+    <button class="btn" type="submit">Get my price</button>
+    <div class="result" id="res" role="status"></div>
+  </form>
+</section>
+
+<section aria-labelledby="build-h">
+  <h2 id="build-h">What I'd build on top of your site</h2>
+  <div class="build">
+    <div><h3>Photo quotes</h3><p>The demo above, with AI load estimates you confirm from your phone.</p></div>
+    <div><h3>Online booking</h3><p>Time windows, same-day slots when you have space, and text confirmations.</p></div>
+    <div><h3>Automatic transfer notes</h3><p>Waste transfer notes filled in from the booking and emailed after each job.</p></div>
+    <div><h3>Business accounts</h3><p>Letting agents, builders and offices rebook in two clicks. Monthly WEEE bin collections run on a schedule.</p></div>
+    <div><h3>Town pages for SEO</h3><p>Daventry, Rugby, Northampton and the villages around them, each with its own page.</p></div>
+    <div><h3>Review requests</h3><p>A friendly text after each job, asking for a Google review.</p></div>
+  </div>
+</section>
+
+<section aria-labelledby="price-h">
+  <h2 id="price-h">Two ways to start</h2>
+  <div class="plans">
+    <div class="plan">
+      <h3>Quote and book</h3>
+      <div class="price">£390</div>
+      <ul><li>Fix the domain mistake (free either way)</li><li>Photo quote form and online booking</li><li>Text confirmations</li><li>Town pages for local SEO</li></ul>
+    </div>
+    <div class="plan pick">
+      <h3>Full system</h3>
+      <div class="price">£750</div>
+      <ul><li>Everything in Quote and book</li><li>AI load estimates from photos</li><li>Automatic waste transfer notes</li><li>Business accounts and WEEE schedules</li><li>Automatic Google review requests</li></ul>
+    </div>
+  </div>
+  <ul class="extras">
+    <li>Both include 30 days of blog posts written for your site, free, to help you climb in local search.</li>
+    <li>Hosting is practically free on my setup. Your only yearly cost is the domain you already own.</li>
+    <li>Prices are flexible. If your budget is different, tell me and we'll work something out.</li>
+  </ul>
+</section>
+
+</main>
+<footer><div class="wrap">Questions? Reply to my email and I'll get back to you the same day.</div></footer>
+
+<script>
+const btns=[...document.querySelectorAll('.loads button')];let load=1;
+btns.forEach(b=>b.addEventListener('click',()=>{btns.forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');load=+b.dataset.l;}));
+const ranges=[[40,70],[90,130],[150,210],[240,320]];
+document.getElementById('q').addEventListener('submit',e=>{
+  e.preventDefault();
+  const n=document.getElementById('ph').files.length;const [lo,hi]=ranges[load];
+  const r=document.getElementById('res');
+  r.innerHTML='<strong>About £'+lo+' to £'+hi+'</strong><br>'+(n?n+' photo'+(n>1?'s':'')+' attached. ':'')+'Clear Get Away will confirm a fixed price by text before booking.<br><span style="font-size:15px;color:#5B6168">Demo prices only. On the live version you set the prices.</span>';
+  r.classList.add('show');
+});
+</script>
+</body>
+</html>
