@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>JW Consulting Svcs · Bookkeeping, Payroll & HR, Sarasota · design preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBFAF7;
+  --ink:#1E2430;
+  --soft:#5D6573;
+  --teal:#1F5C5A;
+  --teal2:#2B7471;
+  --mint:#E4EFEC;
+  --sun:#E8A54B;
+  --line:#E5E2DB;
+  --card:#FFFFFF;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Public Sans",system-ui,sans-serif;font-size:17px;line-height:1.65;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Newsreader,Georgia,serif;font-weight:500;line-height:1.1;letter-spacing:-.01em}
+.note{font-size:13px;background:var(--teal);color:#D5E6E3;text-align:center;padding:7px 16px}
+
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand .jw{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;font:500 18px Newsreader}
+.brand b{font:600 16px "Public Sans";display:block;letter-spacing:.02em}
+.brand small{font-size:12px;color:var(--soft)}
+nav{display:flex;gap:24px;font-size:15px;font-weight:500}
+nav a{text-decoration:none;color:var(--soft)}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--teal);color:#fff;text-decoration:none;font:600 16px "Public Sans";padding:13px 22px;border-radius:8px;border:0;cursor:pointer}
+.btn:hover{background:var(--teal2)}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+
+.hero{padding:40px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal2);margin-bottom:14px}
+.hero h1{font-size:clamp(38px,5vw,60px)}
+.hero h1 em{color:var(--teal)}
+.hero p{color:var(--soft);font-size:19px;margin:20px 0 28px;max-width:520px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero .trust{display:flex;gap:28px;margin-top:34px;flex-wrap:wrap;font-size:14px;color:var(--soft)}
+.hero .trust b{display:block;font:500 26px Newsreader;color:var(--ink)}
+.hero figure{position:relative}
+.hero figure img{border-radius:14px;aspect-ratio:4/5;object-fit:cover;width:100%}
+.hero .chip{position:absolute;left:-24px;bottom:30px;background:var(--card);border-radius:12px;padding:14px 18px;box-shadow:0 12px 30px rgba(0,0,0,.12);font-size:14px;max-width:240px}
+.hero .chip b{display:block;color:var(--teal);font-size:15px}
+
+section{padding:76px 0}
+h2{font-size:clamp(30px,3.6vw,44px);margin-bottom:14px}
+.intro{color:var(--soft);max-width:620px;margin-bottom:40px}
+
+.pain{background:var(--mint)}
+.pain .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.pain img{border-radius:14px;aspect-ratio:3/2;object-fit:cover;width:100%}
+.pain ul{list-style:none;display:grid;gap:12px;margin-top:8px}
+.pain li{background:var(--card);border-radius:10px;padding:14px 18px;font-size:16px}
+
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.svc article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px}
+.svc h3{font-size:22px;margin-bottom:8px}
+.svc p{color:var(--soft);font-size:15px}
+.svc .n{font:600 13px "Public Sans";color:var(--sun);letter-spacing:.1em}
+
+.plan{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.finder{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.qbox{border:1px solid var(--line);border-radius:12px;padding:26px;display:grid;gap:18px}
+.qbox label.t{font-weight:600;font-size:15px;display:block;margin-bottom:8px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts label{border:1.5px solid var(--line);border-radius:999px;padding:8px 14px;font-size:15px;cursor:pointer}
+.opts input{display:none}
+.opts label:has(input:checked){border-color:var(--teal);background:var(--mint);font-weight:600}
+.rec{background:var(--teal);color:#fff;border-radius:12px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:18px}
+.rec h3{font-size:30px}
+.rec ul{margin-left:18px;color:#D5E6E3;font-size:15px}
+.rec .btn{background:var(--sun);color:var(--ink);text-align:center}
+.rec .btn:hover{background:#F0B866}
+
+.how{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;list-style:none;counter-reset:s}
+.how li{border-top:2px solid var(--teal);padding-top:16px}
+.how li::before{counter-increment:s;content:counter(s);font:500 30px Newsreader;color:var(--teal)}
+.how h3{font:700 17px "Public Sans";margin:4px 0 6px}
+.how p{font-size:15px;color:var(--soft)}
+
+.about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:52px;align-items:center}
+.about img{border-radius:14px;aspect-ratio:4/5;object-fit:cover;width:100%}
+.about p{color:var(--soft);margin-bottom:14px}
+
+.areas ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+.areas li{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:10px 14px;font-size:15px}
+
+.book{background:var(--ink);color:#EEF0F3}
+.book h2{color:#fff}
+.book .intro{color:#B9C0CC}
+.bform{background:var(--card);color:var(--ink);border-radius:14px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.bform .full{grid-column:1/-1}
+.bform label{font-size:14px;font-weight:600;display:block;margin-bottom:6px}
+.bform input,.bform select,.bform textarea{width:100%;font:inherit;font-size:16px;padding:11px 12px;border:1px solid #CFD3DA;border-radius:8px;background:#fff;color:var(--ink)}
+.drop{border:1.5px dashed #B8BEC8;border-radius:10px;padding:18px;text-align:center;color:var(--soft);font-size:15px}
+.ok{font-size:15px;color:var(--soft)}
+
+.faq{max-width:760px}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{font-weight:600;font-size:18px;cursor:pointer}
+details p{color:var(--soft);margin-top:10px}
+
+footer{padding:40px 0;font-size:14px;color:var(--soft);border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:920px){
+  nav{display:none}
+  .hero .wrap,.pain .wrap,.about .wrap,.finder{grid-template-columns:1fr}
+  .svc{grid-template-columns:1fr 1fr}
+  .how{grid-template-columns:1fr 1fr}
+  .hero .chip{left:12px}
+}
+@media (max-width:560px){
+  header .btn{display:none}
+  .svc,.how,.bform{grid-template-columns:1fr}
+  section{padding:56px 0}
+  .bform,.qbox,.rec{padding:20px}
+}
+</style>
+</head>
+<body>
+<div class="note">Design preview made for JW Consulting Svcs, LLC · photos are placeholders until we use your own</div>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="jw">JW</span><span><b>JW CONSULTING SVCS</b><small>Bookkeeping · Payroll · HR</small></span></a>
+    <nav><a href="#services">Services</a><a href="#plan">Find your plan</a><a href="#about">About Jennifer</a><a href="#faq">FAQ</a></nav>
+    <a class="btn" href="#book">Book a free call</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Sarasota &amp; Southwest Florida</p>
+      <h1>Books that are done, <em>right</em>, every month.</h1>
+      <p>Bookkeeping, payroll and HR support for small business owners who would rather run their business than chase receipts. Clear numbers, on time, from someone who has led finance and HR teams for 20 years.</p>
+      <div class="cta"><a class="btn" href="#book">Book a free 20-minute call</a><a class="btn alt" href="#plan">Which plan fits me?</a></div>
+      <div class="trust"><div><b>20+ years</b>finance &amp; HR leadership</div><div><b>QuickBooks</b>Online setup &amp; training</div><div><b>Local</b>Southwest Florida</div></div>
+    </div>
+    <figure>
+      <img src="img/working.jpg" alt="Bookkeeper reviewing a printed report at a laptop" width="1024" height="1280">
+      <div class="chip"><b>Books closed by the 10th</b>Reconciled accounts and a simple report in your inbox each month.</div>
+    </figure>
+  </div>
+</section>
+
+<section class="pain">
+  <div class="wrap">
+    <img src="img/receipts.jpg" alt="Shoebox of paper receipts on a kitchen counter" loading="lazy" width="1536" height="1024">
+    <div>
+      <p class="eyebrow">Sound familiar?</p>
+      <h2>Bookkeeping shouldn't live in a shoebox</h2>
+      <ul>
+        <li>You're not sure if you're actually making money this month.</li>
+        <li>QuickBooks was set up years ago and nothing matches the bank.</li>
+        <li>Payroll and HR paperwork eat your evenings.</li>
+        <li>Tax time means a panicked clean-up every year.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <p class="eyebrow">Services</p>
+    <h2>Everything behind the numbers</h2>
+    <p class="intro">Professional, confidential and customized to how your business actually works.</p>
+    <div class="svc">
+      <article><span class="n">01</span><h3>Bookkeeping</h3><p>Monthly categorizing, bank and card reconciliations, and financial statements you can read.</p></article>
+      <article><span class="n">02</span><h3>QuickBooks Online</h3><p>Setup, clean-up and training, so your software works for you instead of against you.</p></article>
+      <article><span class="n">03</span><h3>Payroll</h3><p>Accurate, on-time payroll with the filings handled.</p></article>
+      <article><span class="n">04</span><h3>Year-end clean-up</h3><p>Data review and clean-up so your CPA gets tidy books, not a mess.</p></article>
+      <article><span class="n">05</span><h3>HR consulting</h3><p>Employee handbooks, HR processes and compliance support as you grow.</p></article>
+      <article><span class="n">06</span><h3>Executive admin</h3><p>Back-office support for owners who need a second pair of hands.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="plan" id="plan">
+  <div class="wrap">
+    <p class="eyebrow">Find your plan</p>
+    <h2>Three questions, one recommendation</h2>
+    <p class="intro">Answer a few quick questions and see which kind of support fits your business. No obligation.</p>
+    <div class="finder">
+      <form class="qbox" id="fq">
+        <div><label class="t">Monthly transactions</label><div class="opts">
+          <label><input type="radio" name="tx" value="1" checked>Under 100</label>
+          <label><input type="radio" name="tx" value="2">100 – 300</label>
+          <label><input type="radio" name="tx" value="3">300+</label></div></div>
+        <div><label class="t">Employees on payroll</label><div class="opts">
+          <label><input type="radio" name="emp" value="0" checked>None</label>
+          <label><input type="radio" name="emp" value="1">1 – 10</label>
+          <label><input type="radio" name="emp" value="2">11+</label></div></div>
+        <div><label class="t">Are your books up to date?</label><div class="opts">
+          <label><input type="radio" name="up" value="0" checked>Yes</label>
+          <label><input type="radio" name="up" value="1">A few months behind</label>
+          <label><input type="radio" name="up" value="2">Honestly, no</label></div></div>
+      </form>
+      <aside class="rec" aria-live="polite">
+        <div><p class="eyebrow" style="color:var(--sun)">Recommended</p><h3 id="rname">Essentials</h3><ul id="rlist"></ul></div>
+        <a class="btn" href="#book">Talk it through on a free call</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h2>Getting started is simple</h2>
+    <ol class="how">
+      <li><h3>Free call</h3><p>20 minutes to understand your business and where things stand.</p></li>
+      <li><h3>Secure access</h3><p>Connect your accounts and upload documents through a secure link.</p></li>
+      <li><h3>Clean-up</h3><p>Anything behind gets caught up and set up properly.</p></li>
+      <li><h3>Monthly rhythm</h3><p>Reconciled books and a short report every month.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <img src="img/desk.jpg" alt="Home office desk by a window with palm trees" loading="lazy" width="1536" height="1024">
+    <div>
+      <p class="eyebrow">About Jennifer</p>
+      <h2>Big-company experience, small-business attention</h2>
+      <p>Jennifer was born and raised in New York and began her finance career after moving to Florida over 20 years ago. She has built and led accounting and HR departments across legal, technology and professional services organizations.</p>
+      <p>She specializes in financial management, payroll, HR operations, compliance and process development, with a passion for efficient systems that help companies grow. Now she brings that same experience to small business owners directly.</p>
+      <a class="btn" href="#book">Book a call with Jennifer</a>
+    </div>
+  </div>
+</section>
+
+<section class="areas" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow">Serving</p>
+    <ul><li>Sarasota</li><li>Bradenton</li><li>Lakewood Ranch</li><li>Venice</li><li>North Port</li><li>Osprey</li><li>Nokomis</li><li>Remote, anywhere in Florida</li></ul>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--sun)">Free consultation</p>
+    <h2>Book your free 20-minute call</h2>
+    <p class="intro">Pick a time that suits you. You'll get a calendar invite and a short checklist of what to have ready.</p>
+    <form class="bform" onsubmit="event.preventDefault();document.getElementById('ok').hidden=false">
+      <div><label for="n">Name</label><input id="n" autocomplete="name"></div>
+      <div><label for="b">Business</label><input id="b" autocomplete="organization"></div>
+      <div><label for="e">Email</label><input id="e" type="email" autocomplete="email"></div>
+      <div><label for="d">Preferred day</label><input id="d" type="date"></div>
+      <div class="full"><label for="h">What do you need help with?</label><select id="h"><option>Monthly bookkeeping</option><option>QuickBooks setup or clean-up</option><option>Payroll</option><option>Catching up on old books</option><option>HR or employee handbook</option></select></div>
+      <div class="full drop">Optional: drop last month's bank statement here so Jennifer can come prepared (secure upload on the live site)</div>
+      <div class="full"><button class="btn" type="submit">Request my call</button></div>
+      <p class="full ok" id="ok" hidden>This is a design preview, so nothing was sent. On the live site this books straight into Jennifer's calendar.</p>
+    </form>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap faq">
+    <p class="eyebrow">Questions</p>
+    <h2>Good to know</h2>
+    <details><summary>Do I need to be in Sarasota?</summary><p>No. Most work is done securely online, so clients anywhere in Florida are welcome. Local clients can meet in person.</p></details>
+    <details><summary>My books are a mess. Is that a problem?</summary><p>Not at all. Year-end and catch-up clean-ups are one of the most common starting points.</p></details>
+    <details><summary>Do you work with my CPA?</summary><p>Yes. You'll get clean, reconciled books your CPA can work from directly.</p></details>
+    <details><summary>Which software do you use?</summary><p>Mainly QuickBooks Online, including setup and training if you're new to it.</p></details>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>JW Consulting Svcs, LLC · Bookkeeping, payroll &amp; HR · Sarasota, Florida</span><span>941.932.3654 · jennifer@jwconsultingsvcs.com</span></div></footer>
+
+<script>
+const plans={
+  1:{n:"Essentials",l:["Monthly bookkeeping & reconciliations","Simple monthly profit & loss","Year-end package for your CPA"]},
+  2:{n:"Growth",l:["Everything in Essentials","Payroll for your team","Monthly review call"]},
+  3:{n:"Full back office",l:["Bookkeeping, payroll and HR support","Employee handbook & compliance","Priority support"]}
+};
+function rec(){
+  const tx=+document.querySelector('input[name=tx]:checked').value;
+  const emp=+document.querySelector('input[name=emp]:checked').value;
+  const up=+document.querySelector('input[name=up]:checked').value;
+  let k=Math.min(3,Math.max(tx,emp+1,emp===2?3:0));
+  const p=plans[k];
+  document.getElementById('rname').textContent=p.n;
+  document.getElementById('rlist').innerHTML=p.l.map(x=>'<li>'+x+'</li>').join('')+(up?'<li>Plus a one-time catch-up clean-up</li>':'');
+}
+document.getElementById('fq').addEventListener('change',rec);rec();
+</script>
+</body>
+</html>
