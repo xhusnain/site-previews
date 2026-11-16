@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Softly Arranged | Flowers, experiences and events in Atlanta</title>
+<meta name="description" content="Softly Arranged by Teesha Prieto: custom flowers, pop-up flower bar experiences and event planning in Atlanta, Georgia and surrounding areas.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23331917'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23eecbc0' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400;0,500;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#fbf7f3; --paper:#f4ece6; --blush:#eecbc0; --rose:#d4899a; --wine:#7a1f3d;
+  --ink:#331917; --soft:#6f5651; --line:#e6d8cf;
+  --serif:"Brygada 1918",Georgia,serif; --sans:"DM Sans",system-ui,sans-serif;
+  --wrap:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.15;letter-spacing:-.01em}
+h2{font-size:clamp(30px,4vw,44px)}
+h3{font-size:24px}
+.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--wine);margin-bottom:14px}
+.lead{color:var(--soft);max-width:560px;margin-top:16px}
+section{padding:112px 0}
+.btn{display:inline-block;background:var(--ink);color:var(--cream);text-decoration:none;padding:14px 28px;border-radius:999px;font-size:15px;transition:background .25s}
+.btn:hover{background:var(--wine)}
+.textlink{font-size:15px;text-decoration:none;border-bottom:1px solid var(--rose);padding-bottom:2px}
+.textlink:hover{color:var(--wine)}
+
+/* header */
+header{position:sticky;top:0;z-index:10;background:rgba(251,247,243,.92);backdrop-filter:blur(8px);border-bottom:1px solid transparent;transition:border-color .3s}
+header.scrolled{border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-family:var(--serif);font-size:22px;text-decoration:none}
+.nav ul{display:flex;gap:32px;list-style:none;font-size:15px}
+.nav ul a{text-decoration:none;color:var(--soft)}
+.nav ul a:hover{color:var(--ink)}
+.nav .btn{padding:10px 20px;font-size:14px}
+
+/* hero */
+.hero{padding:56px 0 96px}
+.hero-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(44px,6vw,72px)}
+.hero h1 em{font-style:italic;color:var(--wine)}
+.hero p{color:var(--soft);margin:22px 0 34px;max-width:440px;font-size:18px}
+.hero .actions{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+.hero-photo{aspect-ratio:4/5;border-radius:220px 220px 16px 16px;overflow:hidden;background:var(--paper)}
+.place{margin-top:28px;font-size:14px;color:var(--soft)}
+
+/* services */
+.services{background:var(--paper)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:56px}
+.svc .ph{aspect-ratio:4/5;border-radius:12px;overflow:hidden;margin-bottom:24px}
+.svc p{color:var(--soft);margin:10px 0 18px;font-size:16px}
+
+/* flowers */
+.fl-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;margin-top:8px}
+.menu{list-style:none;border-top:1px solid var(--line);margin-top:40px}
+.menu li{display:flex;justify-content:space-between;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.menu span{font-family:var(--serif);font-size:21px}
+.menu small{font-size:14px;color:var(--soft);white-space:nowrap;align-self:center}
+.fl-photos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fl-photos div{aspect-ratio:3/4;border-radius:12px;overflow:hidden}
+.fl-photos div:first-child{margin-top:48px}
+
+/* steps */
+.steps{background:var(--ink);color:var(--cream)}
+.steps .eyebrow{color:var(--blush)}
+.steps .lead{color:#d9c6bf}
+.step-list{display:grid;grid-template-columns:repeat(5,1fr);gap:28px;margin-top:56px;list-style:none;counter-reset:s}
+.step-list li{border-top:1px solid rgba(238,203,192,.35);padding-top:20px;counter-increment:s}
+.step-list li::before{content:"0" counter(s);font-family:var(--serif);color:var(--blush);font-size:15px;display:block;margin-bottom:10px}
+.step-list h3{font-size:21px}
+.step-list p{font-size:15px;color:#d9c6bf;margin-top:8px}
+
+/* flower bar */
+.bar-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:72px;align-items:center}
+.bar-photo{aspect-ratio:3/2;border-radius:16px;overflow:hidden}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 34px;list-style:none}
+.tags li{border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:14px;color:var(--soft);background:#fff}
+
+/* about */
+.about{background:var(--paper)}
+.about-grid{display:grid;grid-template-columns:.8fr 1fr;gap:80px;align-items:center}
+.about-photo{aspect-ratio:3/4;border-radius:16px;overflow:hidden}
+.about blockquote{font-family:var(--serif);font-size:clamp(22px,2.4vw,28px);line-height:1.4;margin:24px 0}
+.about p{color:var(--soft);margin-bottom:14px}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px}
+details{border-bottom:1px solid var(--line);padding:22px 0}
+details:first-child{border-top:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;font-family:var(--serif);font-size:20px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--rose);font-family:var(--sans);font-size:22px;line-height:1;transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--soft);margin-top:12px;max-width:560px}
+
+/* contact */
+.contact{background:var(--paper)}
+.ct-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:start}
+.ct-photo{aspect-ratio:4/5;border-radius:16px;overflow:hidden;margin-top:36px}
+form{background:#fff;border-radius:16px;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:18px 20px}
+label{display:flex;flex-direction:column;gap:6px;font-size:14px;color:var(--soft)}
+.wide{grid-column:1/-1}
+input,select,textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--blush);border-color:var(--rose)}
+form .btn{border:0;cursor:pointer;justify-self:start;font:inherit;font-size:15px}
+.done{grid-column:1/-1;color:var(--wine);font-size:15px}
+
+/* footer */
+footer{padding:56px 0 40px;font-size:14px;color:var(--soft)}
+.ft{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-end;border-top:1px solid var(--line);padding-top:32px}
+.ft .logo{color:var(--ink);display:block;margin-bottom:6px}
+.ft nav{display:flex;gap:24px;flex-wrap:wrap}
+.ft nav a{text-decoration:none}
+
+/* gentle fade-in */
+.fade{opacity:0;transform:translateY(14px);transition:opacity .9s ease,transform .9s ease}
+.fade.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.fade{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (max-width:900px){
+  section{padding:80px 0}
+  .nav ul{display:none}
+  .hero-grid,.fl-grid,.bar-grid,.about-grid,.faq-grid,.ct-grid{grid-template-columns:1fr;gap:40px}
+  .hero{padding-top:24px}
+  .svc-grid{grid-template-columns:1fr;gap:48px}
+  .step-list{grid-template-columns:1fr 1fr}
+  .bar-photo{order:-1}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .step-list{grid-template-columns:1fr}
+  form{grid-template-columns:1fr;padding:24px}
+  .nav .btn{display:none}
+}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a class="logo" href="#top">Softly Arranged</a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#flowers">Flowers</a></li>
+      <li><a href="#flower-bar">Flower bar</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <a class="btn" href="#inquire">Start an inquiry</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="fade">
+      <p class="eyebrow">Flowers · Experiences · Events</p>
+      <h1>Thoughtfully planned. <em>Beautifully arranged.</em></h1>
+      <p>Custom flowers, pop-up flower bars and event planning by Teesha Prieto, for meaningful celebrations in Atlanta.</p>
+      <div class="actions">
+        <a class="btn" href="#inquire">Start an inquiry</a>
+        <a class="textlink" href="#services">Explore services</a>
+      </div>
+      <p class="place">Serving Atlanta, Georgia and surrounding areas</p>
+    </div>
+    <div class="hero-photo fade"><img src="img/sa-00.jpg" width="1350" height="900" alt="Roses arranged on an event table" fetchpriority="high"></div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="fade">
+      <p class="eyebrow">What we arrange</p>
+      <h2>Three ways to work together</h2>
+      <p class="lead">Every order is custom. Pricing is discussed once we know your colors, occasion and date.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc fade">
+        <div class="ph"><img src="img/sa-06.jpg" width="1024" height="1536" alt="A custom bouquet of mixed flowers" loading="lazy"></div>
+        <h3>Flowers</h3>
+        <p>Roses from a dozen to hundreds of stems, custom bouquets, floral stands and a pop-up flower shop.</p>
+        <a class="textlink" href="#flowers">See the flowers menu</a>
+      </article>
+      <article class="svc fade">
+        <div class="ph"><img src="img/sa-07.jpg" width="960" height="1440" alt="Guests choosing stems at a rooftop pop-up flower bar" loading="lazy"></div>
+        <h3>Experiences</h3>
+        <p>A pop-up flower bar where guests build their own bouquet from fresh stems, wrapped to take home.</p>
+        <a class="textlink" href="#flower-bar">About the flower bar</a>
+      </article>
+      <article class="svc fade">
+        <div class="ph"><img src="img/sa-22.jpg" width="800" height="1200" alt="A pop-up flower shop at an event" loading="lazy"></div>
+        <h3>Event Planning</h3>
+        <p>Planning and coordination with trusted vendors, shaped around your culture, style and priorities.</p>
+        <a class="textlink" href="#inquire">Plan an event</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="flowers">
+  <div class="wrap fl-grid">
+    <div class="fade">
+      <p class="eyebrow">The flowers menu</p>
+      <h2>Roses and custom bouquets</h2>
+      <p class="lead">Choose your colors, occasion and preferred date. We'll contact you about design, availability and pricing.</p>
+      <ul class="menu">
+        <li><span>12 Roses</span><small>Inquire</small></li>
+        <li><span>24 Roses</span><small>Inquire</small></li>
+        <li><span>50 Roses</span><small>Inquire</small></li>
+        <li><span>100 Roses</span><small>Inquire</small></li>
+        <li><span>200–400 Roses</span><small>Custom quote</small></li>
+        <li><span>Custom Bouquet</span><small>Inquire</small></li>
+      </ul>
+      <p style="margin-top:32px"><a class="btn" href="#inquire">Start a flower order</a></p>
+    </div>
+    <div class="fl-photos fade">
+      <div><img src="img/sa-01.jpg" width="960" height="1440" alt="A bouquet of twelve roses" loading="lazy"></div>
+      <div><img src="img/sa-04.jpg" width="1024" height="1536" alt="An arrangement of one hundred roses" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="steps">
+  <div class="wrap">
+    <div class="fade">
+      <p class="eyebrow">How it works</p>
+      <h2>From inquiry to celebration</h2>
+      <p class="lead">Whether it's a bouquet, a flower bar or a whole event, it starts with your colors, your occasion and your date.</p>
+    </div>
+    <ol class="step-list fade">
+      <li><h3>Inquire</h3><p>Tell us what you'd like, with your date, occasion and vision.</p></li>
+      <li><h3>Consult</h3><p>We talk through colors, design, availability and pricing.</p></li>
+      <li><h3>Design</h3><p>Every order is custom, planned around your style.</p></li>
+      <li><h3>Set up</h3><p>Teesha and her team bring it together on the day.</p></li>
+      <li><h3>Celebrate</h3><p>Enjoy being a guest at your own celebration.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="flower-bar">
+  <div class="wrap bar-grid">
+    <div class="bar-photo fade"><img src="img/sa-24.jpg" width="1200" height="800" alt="Guests building their own bouquets at a pop-up flower bar" loading="lazy"></div>
+    <div class="fade">
+      <p class="eyebrow">Experiences</p>
+      <h2>A pop-up flower bar</h2>
+      <p class="lead">Guests build their own bouquet from a bar of fresh stems, and each one is wrapped to take home. Most recently at the Shades of Brown rooftop event.</p>
+      <ul class="tags">
+        <li>Rooftop parties</li><li>Bridal &amp; baby showers</li><li>Brand events</li><li>Community gatherings</li>
+      </ul>
+      <a class="btn" href="#inquire">Book a flower bar</a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-photo fade"><img src="img/sa-25.jpg" width="800" height="1200" alt="Flowers, ribbon and a planning notebook on a table" loading="lazy"></div>
+    <div class="fade">
+      <p class="eyebrow">Meet Teesha</p>
+      <h2>Your event planner and florist</h2>
+      <blockquote>“Every celebration should reflect the people in it: their culture, their style and their priorities.”</blockquote>
+      <p>Teesha Prieto brings more than ten years in hospitality and six in event planning to every order. With her team and trusted vendor connections, she plans occasions from intimate gatherings to corporate events.</p>
+      <p><a class="textlink" href="https://www.instagram.com/softlyarranged/">Follow @softlyarranged</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap faq-grid">
+    <div class="fade">
+      <p class="eyebrow">Questions</p>
+      <h2>Before you inquire</h2>
+      <p class="lead">Anything else, just ask in the inquiry form.</p>
+    </div>
+    <div class="fade">
+      <details><summary>How much does an order cost?</summary><p>Every order is custom. Share your colors, occasion and date, and we'll contact you about design, availability and pricing.</p></details>
+      <details><summary>Where do you work?</summary><p>Atlanta, Georgia and surrounding areas.</p></details>
+      <details><summary>What can you arrange for my event?</summary><p>Flowers, a pop-up flower bar, or full event planning and coordination, from intimate gatherings to corporate events.</p></details>
+      <details><summary>How does the flower bar work?</summary><p>Guests build their own bouquet from a bar of fresh stems, and each one is wrapped to take home.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="inquire">
+  <div class="wrap ct-grid">
+    <div class="fade">
+      <p class="eyebrow">Inquire</p>
+      <h2>What can we arrange for you?</h2>
+      <p class="lead">Tell us a little about your occasion and we'll be in touch.</p>
+      <div class="ct-photo"><img src="img/sa-26.jpg" width="1536" height="1024" alt="Fresh flowers and arrangements on a counter" loading="lazy"></div>
+    </div>
+    <form class="fade" action="#inquire" method="post">
+      <label class="wide">What can we arrange?<select name="service"><option>Flowers</option><option>Experiences</option><option>Event Planning</option></select></label>
+      <label>Your name<input name="name" type="text" autocomplete="name" required></label>
+      <label>Email<input name="email" type="email" autocomplete="email" required></label>
+      <label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+      <label>Requested date<input name="date" type="date"></label>
+      <label>Occasion<input name="occasion" type="text"></label>
+      <label>Guest count<input name="guests" type="text" inputmode="numeric"></label>
+      <label class="wide">Your vision<textarea name="vision" rows="4"></textarea></label>
+      <button class="btn" type="submit">Send inquiry</button>
+      <p class="done" role="status" hidden>Thank you! This is a design preview, so nothing was sent.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap ft">
+    <div><a class="logo" href="#top">Softly Arranged</a>Atlanta, Georgia and surrounding areas</div>
+    <nav><a href="#services">Services</a><a href="#flowers">Flowers</a><a href="#flower-bar">Flower bar</a><a href="#about">About</a><a href="https://www.instagram.com/softlyarranged/">Instagram</a></nav>
+    <div>© Softly Arranged</div>
+  </div>
+</footer>
+
+<script>
+const hdr=document.querySelector('header');
+addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>8),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.fade').forEach(el=>io.observe(el));
+document.querySelector('form').addEventListener('submit',e=>{e.preventDefault();e.target.querySelector('.done').hidden=false});
+</script>
+</body>
+</html>
