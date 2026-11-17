@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>QZuzo Cleaning Services · Ottawa · design preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F8F8;--ink:#13232B;--soft:#5A6B72;--teal:#0F6E6A;--teal2:#138A84;--mint:#DDF1EE;--line:#DCE6E6;--card:#fff;--sun:#FFC857}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Outfit,sans-serif;font-weight:600;line-height:1.08;letter-spacing:-.01em}
+.note{background:var(--ink);color:#B9C8CD;font-size:13px;text-align:center;padding:7px 16px}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;gap:12px}
+.logo{font:700 22px Outfit;color:var(--teal);text-decoration:none}
+.logo span{color:var(--ink);font-weight:500}
+.tel{font-weight:600;color:var(--ink);text-decoration:none;white-space:nowrap}
+.btn{display:inline-block;background:var(--teal);color:#fff;border:0;border-radius:12px;padding:14px 22px;font:600 16px Inter;text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--teal2)}
+.hero{padding:26px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal2);margin-bottom:12px}
+.hero h1{font-size:clamp(36px,5vw,58px)}
+.hero p{color:var(--soft);font-size:18px;margin:16px 0 24px;max-width:520px}
+.hero img{border-radius:18px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;font-size:14px;color:var(--soft)}
+.trust b{color:var(--ink)}
+section{padding:58px 0}
+h2{font-size:clamp(28px,3.6vw,42px);margin-bottom:10px}
+.intro{color:var(--soft);max-width:640px;margin-bottom:30px}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.svc article{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.svc h3{font-size:19px;margin-bottom:6px}
+.svc p{font-size:14.5px;color:var(--soft)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:20px;display:grid;grid-template-columns:1.25fr .75fr;overflow:hidden}
+.q form{padding:28px;display:grid;gap:20px}
+.h{font-weight:600;display:block;margin-bottom:8px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tabs input,.opt input{position:absolute;opacity:0;pointer-events:none}
+.tabs label{border:1.5px solid var(--line);border-radius:999px;padding:9px 16px;cursor:pointer;font-weight:600;font-size:15px}
+.tabs input:checked+label{background:var(--teal);border-color:var(--teal);color:#fff}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cnt{display:flex;align-items:center;justify-content:space-between;border:1px solid var(--line);border-radius:12px;padding:8px 12px}
+.cnt button{width:32px;height:32px;border-radius:50%;border:1.5px solid var(--line);background:#fff;font-size:18px;cursor:pointer}
+.cnt b{min-width:24px;text-align:center}
+select,input[type=text],input[type=tel],input[type=email],input[type=date]{font:16px Inter;padding:12px 13px;border:1px solid var(--line);border-radius:12px;width:100%;background:#fff}
+select:focus,input:focus{outline:2px solid var(--teal2);border-color:transparent}
+.opt{display:flex;flex-wrap:wrap;gap:8px}
+.opt label{border:1.5px solid var(--line);border-radius:10px;padding:8px 12px;cursor:pointer;font-size:14.5px}
+.opt input:checked+label{border-color:var(--teal);background:var(--mint)}
+.hide{display:none!important}
+.side{background:var(--teal);color:#D7EEEC;padding:28px;display:flex;flex-direction:column;gap:14px}
+.side h3{color:#fff;font-size:22px}
+.price{font:700 50px Outfit;color:#fff;line-height:1}
+.side ul{list-style:none;display:grid;gap:6px;font-size:14.5px}
+.side li::before{content:"✓ ";color:var(--sun)}
+.side .fine{font-size:12.5px;color:#A9D3CF;margin-top:auto}
+.done{display:none;background:var(--mint);border-radius:12px;padding:14px;font-size:15px}
+.auto{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.auto article{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.auto h3{font-size:19px;margin-bottom:6px}
+.auto p{font-size:15px;color:var(--soft)}
+.msg{margin-top:12px;background:#EEF4F4;border-radius:14px 14px 14px 4px;padding:12px 14px;font-size:14.5px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gal img{border-radius:16px;aspect-ratio:3/2;object-fit:cover;width:100%}
+footer{background:var(--ink);color:#9FB0B6;padding:36px 0;font-size:14px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .hero .wrap,.q{grid-template-columns:1fr}
+  .svc{grid-template-columns:1fr 1fr}
+  .auto,.gal{grid-template-columns:1fr}
+  header .btn{display:none}
+}
+@media (max-width:480px){.svc,.row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="note">Design preview for QZuzo Cleaning Services, made by Husnain Babar. Prices shown are examples; you set the real ones.</div>
+<header><div class="wrap">
+  <a class="logo" href="#">QZuzo <span>Cleaning</span></a>
+  <div style="display:flex;gap:14px;align-items:center"><a class="tel" href="tel:6134136813">613-413-6813</a><a class="btn" href="#quote">Instant quote</a></div>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div>
+    <div class="eyebrow">Ottawa &amp; surrounding areas</div>
+    <h1>Clean offices. Fresh homes. A price in 30 seconds.</h1>
+    <p>Locally owned commercial and residential cleaning in Ottawa. Get an instant estimate, pick a date, and we'll take it from there.</p>
+    <a class="btn" href="#quote">Get my price</a>
+    <div class="trust"><span><b>Locally owned</b> in Ottawa</span><span><b>Offices</b> &amp; homes</span><span><b>Move-in / move-out</b> &amp; post-construction</span></div>
+  </div>
+  <img src="img/clean1.jpg" alt="Freshly cleaned small office">
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="svc">
+    <article><h3>Office cleaning</h3><p>Daily, weekly or after-hours cleaning for offices and small businesses.</p></article>
+    <article><h3>Home cleaning</h3><p>Regular or one-time cleaning for houses, condos and apartments.</p></article>
+    <article><h3>Move-in / move-out</h3><p>Empty-unit deep cleans for tenants, landlords and property managers.</p></article>
+    <article><h3>Post-construction</h3><p>Dust, debris and detail cleaning after renovations and builds.</p></article>
+  </div>
+</div></section>
+
+<section id="quote" style="padding-top:0"><div class="wrap">
+  <h2>Instant estimate</h2>
+  <p class="intro">Most cleaning enquiries start with "how much?". This answers it on the spot, day or night, and sends you a ready-to-confirm booking.</p>
+  <div class="q">
+    <form id="f" novalidate>
+      <div><span class="h">1. What needs cleaning?</span>
+        <div class="tabs">
+          <input type="radio" name="t" id="t1" value="home" checked><label for="t1">Home</label>
+          <input type="radio" name="t" id="t2" value="move"><label for="t2">Move-in / out</label>
+          <input type="radio" name="t" id="t3" value="office"><label for="t3">Office</label>
+          <input type="radio" name="t" id="t4" value="post"><label for="t4">Post-construction</label>
+        </div></div>
+      <div id="homeF"><span class="h">2. Size</span>
+        <div class="row">
+          <div class="cnt">Bedrooms <span><button type="button" data-k="bd" data-d="-1">−</button> <b id="bd">2</b> <button type="button" data-k="bd" data-d="1">+</button></span></div>
+          <div class="cnt">Bathrooms <span><button type="button" data-k="ba" data-d="-1">−</button> <b id="ba">1</b> <button type="button" data-k="ba" data-d="1">+</button></span></div>
+        </div></div>
+      <div id="offF" class="hide"><span class="h">2. Office size</span>
+        <select id="sq"><option value="1">Up to 1,500 sq ft</option><option value="2" selected>1,500–3,000 sq ft</option><option value="3">3,000–6,000 sq ft</option><option value="4">6,000+ sq ft</option></select></div>
+      <div id="freqF"><span class="h">3. How often?</span>
+        <div class="tabs">
+          <input type="radio" name="fq" id="q1" value="1"><label for="q1">One time</label>
+          <input type="radio" name="fq" id="q2" value="0.85" checked><label for="q2">Every 2 weeks</label>
+          <input type="radio" name="fq" id="q3" value="0.8"><label for="q3">Weekly</label>
+        </div></div>
+      <div id="extF"><span class="h">Extras</span>
+        <div class="opt">
+          <input type="checkbox" id="x1" value="35"><label for="x1">Inside oven</label>
+          <input type="checkbox" id="x2" value="30"><label for="x2">Inside fridge</label>
+          <input type="checkbox" id="x3" value="40"><label for="x3">Interior windows</label>
+          <input type="checkbox" id="x4" value="25"><label for="x4">Pet hair</label>
+        </div></div>
+      <div><span class="h">4. Date and details</span>
+        <div class="row"><input type="date" id="dt"><input type="text" id="pc" placeholder="Postal code (e.g. K1N)"></div>
+        <div class="row" style="margin-top:10px"><input type="text" id="nm" placeholder="Name"><input type="tel" id="ph" placeholder="Phone"></div>
+      </div>
+      <button class="btn" type="submit">Request this booking</button>
+      <div class="done" id="done"></div>
+    </form>
+    <aside class="side">
+      <h3>Your estimate</h3>
+      <div><div class="price" id="pr">$0</div><small id="per">per visit</small></div>
+      <ul id="sum"></ul>
+      <p class="fine">Example prices only. In the real version you set your own rates, and you confirm every booking before it's final.</p>
+    </aside>
+  </div>
+</div></section>
+
+<section style="background:#E9F2F1"><div class="wrap">
+  <h2>Runs itself while you clean</h2>
+  <p class="intro">For a new cleaning company, the office work grows faster than the team. These parts happen automatically.</p>
+  <div class="auto">
+    <article><h3>Booking confirmations</h3><p>Every request gets an instant reply, then a reminder the day before with what to expect.</p><div class="msg">Hi Maria, your home cleaning with QZuzo is confirmed for Thursday 10am. Reply R to reschedule.</div></article>
+    <article><h3>Recurring clients</h3><p>Weekly and bi-weekly clients are scheduled automatically, with invoices sent after each visit.</p><div class="msg">Thanks for choosing QZuzo! Your invoice for today's clean is ready. Pay securely here.</div></article>
+    <article><h3>Reviews and referrals</h3><p>After each clean, happy clients get a Google review link: the fastest way for a new Ottawa business to get found.</p><div class="msg">How did we do today? A quick Google review really helps a small local business like ours.</div></article>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="gal">
+    <img src="img/clean2.jpg" alt="Clean condo kitchen with supplies">
+    <img src="img/clean3.jpg" alt="Empty living room after a move-out clean">
+    <img src="img/clean1.jpg" alt="Clean office" style="object-position:30% center">
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <p><b style="color:#fff">QZuzo Cleaning Services</b> · Ottawa, Ontario · <a href="tel:6134136813">613-413-6813</a></p>
+  <p style="margin-top:8px">Design preview by Husnain Babar, Software Engineer. Not the live site.</p>
+</div></footer>
+
+<script>
+const $=id=>document.getElementById(id);
+const c={bd:2,ba:1};
+document.querySelectorAll('.cnt button').forEach(b=>b.onclick=()=>{const k=b.dataset.k;c[k]=Math.max(k==='bd'?0:1,Math.min(8,c[k]+ +b.dataset.d));$(k).textContent=c[k];calc()});
+function type(){return document.querySelector('input[name=t]:checked').value}
+function calc(){
+  const t=type(); const off=t==='office';
+  $('homeF').classList.toggle('hide',off); $('offF').classList.toggle('hide',!off);
+  $('freqF').classList.toggle('hide',t==='move'||t==='post'); $('extF').classList.toggle('hide',off);
+  let p, items=[];
+  if(off){const s=+$('sq').value;p=[0,95,150,240,360][s];items.push($('sq').selectedOptions[0].text)}
+  else{p=90+c.bd*25+c.ba*30; items.push(c.bd+' bed, '+c.ba+' bath')}
+  if(t==='move'){p*=1.6;items.push('Move-in / move-out deep clean')}
+  if(t==='post'){p*=1.9;items.push('Post-construction clean')}
+  let fq=1;
+  if(t==='home'||t==='office'){fq=+document.querySelector('input[name=fq]:checked').value; items.push({1:'One time',0.85:'Every 2 weeks (15% off)',0.8:'Weekly (20% off)'}[fq])}
+  p*=fq;
+  if(!off) document.querySelectorAll('#extF input:checked').forEach(x=>{p+=+x.value;items.push(x.nextElementSibling.textContent)});
+  $('pr').textContent='$'+Math.round(p);
+  $('per').textContent=(fq<1?'per visit, plus HST':'one time, plus HST');
+  $('sum').innerHTML=items.map(i=>'<li>'+i+'</li>').join('');
+}
+document.querySelectorAll('input,select').forEach(i=>i.addEventListener('change',calc));
+$('f').addEventListener('submit',e=>{
+  e.preventDefault(); const d=$('done'); d.style.display='block';
+  if(!$('nm').value.trim()||!$('ph').value.trim()){d.textContent='Please add your name and phone so we can confirm your booking.';return}
+  d.innerHTML='<b>Preview only, nothing was sent.</b> In the live version you get this booking request with the estimate, and the client gets an instant confirmation text.';
+});
+calc();
+</script>
+</body>
+</html>
