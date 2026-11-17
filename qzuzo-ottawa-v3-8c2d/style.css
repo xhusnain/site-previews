@@ -74,7 +74,7 @@ p{color:var(--muted)}
 .mask{overflow:hidden}
 .mask img{transform:scale(1.15);clip-path:inset(12% 0 12% 0);transition:transform 1.4s var(--ease),clip-path 1.2s var(--ease)}
 .mask.in img{transform:scale(1);clip-path:inset(0)}
-.line-in{display:inline-block;overflow:hidden;vertical-align:top}
+.line-in{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.14em;margin-bottom:-.14em}
 .line-in>span{display:inline-block;transform:translateY(105%);transition:transform 1s var(--ease)}
 .loaded .line-in>span{transform:none}
 
