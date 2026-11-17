@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>A&amp;M Diesel Techs · Fleet service desk · design preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4F4F2;--ink:#16181B;--soft:#5E636A;--y:#F2B705;--dark:#1E2228;--line:#DEDFDB;--card:#fff;--ok:#2F7D4F;--wait:#B7791F;--blue:#2D5B8A}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 Barlow,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:"Barlow Condensed",sans-serif;font-weight:700;line-height:1.02;text-transform:uppercase;letter-spacing:.01em}
+.note{background:var(--y);color:var(--ink);font-size:13px;text-align:center;padding:7px 16px;font-weight:500}
+header{background:var(--dark);color:#fff}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;gap:12px}
+.logo{font:700 24px "Barlow Condensed";letter-spacing:.04em;color:#fff;text-decoration:none}
+.logo span{color:var(--y)}
+.tel{color:#fff;font-weight:600;text-decoration:none;white-space:nowrap}
+.btn{display:inline-block;background:var(--y);color:var(--ink);border:0;border-radius:8px;padding:14px 22px;font:700 17px Barlow;text-decoration:none;cursor:pointer}
+.btn.dark{background:var(--dark);color:#fff}
+.hero{background:var(--dark);color:#E8E9EA;padding:30px 0 60px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(40px,6vw,72px);color:#fff}
+.hero h1 em{font-style:normal;color:var(--y)}
+.hero p{font-size:18px;color:#B9BDC2;margin:16px 0 24px;max-width:520px}
+.hero img{border-radius:12px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.pills span{border:1px solid #3A4048;border-radius:99px;padding:6px 12px;font-size:14px}
+section{padding:60px 0}
+h2{font-size:clamp(32px,4vw,46px);margin-bottom:10px}
+.intro{color:var(--soft);max-width:660px;margin-bottom:30px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card h3{font-size:24px;margin-bottom:14px}
+form{display:grid;gap:14px}
+label{font-weight:600;font-size:14px;display:grid;gap:6px}
+input,select,textarea{font:16px Barlow;padding:11px 12px;border:1px solid var(--line);border-radius:8px;width:100%;background:#fff}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--y);border-color:transparent}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label{border:1.5px solid var(--line);border-radius:8px;padding:8px 12px;cursor:pointer;font-weight:500}
+.seg input:checked+label{border-color:var(--ink);background:var(--ink);color:#fff}
+.board{display:grid;gap:10px}
+.job{border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:grid;grid-template-columns:1fr auto;gap:4px 10px;font-size:15px;background:#FAFAF8}
+.job b{font-weight:600}
+.job small{color:var(--soft);grid-column:1/2}
+.tag{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:3px 8px;border-radius:6px;align-self:start;white-space:nowrap}
+.t-new{background:#FDF1C7;color:#7A5A00}.t-route{background:#DCE8F5;color:var(--blue)}.t-work{background:#FBE7D3;color:var(--wait)}.t-done{background:#DDEFE3;color:var(--ok)}
+.flash{animation:fl 1.6s ease}
+@keyframes fl{0%{background:#FFF3BF}100%{background:#FAFAF8}}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.steps article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.steps b{font:700 34px "Barlow Condensed";color:var(--y);-webkit-text-stroke:1px var(--ink)}
+.steps h3{font-size:21px;margin:6px 0}
+.steps p{font-size:15px;color:var(--soft)}
+.inv{font-size:15px}
+.inv table{width:100%;border-collapse:collapse;margin:10px 0}
+.inv td{padding:7px 0;border-bottom:1px solid var(--line)}
+.inv td:last-child{text-align:right}
+.inv .tot td{font-weight:700;border:0;font-size:17px}
+.sms{background:#EEF1F4;border-radius:14px 14px 14px 4px;padding:12px 14px;font-size:14.5px;margin-top:10px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gal img{border-radius:12px;aspect-ratio:3/2;object-fit:cover;width:100%}
+.done{display:none;background:#FDF6DC;border-radius:10px;padding:12px;font-size:15px}
+footer{background:var(--dark);color:#A9AEB4;padding:36px 0;font-size:14px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .hero .wrap,.grid2{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .gal{grid-template-columns:1fr}
+  header .btn{display:none}
+}
+@media (max-width:480px){.steps,.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="note">Design preview for A&amp;M Diesel Techs, made by Husnain Babar. Sample data, nothing is sent.</div>
+<header><div class="wrap">
+  <a class="logo" href="#">A&amp;M <span>DIESEL TECHS</span></a>
+  <div style="display:flex;gap:14px;align-items:center"><a class="tel" href="tel:9198223002">(919) 822-3002</a><a class="btn" href="#request">Request service</a></div>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div>
+    <h1>Truck down? <em>Send the unit, we send a tech.</em></h1>
+    <p>Mobile diesel repair and fleet maintenance across the Triangle. Fleet managers log a breakdown or PM in under a minute, see when the tech is on the way, and get the invoice the moment the job is done.</p>
+    <a class="btn" href="#request">Request service</a>
+    <div class="pills"><span>24-hour roadside</span><span>Light, medium &amp; heavy duty</span><span>Fuel delivery</span><span>Fleet PM</span></div>
+  </div>
+  <img src="img/diesel1.jpg" alt="Service truck parked beside a semi on the highway shoulder">
+</div></section>
+
+<section id="request"><div class="wrap">
+  <h2>Fleet service desk</h2>
+  <p class="intro">Today, "Book Online" on your site says "Nothing to book right now", so every job starts with a phone call and gets typed up by hand. This is what a request looks like when the customer fills it in, and how it shows up on your board. Try it.</p>
+  <div class="grid2">
+    <div class="card">
+      <h3>Request service</h3>
+      <form id="f" novalidate>
+        <div class="seg">
+          <input type="radio" name="u" id="u1" value="Breakdown" checked><label for="u1">Breakdown</label>
+          <input type="radio" name="u" id="u2" value="PM service"><label for="u2">PM service</label>
+          <input type="radio" name="u" id="u3" value="Out of fuel"><label for="u3">Out of fuel</label>
+          <input type="radio" name="u" id="u4" value="Lock out"><label for="u4">Lock out</label>
+        </div>
+        <div class="two">
+          <label>Company<input id="co" placeholder="e.g. Triangle Produce Co."></label>
+          <label>Unit # / VIN<input id="un" placeholder="e.g. Unit 214"></label>
+        </div>
+        <label>Where is the truck?<input id="loc" placeholder="Address, exit or mile marker"></label>
+        <label>What's going on?<textarea id="is" rows="3" placeholder="e.g. Check engine light, losing power on hills, DEF warning"></textarea></label>
+        <div class="two">
+          <label>Your name<input id="nm"></label>
+          <label>Mobile (for updates)<input id="ph" type="tel"></label>
+        </div>
+        <button class="btn dark" type="submit">Send request</button>
+        <div class="done" id="done"></div>
+      </form>
+    </div>
+    <div class="card">
+      <h3>Today's board</h3>
+      <div class="board" id="board">
+        <div class="job"><b>Unit 87 · Bull City Movers</b><span class="tag t-work">In progress</span><small>Brake job · I-40 exit 279 · Tech: Marcus · 2.5 h so far</small></div>
+        <div class="job"><b>Unit 12 · RTP Linen Supply</b><span class="tag t-route">Tech en route</span><small>PM service · Morrisville yard · ETA 1:40 pm</small></div>
+        <div class="job"><b>Unit 301 · Cardinal Freight</b><span class="tag t-done">Done · invoiced</span><small>Battery + alternator · Durham · $684.20 sent 11:12 am</small></div>
+      </div>
+      <div class="sms" id="sms">Texts go out on their own: "A&amp;M Diesel: Marcus is on the way to Unit 12, ETA 1:40 pm."</div>
+    </div>
+  </div>
+</div></section>
+
+<section style="background:#EAEAE6"><div class="wrap">
+  <h2>From call to paid, without the paperwork</h2>
+  <p class="intro">The jobs in your service writer ad that are the same every time, done automatically, so your coordinator handles approvals and the customers.</p>
+  <div class="steps">
+    <article><b>01</b><h3>Request in</h3><p>Fleet fills in unit, location and issue, or the office logs a phone call in 20 seconds. Emergencies jump to the top.</p></article>
+    <article><b>02</b><h3>Dispatch</h3><p>Assign a tech, and the customer gets a text with who is coming and when.</p></article>
+    <article><b>03</b><h3>Tech updates from the truck</h3><p>Parts used, labor hours, photos and notes from the tech's phone. No more chasing mechanics for repair descriptions.</p></article>
+    <article><b>04</b><h3>Invoice and follow-up</h3><p>Job marked done, invoice goes out with the work order attached. Unpaid after 15 days? A polite reminder goes out on its own.</p></article>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="grid2">
+    <div class="card inv">
+      <h3>The invoice the customer gets</h3>
+      <p><b>Cardinal Freight · Unit 301</b><br><span style="color:var(--soft)">Work order #1047 · Durham, NC · completed 11:05 am</span></p>
+      <table>
+        <tr><td>Group 31 battery (x2)</td><td>$389.00</td></tr>
+        <tr><td>Alternator test + belt</td><td>$62.70</td></tr>
+        <tr><td>Labor, 1.5 h</td><td>$195.00</td></tr>
+        <tr><td>Mobile service call</td><td>$37.50</td></tr>
+        <tr class="tot"><td>Total</td><td>$684.20</td></tr>
+      </table>
+      <p style="color:var(--soft);font-size:14px">Sample numbers. Built from what the tech logged on site, with photos attached.</p>
+    </div>
+    <div class="card">
+      <h3>PM reminders for fleets</h3>
+      <p style="color:var(--soft)">Every truck you service gets a next-due date or mileage. Fleet managers get a reminder before it's due, with a one-tap "book it" link. Steady work instead of only breakdowns.</p>
+      <div class="sms">A&amp;M Diesel: Units 12, 14 and 19 are due for PM service next week. Reply YES and we'll schedule them at your yard Tuesday morning.</div>
+    </div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="gal">
+    <img src="img/diesel2.jpg" alt="Mechanic working on a heavy-duty diesel engine">
+    <img src="img/diesel3.jpg" alt="Fleet of box trucks in a lot with a service truck">
+    <img src="img/diesel1.jpg" alt="Service truck on the highway shoulder" style="object-position:70% center">
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <p><b style="color:#fff">A&amp;M Diesel Techs LLC</b> · Durham, NC and the Triangle · <a href="tel:9198223002">(919) 822-3002</a> · <a href="mailto:am.dieseltechs@gmail.com">am.dieseltechs@gmail.com</a></p>
+  <p style="margin-top:8px">Design preview by Husnain Babar, Software Engineer. Not the live site.</p>
+</div></footer>
+
+<script>
+const $=id=>document.getElementById(id);
+$('f').addEventListener('submit',e=>{
+  e.preventDefault();
+  const d=$('done');d.style.display='block';
+  const type=document.querySelector('input[name=u]:checked').value;
+  const co=$('co').value.trim()||'Your company', un=$('un').value.trim()||'Unit ?', loc=$('loc').value.trim()||'location given';
+  if(!$('ph').value.trim()){d.textContent='Add a mobile number so we can text you when the tech is on the way.';return}
+  const j=document.createElement('div');j.className='job flash';
+  j.innerHTML=`<b></b><span class="tag t-new">New · ${type==='Breakdown'?'priority':'to schedule'}</span><small></small>`;
+  j.querySelector('b').textContent=un+' · '+co;
+  j.querySelector('small').textContent=type+' · '+loc+' · just now';
+  $('board').prepend(j);
+  $('sms').textContent='Text to '+($('nm').value.trim()||'you')+': "A&M Diesel got your request for '+un+'. We\'ll text you when a tech is on the way."';
+  d.innerHTML='<b>Preview only, nothing was sent.</b> Your request is now at the top of the board on the right.';
+});
+</script>
+</body>
+</html>
