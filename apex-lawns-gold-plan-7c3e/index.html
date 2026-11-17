@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Apex Lawns · Gold Plan sign-up · design preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F7F2;--ink:#17201A;--soft:#5B665E;--green:#1F5130;--green2:#2C6B40;--lime:#C8E06A;--line:#DFE3D8;--card:#fff;--warn:#B4542B}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Archivo,sans-serif;line-height:1.08;letter-spacing:-.01em}
+.note{background:var(--ink);color:#C9D2CB;font-size:13px;text-align:center;padding:7px 16px}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;gap:16px}
+.logo{font:800 20px Archivo;letter-spacing:.04em;text-decoration:none;color:var(--green)}
+.logo span{color:var(--ink);font-weight:500}
+header a.tel{font-weight:600;text-decoration:none;color:var(--ink);white-space:nowrap}
+.btn{display:inline-block;background:var(--green);color:#fff;border:0;border-radius:10px;padding:14px 22px;font:600 16px Inter;text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--green2)}
+.btn.lime{background:var(--lime);color:var(--ink)}
+.hero{padding:28px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--green2);margin-bottom:12px}
+.hero h1{font-size:clamp(36px,5vw,58px)}
+.hero p{color:var(--soft);font-size:18px;margin:18px 0 26px;max-width:520px}
+.hero img{border-radius:16px;aspect-ratio:4/5;object-fit:cover;width:100%}
+.ticks{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;font-size:14px;color:var(--soft)}
+.ticks b{color:var(--ink)}
+section{padding:64px 0}
+h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:12px}
+.intro{color:var(--soft);max-width:640px;margin-bottom:34px}
+/* calculator */
+.calc{background:var(--card);border:1px solid var(--line);border-radius:18px;display:grid;grid-template-columns:1.2fr .8fr;overflow:hidden}
+.calc form{padding:30px;display:grid;gap:22px}
+.step{display:grid;gap:10px}
+.step label.h{font-weight:600}
+.step small{color:var(--soft)}
+input[type=text],input[type=email],input[type=tel]{width:100%;font:16px Inter;padding:13px 14px;border:1px solid var(--line);border-radius:10px;background:#fff}
+input:focus{outline:2px solid var(--green2);border-color:transparent}
+.sizes{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.sizes label{border:1.5px solid var(--line);border-radius:12px;padding:12px 10px;text-align:center;cursor:pointer;font-size:14px}
+.sizes label b{display:block;font:700 15px Archivo}
+.sizes input{position:absolute;opacity:0;pointer-events:none}
+.sizes input:checked+label{border-color:var(--green);background:#EEF4E6}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:15px}
+.chk input{margin-top:5px;accent-color:var(--green)}
+.pc-msg{font-size:14px;min-height:20px}
+.pc-msg.ok{color:var(--green2)}.pc-msg.no{color:var(--warn)}
+.summary{background:var(--green);color:#E9F1E6;padding:30px;display:flex;flex-direction:column;gap:16px}
+.summary h3{font-size:22px;color:#fff}
+.price{font:800 54px Archivo;color:#fff;line-height:1}
+.price small{font:500 16px Inter;color:#C8D8C6}
+.summary ul{list-style:none;display:grid;gap:8px;font-size:15px}
+.summary li::before{content:"✓ ";color:var(--lime)}
+.summary .fine{font-size:12.5px;color:#B9CDB7;margin-top:auto}
+/* calendar */
+.cal{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.cal div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.cal b{font:700 13px Inter;letter-spacing:.1em;text-transform:uppercase;color:var(--green2)}
+.cal h3{font-size:18px;margin:6px 0}
+.cal p{font-size:14px;color:var(--soft)}
+/* automation */
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.flow article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.flow h3{font-size:18px;margin-bottom:8px}
+.flow p{font-size:15px;color:var(--soft)}
+.sms{margin-top:14px;background:#EEF4E6;border-radius:14px 14px 14px 4px;padding:12px 14px;font-size:14px;color:var(--ink)}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gal img{border-radius:14px;aspect-ratio:3/2;object-fit:cover;width:100%}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.reviews blockquote{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;font-size:15px}
+.reviews cite{display:block;margin-top:12px;font-style:normal;font-weight:600;font-size:14px}
+.stars{color:#E2A500;letter-spacing:2px}
+footer{background:var(--ink);color:#AEB8B0;padding:40px 0;font-size:14px}
+footer a{color:#fff}
+.done{display:none;background:#EEF4E6;border-radius:12px;padding:16px;font-size:15px}
+@media (max-width:860px){
+  .hero .wrap,.calc{grid-template-columns:1fr}
+  .hero img{aspect-ratio:3/2}
+  .cal{grid-template-columns:1fr 1fr}
+  .flow,.reviews,.gal{grid-template-columns:1fr}
+  .sizes{grid-template-columns:1fr 1fr}
+  header .btn{display:none}
+}
+</style>
+</head>
+<body>
+<div class="note">Design preview for Apex Lawns, made by Husnain Babar. Prices shown are examples; you set the real ones.</div>
+<header><div class="wrap">
+  <a class="logo" href="#">APEX <span>LAWNS</span></a>
+  <div class="row"><a class="tel" href="tel:08008886957">0800 888 6957</a><a class="btn" href="#join">Join the Gold Plan</a></div>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div>
+    <div class="eyebrow">South Manchester &amp; Cheshire</div>
+    <h1>Your Gold Plan price in 30 seconds. Sign up tonight.</h1>
+    <p>Five greenkeeper-standard treatments a year. Pick your lawn size, check your postcode, and you're on the round. No waiting for a call back.</p>
+    <a class="btn" href="#join">Get my price</a>
+    <div class="ticks"><span><b>5</b> treatments a year</span><span><b>Text</b> the day before each visit</span><span><b>Pay</b> monthly or per visit</span></div>
+  </div>
+  <img src="img/lawn1.jpg" alt="Thick striped back lawn behind a semi-detached house">
+</div></section>
+
+<section id="join" style="padding-top:0"><div class="wrap">
+  <h2>Join the Gold Plan</h2>
+  <p class="intro">Right now customers leave a name and number and wait for a call. This lets them see the price and sign up on the spot, any time of day, and lands straight in your schedule.</p>
+  <div class="calc">
+    <form id="f" novalidate>
+      <div class="step">
+        <label class="h" for="pc">1. Your postcode</label>
+        <div class="row"><input type="text" id="pc" placeholder="e.g. SK8 7JA" style="max-width:220px" autocomplete="postal-code"><span class="pc-msg" id="pcmsg"></span></div>
+      </div>
+      <div class="step">
+        <label class="h">2. Roughly how big is your lawn?</label>
+        <small>Front and back together. Not sure? Pick the closest; we check on the first visit.</small>
+        <div class="sizes">
+          <input type="radio" name="s" id="s1" value="1"><label for="s1"><b>Small</b>up to 50 m²</label>
+          <input type="radio" name="s" id="s2" value="2" checked><label for="s2"><b>Medium</b>50–150 m²</label>
+          <input type="radio" name="s" id="s3" value="3"><label for="s3"><b>Large</b>150–300 m²</label>
+          <input type="radio" name="s" id="s4" value="4"><label for="s4"><b>Extra large</b>300 m²+</label>
+        </div>
+      </div>
+      <div class="step">
+        <label class="h">3. Add machine work</label>
+        <label class="chk"><input type="checkbox" id="scar"> Autumn scarification (removes thatch and moss)</label>
+        <label class="chk"><input type="checkbox" id="aer"> Hollow-tine aeration (relieves compaction)</label>
+      </div>
+      <div class="step">
+        <label class="h">4. Your details</label>
+        <input type="text" id="nm" placeholder="Full name" autocomplete="name">
+        <div class="row" style="flex-wrap:nowrap"><input type="tel" id="ph" placeholder="Mobile (for visit reminders)" autocomplete="tel"><input type="email" id="em" placeholder="Email" autocomplete="email"></div>
+      </div>
+      <button class="btn" type="submit">Join the Gold Plan</button>
+      <div class="done" id="done"></div>
+    </form>
+    <aside class="summary">
+      <h3>Your Gold Plan</h3>
+      <div><div class="price" id="pm">£0</div><small id="pv">per month</small></div>
+      <ul id="inc">
+        <li>Spring feed &amp; weed control</li>
+        <li>Early summer feed &amp; weed control</li>
+        <li>Summer feed</li>
+        <li>Autumn moss control &amp; root strengthener</li>
+        <li>Winter moss control &amp; hardener</li>
+      </ul>
+      <p class="fine">Example prices only. In the real version you set prices per size band, and it can take a card or Direct Debit at sign-up, or just book the first visit.</p>
+    </aside>
+  </div>
+</div></section>
+
+<section style="background:#EDF0E6"><div class="wrap">
+  <h2>Your year, planned</h2>
+  <p class="intro">Every Gold Plan customer gets their own treatment calendar. Your greenkeepers see the round, customers see when you're coming.</p>
+  <div class="cal">
+    <div><b>Mar–Apr</b><h3>Spring</h3><p>Feed and weed control to wake the lawn up after winter.</p></div>
+    <div><b>May–Jun</b><h3>Early summer</h3><p>Feed and targeted weed control for dense growth.</p></div>
+    <div><b>Jul–Aug</b><h3>Summer</h3><p>Seasonal feed, weed control where needed.</p></div>
+    <div><b>Sep–Oct</b><h3>Autumn</h3><p>Moss control and root strengthening.</p></div>
+    <div><b>Nov–Feb</b><h3>Winter</h3><p>Moss control and root hardener.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>The office work that runs itself</h2>
+  <p class="intro">The jobs in your administrator advert that don't need a person: these happen automatically, so the office handles the conversations that do.</p>
+  <div class="flow">
+    <article><h3>Day-before visit texts</h3><p>When a round is planned, every customer on it gets a text with the day. Rain delay? One tap moves the whole round and re-texts everyone.</p><div class="sms">Hi Sarah, your spring treatment from Apex Lawns is booked for Thursday. Please leave the side gate open. Reply R to rearrange.</div></article>
+    <article><h3>Missed visits logged from the van</h3><p>Greenkeepers tap "missed" with a reason (gate locked, dog out, waterlogged). The customer is told, and the visit goes back on the next round.</p><div class="sms">We couldn't get to your back lawn today (gate locked). We've moved you to Tuesday, no need to do anything.</div></article>
+    <article><h3>Payments and reviews</h3><p>Friendly payment reminders go out on day 3 and day 10. After each visit, happy customers get a link to leave a Google review.</p><div class="sms">Thanks for choosing Apex Lawns! If you're happy with your lawn, a quick Google review helps us a lot.</div></article>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="gal">
+    <img src="img/lawn2.jpg" alt="Fertiliser spreader on a damp lawn">
+    <img src="img/lawn3.jpg" alt="Aeration machine on a front lawn">
+    <img src="img/lawn1.jpg" alt="Finished striped lawn" style="object-position:center 70%">
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <h2>What customers say</h2>
+  <div class="reviews" style="margin-top:24px">
+    <blockquote><div class="stars">★★★★★</div>Honestly couldn't recommend the Apex team enough. Not only have they made my lawn look like Wembley, but the advice they give to help maintain it alongside their treatment plans has so far been very helpful.<cite>Louis Derricott, Google review</cite></blockquote>
+    <blockquote><div class="stars">★★★★★</div>Very happy with the service and the results. Friendly, professional team who did a great job. My lawn is looking much healthier and greener. Highly recommend!<cite>J. Jones, Google review</cite></blockquote>
+    <blockquote><div class="stars">★★★★★</div>Great lads who are clearly very passionate and knowledgeable about their trade. Looking forward to the results over the next few months.<cite>Glenn Hughes, Google review</cite></blockquote>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <p><b style="color:#fff">Apex Lawns</b> · Greater Manchester &amp; North West England · <a href="tel:08008886957">0800 888 6957</a> · <a href="mailto:info@apexlawns.co.uk">info@apexlawns.co.uk</a></p>
+  <p style="margin-top:8px">Design preview by Husnain Babar, Software Engineer. Not the live site.</p>
+</div></footer>
+
+<script>
+const base={1:18,2:26,3:36,4:48}, scarP={1:60,2:85,3:120,4:160}, aerP={1:45,2:65,3:90,4:120};
+const ok=/^(SK|M|WA|CW|WN|BL|OL)\d/i;
+const $=id=>document.getElementById(id);
+function upd(){
+  const s=document.querySelector('input[name=s]:checked').value;
+  let m=base[s], extra=0, items=[];
+  if($('scar').checked){extra+=scarP[s];items.push('Autumn scarification')}
+  if($('aer').checked){extra+=aerP[s];items.push('Hollow-tine aeration')}
+  const monthly=Math.round(m+extra/12);
+  $('pm').textContent='£'+monthly;
+  $('pv').textContent='per month, or £'+(m*12/5).toFixed(0)+' per treatment'+(extra?' + £'+extra+' machine work':'');
+  document.querySelectorAll('#inc .x').forEach(e=>e.remove());
+  items.forEach(t=>{const li=document.createElement('li');li.className='x';li.textContent=t;$('inc').appendChild(li)});
+}
+function pc(){
+  const v=$('pc').value.trim().replace(/\s+/g,'');
+  const el=$('pcmsg');
+  if(v.length<3){el.textContent='';el.className='pc-msg';return true}
+  if(ok.test(v)){el.textContent='✓ We cover your area';el.className='pc-msg ok';return true}
+  el.textContent="Outside our usual area, but ask us";el.className='pc-msg no';return false
+}
+document.querySelectorAll('input').forEach(i=>i.addEventListener('input',()=>{upd();pc()}));
+$('f').addEventListener('submit',e=>{
+  e.preventDefault();
+  const d=$('done');d.style.display='block';
+  if(!$('nm').value.trim()||!$('ph').value.trim()){d.textContent='Please add your name and mobile so we can text your first visit date.';return}
+  d.innerHTML='<b>Preview only, nothing was sent.</b> In the live version, '+($('nm').value.split(' ')[0]||'the customer')+' gets a welcome text and email, is added to the next spring round in your system, and you get a notification.';
+});
+upd();
+</script>
+</body>
+</html>
